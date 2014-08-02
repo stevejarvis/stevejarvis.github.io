@@ -1,20 +1,18 @@
 # Authors
 
-billy_rick:
-  name: Billy Rick
-  web: http://thewhip.com
-  email: billy@rick.com
-  bio: "What do you want, jewels? I am a very extravagant man."
-  avatar: bio-photo-2.jpg
-  twitter: extravagantman
-  google:
-    plus: BillyRick
-
-cornelius_fiddlebone:
-  name: Cornelius Fiddlebone
-  email: cornelius@thewhip.com
-  bio: "I ordered what?"
+steve_jarvis:
+  name: Steve Jarvis
+  email: steve.a.jarvis@gmail.com
+  bio: "Software developer and student at Boston University."
   avatar: bio-photo.jpg
-  twitter: rhymeswithsackit
+  twitter: stevenjarvis
   google:
-    plus: CorneliusFiddlebone
+
+jenny_jarvis:
+  name: Jenny Jarvis
+  web: http://twitter.com/JennyJarv
+  email:
+  bio: "Sweet, sweet science."
+  avatar: bio-photo-jen.jpg
+  twitter: JennyJarv
+  google:
