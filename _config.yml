@@ -27,7 +27,7 @@ kramdown:
 # Site owner
 owner:
   name: Nerdster
-  avatar: nerdster_cropped.png
+  avatar: logo.png
   bio: "Amazing physics going on..."
   email:
   disqus-shortname:
