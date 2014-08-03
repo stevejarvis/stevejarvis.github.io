@@ -5,9 +5,7 @@ tags: [about, nerdster]
 modified: 08-02-2014
 comments: true
 image:
-  feature: texture-feature-02.jpg
-  credit: Texture Lovers
-  creditlink: http://texturelovers.com
+  feature: header.jpg
 ---
 
 This site is a low key blog with a focus on science and programming. In addition to the enjoyment of running a blog and server, writing articles helps to fully understand a topic. Explaining something is a good way to learn what you don't know.
