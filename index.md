@@ -1,7 +1,7 @@
 ---
 layout: home
-excerpt: "A responsive Jekyll theme with editorial tendencies by designer Michael Rose."
-tags: [Jekyll, theme, responsive, blog, template]
+excerpt: "Nerdster. Amazing physics going on..."
+tags: [software, biomedical, programming]
 image:
   feature: texture-feature-01.jpg
   credit: Texture Lovers
