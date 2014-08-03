@@ -1,8 +1,8 @@
 ---
 layout: page
-title: About the Theme
-tags: [about, Jekyll, theme, responsive]
-modified: 2014-08-08T20:53:07.573882-04:00
+title: About
+tags: [about, nerdster]
+modified: 08-02-2014
 comments: true
 image:
   feature: texture-feature-02.jpg
@@ -10,16 +10,8 @@ image:
   creditlink: http://texturelovers.com
 ---
 
-Minimal Mistakes is responsive Jekyll theme with large featured images and solid typography. As the name implies the styling is fairly minimal to make it easier for you to build on top of.
+This site is a low key blog with a focus on science and programming. In addition to the enjoyment of running a blog and server, writing articles helps to fully understand a topic. Explaining something is a good way to learn what you don't know.
 
-## Minimal Mistakes is all about:
+The original name of the site was mxbutterfly, inspired by the magic emacs command "M-x butterfly", a joke originating from xkcd about the optimal way to write software (or do anything, really).
 
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Gracefully degrading in older browsers. Compatible with Internet Explorer 8+ and all modern browsers. 
-* Minimal embellishments -- content first.
-* Optional large feature images for posts and pages.
-* Simple and clear permalink structure.
-* [Custom 404 page](http://mmistakes.github.io/minimal-mistakes/404.html) to get you started.
-* Support for Disqus Comments
-
-<a markdown="0" href="{{ site.url }}/theme-setup" class="btn">Install Minimal Mistakes Theme</a>
+The site was founded by a couple fun scientists; one computer, one biomedical.

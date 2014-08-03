@@ -12,7 +12,7 @@ I've known competition to be stressful, but I'm finding that spectating can be e
 
 <figure>
     <a href="../images/panamPulse.png"><img src="../images/panamPulse.png"></a>
-    <figcaption><a href="Pulse throughout the day of panams" title="Pulse throughout the day of panams">
+    <figcaption><a href="../images/panamPulse.png" title="Pulse throughout the day of panams">
     My pulse charted throughout the day of PanAms.</a></figcaption>
 </figure>
 
@@ -20,7 +20,7 @@ Since data is beautiful, I plotted the time of day against my pulse. This is far
 
 <figure>
     <a href="../images/al_panams2014.jpg"><img src="../images/al_panams2014.jpg"></a>
-    <figcaption><a href="panams intros" title="panams intros">
+    <figcaption><a href="../images/al_panams2014.jpg" title="panams intros">
     Hookgrip photo of Allie at the introductions at Pan Ams, 2014.</a></figcaption>
 </figure>
 

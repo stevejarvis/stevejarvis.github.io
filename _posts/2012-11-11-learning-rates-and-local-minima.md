@@ -13,7 +13,7 @@ To try to get a better grasp of exactly what was happening, I wrote a test to gr
 
 <figure>
     <a href="../images/200_5k_iterations.png"><img src="../images/200_5k_iterations.png"></a>
-    <figcaption><a href="success rate over time" title="success rate over time">
+    <figcaption><a href="../images/200_5k_iterations.png" title="success rate over time">
     Success rate of increasingly larger neural networks, afflicted by local minima.</a></figcaption>
 </figure>
 
