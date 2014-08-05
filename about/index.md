@@ -3,7 +3,7 @@ layout: page
 title: About
 tags: [about, nerdster]
 modified: 08-02-2014
-comments: true
+comments: false
 image:
   feature: header.jpg
 ---
