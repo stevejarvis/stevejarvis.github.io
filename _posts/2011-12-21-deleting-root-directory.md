@@ -5,6 +5,8 @@ author: steve_jarvis
 excerpt: "Having some fun with the university's loaner laptop. What happens when you blow away the root directory?"
 tags: [science, linux, ubuntu]
 comments: true
+image:
+  feature: header.jpg
 ---
 
 Before returning NMU’s Thinkpad after fall semester I used it to perform a science experiment and watch it blow up when I ran the Holy Grail of the “don’t do that!” commands:

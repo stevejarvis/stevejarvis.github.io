@@ -6,6 +6,8 @@ excerpt: "A proof of concept. Altering the compiled binary of a simple
 C++ application to bypass authentication."
 tags: [security, code, binary]
 comments: true
+image:
+  feature: header.jpg
 ---
 
 ### Intro

@@ -5,6 +5,8 @@ author: steve_jarvis
 excerpt: "Examining the strengths of the visitor patter and it's appropriate usage."
 tags: [java, object-oriented, design, software]
 comments: true
+image:
+  feature: header.jpg
 ---
 
 Because object-oriented design is awesome and there’s much to learn, here's a look at the implementation and advantages of the visitor pattern. The visitor pattern is used to easily add functionality to classes without needing to mess with the base classes themselves. There’s a nice clean layer of separation between the core classes and the logic.
