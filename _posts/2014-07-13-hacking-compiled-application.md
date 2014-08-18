@@ -25,7 +25,7 @@ an error, if the password is wrong no action is taken, and if the password is
 correct it prints the string "Access granted: Hello World!".
 
 This source is on [Github](https://github.com/stevejarvis/apphack), otherwise
-copy the following makefile and source to get started.
+copy the following makefile and source to play along.
 
 #### makefile
 {% highlight bash %}
@@ -171,8 +171,7 @@ M-x hexl-find-file
 Change the opcode 75 to a 74 and save.
 <figure>
     <a href="../images/emacs_hexl_after.png"><img src="../images/emacs_hexl_after.png"></a>
-    <figcaption><a href="emacs hexl editor" title="emacs hexl editor">
-    Screenshot of the emacs hexl editor</a></figcaption>
+    <figcaption>Screenshot of the emacs hexl editor.</figcaption>
 </figure>
 
 Now, rerun the application and see that any nonsense passes as authentication;
