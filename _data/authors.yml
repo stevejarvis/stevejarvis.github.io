@@ -8,6 +8,7 @@ steve_jarvis:
   twitter: stevenjarvis
   github: stevejarvis
   linkedin: stevenjarvis
+  page: steve-jarvis    # for page {{ site.url }}/{{ author.page }}
   google:
 
 jenny_jarvis:
@@ -17,4 +18,5 @@ jenny_jarvis:
   bio: "Sweet, sweet science. Biomedical researcher at the University of Memphis and pretty mean on the softball diamond."
   avatar: bio-photo-jen.jpg
   twitter: JennyJarv
+  page: jenny-jarvis
   google:
