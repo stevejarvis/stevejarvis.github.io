@@ -19,4 +19,9 @@ I got my username and password for the system at work so I can use the computer 
 
 I got a new Sharpie and a fancy pen specifically for signing documents.
 
-Here's a picture of my office - nice big windows with a lot of shelves and storage. Do I look kind of important :)
+<figure>
+    <a href="/Desktop/Blog/nerdster/images/jennys-new-desk"><img src="/Desktop/Blog/nerdster/images/jennys-new-desk"></a>
+    <figcaption> This is my new office - nice big windows with a lot of shelves and storage. Do I look kind of important? :) </figcaption>
+</figure>
+
+
