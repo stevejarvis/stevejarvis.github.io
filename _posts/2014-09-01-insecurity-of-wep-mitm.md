@@ -12,7 +12,7 @@ image:
 ---
 
 ## Take Care
-If this something of interest, make sure it's explored in a safe environment in
+If this is something of interest, make sure it's explored in a safe environment in
 which you have permissions to poke around. This is some cool but serious
 business, and any part of it could be worth a
 [5 year prison sentence and fines][legal].
