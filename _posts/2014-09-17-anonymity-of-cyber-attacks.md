@@ -18,8 +18,8 @@ online activity, but doable, and there's often some interesting clues left behin
 
 Stuxnet was perhaps the most advanced cyber weapon seen to date, and it was a
 suspected collaboration between the US and Israel for reasons including the
-supposed [celebration of its success at the retirement of Former
-Chief of General Staff of Israeli Defense Forces][stuxnet_wikipedia] and
+[celebration of its success at the retirement of Former
+Chief of General Staff of Israeli Defense Forces][telegraph_gabi] and
 [an article outlining an attack precisely like Stuxnet][bumgarner_article]
 written by a retired US Army special operations veteran. Finally, and most conclusively,
 [Snowden confirmed Stuxnet was a joint effort between the US and Israel][snowden_stuxnet].
@@ -49,3 +49,4 @@ respectively. Even internet criminals like to get home for dinner.
 [sec_affairs_domain]: http://securityaffairs.co/wordpress/21337/cyber-crime/blackpos-malware.html
 [nytimes_china_attacks]: http://www.nytimes.com/2014/06/10/technology/private-report-further-details-chinese-cyberattacks.html?hp&_r=0
 [nytimes_iran_attacks]: http://bits.blogs.nytimes.com/2014/05/29/cyberespionage-attacks-tied-to-hackers-in-iran/
+[telegraph_gabi]:http://www.telegraph.co.uk/technology/news/8326274/Israeli-security-chief-celebrates-Stuxnet-cyber-attack.html
