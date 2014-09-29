@@ -2,40 +2,18 @@
 layout: page
 title: USAW Competition Results
 tags: [usaw, competition, results, weightlifting]
-modified: 09-26-2014
-comments: false
+modified: 07-26-2011
+comments: true
 image:
   feature: header.jpg
 ---
 
 <html>
-  <table>
-	<tr>
-	  <td>
-		<form name="formOptions" onsubmit="return getComps();">
-		  <select onChange="getYears()" name="comp" id="comp"/>
-		  <option value="null">Select Competition...</option>
-		  <option value="AmericanOpen">American Open</option>
-		  <option value="CollegiateNationals">Collegiate Nationals</option>
-		  <option value="JuniorNationals">Junior Nationals</option>
-		  <option value="NationalChampionship">National Championship</option>
-		  <option value="OlympicTrials">Olympic Trials</option>
-		</form>
-	  </td>
-	  <td>
-		<div id="resultsPadding"><b>OR</b></div>
-	  </td>
-	  <td>
-		<form name="athleteSearch" onsubmit="return getComps();" style="display:inline;">
-		  <input type="text" name="name" id="name" placeholder="Enter Name..." onKeyUp="getComps();">
-		  <input type="submit" value="Search"/>
-		</form>
-	  </td>
-	</tr>
-  </table>
+  <form name="searchField" onsubmit="return dbquery();">
+	<input type="text" name="searchField" id="searchField" placeholder="Enter Athlete or Competition..." onKeyUp="dbquery();">
+  </form>
   <br />
-  <div id="years"></div>
-  <div id="topOTable"> &nbsp; </div>
+  <div id="status"></div>
   <br />
   <div id="tableHere"></div>
   <br />
@@ -45,6 +23,22 @@ image:
 
 var httpObject = null;
 var getBaseUrl = 'http://callahan.nerdster.org:8080/usaw/'
+
+document.getElementById('author-side').innerHTML =
+    '<br><br><br><br>\'*\' denotes record attempt<br>\'x\' denotes missed attempt';
+
+function resetText(){
+    document.getElementById('status').innerHTML = "";
+    document.getElementById('tableHere').innerHTML =
+        '<div class="article-wrap"><h3>What\'s this?</h3>' +
+        'Search above to look through a relatively complete database of US national events ' +
+        'since the beginning of time (or at least since the modern weight classes were in effect) ' +
+        'If you have a fix or addition to the results, <a href="mailto:steve.a.jarvis@gmail.com">email me</a> ' +
+        'or file an issue on <a href="https://github.com/stevejarvis/usa-weightlifting-results">Github</a>.' +
+        '<br><br>Last updated <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time>.' +
+        '<br><br>Huge thanks to <a href="http://www.lifttilyadie.com/w8lift.htm">OWOW and Butch Curry</a> ' +
+        'for organizing most of the results.</div>';
+}
 
 //Get the HTTP Object.
 function getHTTPObject(){
@@ -61,14 +55,6 @@ function getHTTPObject(){
 	}
 }
 
-//Change the value of the div to the year dropdown after comp is selected.
-function setYearDropdown(){
-	if(httpObject.readyState == 4){
-        document.getElementById('years').innerHTML = httpObject.responseText;
-		httpObject = null;
-    }
-}
-
 //Make the table in the table div.
 function setTable(){
 	if(httpObject.readyState == 4){
@@ -77,74 +63,49 @@ function setTable(){
     }
 }
 
-//AJAX call to get the years. Call the function to chage the page.
-function getYears(){
-	//Clear the table
-	document.getElementById('tableHere').innerHTML = "";
-    document.getElementById('years').innerHTML = "Loading Years...";
-	httpObject = getHTTPObject();
-	if (httpObject != null) {
-	    httpObject.open(
-            "GET",
-            getBaseUrl.concat("getYears.php/?target="+document.getElementById('comp').value),
-            true);
-	    httpObject.send(null);
-	    httpObject.onreadystatechange = setYearDropdown;
-	}
-}
-
-//Called from year dropdown. Call the function to add the table to the page.
-function getTable(){
-       document.getElementById('tableHere').innerHTML = "Loading Table...";
-	httpObject = getHTTPObject();
-	if (httpObject != null) {
-	    httpObject.open("GET",
-                        getBaseUrl.concat("makeTable.php/?comp="+document.getElementById('comp').value+"&year="+document.getElementById('year').value),
-                        true);
-	    httpObject.send(null);
-	    httpObject.onreadystatechange = setTable;
-	}
-}
-
-/*
- * Now these functions are if they searched for name.
- */
-//Calls to get all the results for the named athlete.
-function getComps(){
-	//Clear the comps and table when they start typing. Say we're lookin..
-	document.getElementById('tableHere').innerHTML = "";
-	document.getElementById('years').innerHTML = "Searching...";
-	httpObject = getHTTPObject();
-    if (httpObject != null) {
-		// Get comps
-    	httpObject.open("GET",
-                        getBaseUrl.concat("findAthlete.php/?name="+document.getElementById('name').value),
-                        true);
-		httpObject.send(null);
-        httpObject.onreadystatechange = setComps;
-     }
+// Query based on the search box.
+function dbquery(){
+	// Clear the comps and table when they start typing. Say we're lookin..
+    if( document.getElementById('searchField').value != "") {
+	    document.getElementById('status').innerHTML = "Searching...";
+	    httpObject = getHTTPObject();
+        if (httpObject != null) {
+    	    httpObject.open("GET",
+                            getBaseUrl.concat("query.php/?key="+document.getElementById('searchField').value),
+                            true);
+		    httpObject.send(null);
+            httpObject.onreadystatechange = setOptions;
+        }
+    }
+    else {
+        resetText();
+    }
 
 	return false;
 }
 
-//Set the options
-function setComps(){
+// Show what the heck we're doing.'
+function setOptions(){
 	if(httpObject.readyState == 4){
-        document.getElementById('years').innerHTML = httpObject.responseText;
+        document.getElementById('status').innerHTML = httpObject.responseText;
     }
 }
 
-//Get the table from the search box
+// Get the table from the search box
 function getTableFromSearch(comp, year, div){
 	document.getElementById('tableHere').innerHTML = "Loading Table...";
 	httpObject = getHTTPObject();
 	if (httpObject != null) {
 	    httpObject.open("GET",
-                        getBaseUrl.concat("makeTable.php/?comp="+comp+"&year="+year),
+                        getBaseUrl.concat("maketable.php/?comp="+comp+"&year="+year),
                         true);
 	    httpObject.send(null);
 	    httpObject.onreadystatechange = setTable;
+        document.getElementById('tableHere').scrollIntoView(true);
 	}
 }
+
+// Start with set text
+resetText();
 
 </script>
