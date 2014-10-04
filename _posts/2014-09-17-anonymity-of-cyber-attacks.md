@@ -13,7 +13,7 @@ image:
 One of the commonly cited benefits of cyber attacks over conventional warfare is
 the anonymity with which actions can be taken. There's a fine line
 between military action and criminal activity, and many of the same pros and
-cons are relevant for each. It's surely hard to pinpoint those responsible for shady
+cons are relevant. It's hard to pinpoint those responsible for shady
 online activity, but doable, and there's often some interesting clues left behind.
 
 Stuxnet was perhaps the most advanced cyber weapon seen to date, and it was a
@@ -22,7 +22,7 @@ suspected collaboration between the US and Israel for reasons including the
 Chief of General Staff of Israeli Defense Forces][telegraph_gabi] and
 [an article outlining an attack precisely like Stuxnet][bumgarner_article]
 written by a retired US Army special operations veteran. Finally, and most conclusively,
-[Snowden confirmed Stuxnet was a joint effort between the US and Israel][snowden_stuxnet].
+[Snowden confirmed it][snowden_stuxnet].
 
 Another instance of serious cyber action was the BlackPOS malware, the virus that afflicted Target this
 past year. It was found to be written by a Russian teenager. Some of the
