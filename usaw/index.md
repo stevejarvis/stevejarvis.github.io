@@ -30,14 +30,14 @@ document.getElementById('author-side').innerHTML =
 function resetText(){
     document.getElementById('status').innerHTML = "";
     document.getElementById('tableHere').innerHTML =
-        '<div class="article-wrap"><h3>What\'s this?</h3>' +
-        'Search above to look through a relatively complete database of US national events ' +
+        '<h3>What\'s this?</h3>' +
+        '<p>Search above to look through a relatively complete database of US national events ' +
         'since the beginning of time (or at least since the modern weight classes were in effect) ' +
         'If you have a fix or addition to the results, <a href="mailto:steve.a.jarvis@gmail.com">email me</a> ' +
         'or file an issue on <a href="https://github.com/stevejarvis/usa-weightlifting-results">Github</a>.' +
         '<br><br>Last updated <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time>.' +
         '<br><br>Huge thanks to <a href="http://www.lifttilyadie.com/w8lift.htm">OWOW and Butch Curry</a> ' +
-        'for organizing most of the results.</div>';
+        'for organizing most of the results.</p>';
 }
 
 //Get the HTTP Object.
