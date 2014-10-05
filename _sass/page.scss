@@ -231,7 +231,14 @@ $button-size: 1.5rem;
 	    width: 80%;
         margin-left: 10%;
         margin-right: 10%;
-    }
+    	p > a,
+	    li > a {
+		border-bottom: 1px dotted lighten($link-color, 50);
+		&:hover {
+			border-bottom-style: solid;
+		}
+	}
+}
 }
 #index {
 	@include container;
