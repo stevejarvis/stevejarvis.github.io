@@ -1,7 +1,7 @@
 ---
-layout: page
+layout: full-page
 title: USAW Competition Results
-tags: [usaw, competition, results, weightlifting]
+tags: [usaw, competition, results, weightlifting, national]
 modified: 07-26-2011
 comments: true
 image:
@@ -24,9 +24,6 @@ image:
 var httpObject = null;
 var getBaseUrl = 'http://callahan.nerdster.org:8080/usaw/'
 
-document.getElementById('author-side').innerHTML =
-    '<br><br><br><br>\'*\' denotes record attempt<br>\'x\' denotes missed attempt';
-
 function resetText(){
     document.getElementById('status').innerHTML = "";
     document.getElementById('tableHere').innerHTML =
@@ -35,6 +32,7 @@ function resetText(){
         'since the beginning of time (or at least since the modern weight classes were in effect) ' +
         'If you have a fix or addition to the results, <a href="mailto:steve.a.jarvis@gmail.com">email me</a> ' +
         'or file an issue on <a href="https://github.com/stevejarvis/usa-weightlifting-results">Github</a>.' +
+        '<br><br>\'*\' denotes record attempt, \'x\' denotes missed attempt.' +
         '<br><br>Last updated <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time>.' +
         '<br><br>Huge thanks to <a href="http://www.lifttilyadie.com/w8lift.htm">OWOW and Butch Curry</a> ' +
         'for organizing most of the results.</p>';
@@ -106,6 +104,8 @@ function getTableFromSearch(comp, year, div){
 }
 
 // Start with set text
-resetText();
+window.onload = function() {
+    resetText();
+};
 
 </script>
