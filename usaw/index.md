@@ -56,7 +56,8 @@ function getHTTPObject(){
 //Make the table in the table div.
 function setTable(){
 	if(httpObject.readyState == 4){
-        document.getElementById('tableHere').innerHTML = httpObject.responseText;
+        document.getElementById('tableHere').innerHTML = httpObject.responseText +
+            '<br>\'*\' denotes record attempt<br>\'x\' denotes missed attempt';
 		httpObject = null;
     }
 }
