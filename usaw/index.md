@@ -22,7 +22,7 @@ image:
 <script>
 
 var httpObject = null;
-var getBaseUrl = 'http://callahan.nerdster.org:8080/usaw/'
+var getBaseUrl = 'http://callahan.nerdster.org:8080/usaw/';
 
 function resetText(){
     document.getElementById('status').innerHTML = "";
