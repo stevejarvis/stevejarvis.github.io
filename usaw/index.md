@@ -65,6 +65,7 @@ function setTable(){
                 '<br>\'*\' denotes record attempt<br>\'x\' denotes missed attempt';
 		    httpObject = null;
         }
+    }
     else {
         resetText();
     }
@@ -77,6 +78,7 @@ function setOptions(){
 	    if(httpObject.readyState == 4){
             document.getElementById('status').innerHTML = httpObject.responseText;
         }
+    }
     else {
         resetText();
     }
