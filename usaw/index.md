@@ -2,7 +2,7 @@
 layout: full-page
 title: USAW Competition Results
 tags: [usaw, competition, results, weightlifting, national]
-modified: 10-05-2014
+modified: 05-10-2014
 comments: true
 image:
   feature: header.jpg
