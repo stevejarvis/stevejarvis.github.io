@@ -30,12 +30,12 @@
 
 <div class="article-author-side">
   {% include _author-bio.html %}
-  {% include _contributors.html %}
 </div>
 
 <div id="index">
   <h1>{{ page.title }}</h1>
   {% for post in site.posts %}
+  {% if post.author == 'steve_jarvis' %}
   {% unless post.next %}
     <h3>{{ post.date | date: '%Y' }}</h3>
     {% else %}
@@ -45,15 +45,16 @@
         <h3>{{ post.date | date: '%Y' }}</h3>
       {% endif %}
     {% endunless %}
-    <article>
+  <article>
       {% if post.link %}
         <h2 class="link-post"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></h2>
       {% else %}
         <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-        <p class="byline"><small>by <a href="{{ site.url }}/{{ site.data.authors[post.author].page }}">{{ site.data.authors[post.author].name }}</a>, <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d" }}</time></small></p>
+        <p class="byline"><small>by {{ site.data.authors[post.author].name }}, <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d" }}</time></small></p>
         <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
       {% endif %}
     </article>
+  {% endif %}
   {% endfor %}
 </div><!-- /#index -->
 

@@ -3,18 +3,20 @@
 steve_jarvis:
   name: Steve Jarvis
   email: steve.a.jarvis@gmail.com
-  bio: "Software developer and student at Boston University."
+  bio: "Software developer and student at Boston University. Also loves some beer league hockey."
   avatar: bio-photo.jpg
   twitter: stevenjarvis
   github: stevejarvis
   linkedin: stevenjarvis
+  page: steve-jarvis    # for page {{ site.url }}/{{ author.page }}
   google:
 
 jenny_jarvis:
   name: Jenny Jarvis
   web: http://twitter.com/JennyJarv
   email:
-  bio: "Sweet, sweet science."
+  bio: "Sweet, sweet science. Biomedical researcher at the University of Memphis and pretty mean on the softball diamond."
   avatar: bio-photo-jen.jpg
   twitter: JennyJarv
+  page: jenny-jarvis
   google:

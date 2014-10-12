@@ -22,8 +22,8 @@ Next, we went to an old dance hall that was a popular spot for people to go get 
 We drove past the castle - it looks even more incredible in person. I still have to go there for an official tour. The next stop was Ruissalo where we hiked through the woods right along the coast. The path follows a short part of the cruise from Turku to Stockholm so maybe I'll recognize the scenery when I take the cruise at the end of the month. We moved to another area of Ruissalo on yet another coastline and had sandwiches and coffee while watching some brave souls windsurf on the sea.
 
 <figure>
-     <a href="../images/Coast.jpg"><img src="../images/Coast.jpg"></a>
-	 <a href="../images/Ruissalo.jpg"><img src="../images/Ruissalo.jpg"></a>
+    <a href="../images/Coast.jpg"><img src="../images/Coast.jpg"></a>
+    <a href="../images/Ruissalo.jpg"><img src="../images/Ruissalo.jpg"></a>
     <figcaption> Our first and second stops in Ruissalo - the second is where we stopped for lunch. </figcaption>
 </figure>
 

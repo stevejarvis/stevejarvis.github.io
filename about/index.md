@@ -8,8 +8,23 @@ image:
   feature: header.jpg
 ---
 
-This site is a low key blog with a focus on science and programming. In addition to the enjoyment of running a blog and server, writing articles helps to fully understand a topic. Explaining something is a good way to learn what you don't know.
+This site is a low key blog with a focus on science and programming. In addition
+to the enjoyment of running a blog and server, writing articles helps to fully
+understand a topic. Explaining something is a good way to learn what you don't
+know. And it's often just generally enjoyable.
 
-The original name of the site was mxbutterfly, inspired by the magic emacs command "M-x butterfly", a joke originating from xkcd about the optimal way to write software (or do anything, really).
+The original domain of the site was mxbutterfly.net, inspired by the magic emacs
+command "M-x butterfly", a joke originating from [xkcd](https://xkcd.com/378/)
+about the optimal way to write software (and do anything, really).
 
-The site was founded by a couple fun scientists; one computer, one biomedical.
+The site was founded by a couple fun scientists; one computer, one
+biomedical.
+
+It was originally built on [Drupal](https://www.drupal.org/) and hosted on an
+[Ubuntu](http://www.ubuntu.com/) server from a residential Comcast account,
+but the tricks to maintain a clean site with port forwarding and a dynamic IP
+quickly got less fun, so it's since migrated to [Jekyll](http://jekyllrb.com/)
+and [Github Pages](https://pages.github.com/). Also thanks to
+[mmistakes](https://github.com/mmistakes/minimal-mistakes) for a great starting
+point on the theme. This site's source is also available on
+[Github](https://github.com/stevejarvis/stevejarvis.github.io).
