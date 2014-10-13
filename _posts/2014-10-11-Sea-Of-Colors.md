@@ -17,11 +17,14 @@ image:
 <br>
 <p>We drove past the castle - it looks even more incredible in person. I still have to go there for an official tour. The next stop was Ruissalo where we hiked through the woods right along the coast. The path follows a short part of the cruise from Turku to Stockholm so maybe I'll recognize the scenery when I take the cruise at the end of the month. We moved to another area of Ruissalo on yet another coastline and had sandwiches and coffee while watching some brave souls windsurf on the sea.</p>
 <br>
+
 <figure class="half">
-     <a href="../images/Coast.jpg"><img src="../images/Coast.jpg"></a>
-     <a href="../images/Ruissalo.jpg"><img src="../images/Ruissalo.jpg"></a>
+    <a href="../images/Coast.jpg"><img src="../images/Coast.jpg"></a>
+    <a href="../images/Ruissalo.jpg"><img src="../images/Ruissalo.jpg"></a>
     <figcaption> Our first and second stops in Ruissalo - the second is where we stopped for lunch. </figcaption>
 </figure>
+<br>
+
 <p>We finished our venture with a drive to Naantali where we visited Moomin park. Moomin is a comic started in Finland. The comic turned into a cartoon series and a movie just came out, as well. The amusement park wasn't open for business but the gates were open so we could still walk through and look around. It is beautiful - not what I would usually consider an amusement park. It contains many colorful buildings that resemble those in the comics but a large part of encompasses the natural landscape. The trails go through the woods and make it feel like a true adventure. I think the place is just as fun for adults as it is for the kiddos.</p>
 
 <figure>
@@ -31,4 +34,4 @@ image:
 
 <p>By the time we got back to the car, our faces were a little cold from the wind so it felt nice to turn the heat on. Overall, it was definitely a successful day and it was so nice to get more familiar with the beautiful country I'm living in.</p>
 <br>
-<p>Jag älskar Åbo!<p/> 
+<p>Jag älskar Åbo!<p/>
