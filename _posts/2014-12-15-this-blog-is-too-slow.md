@@ -53,7 +53,7 @@ $ for f in `find images -size +1M`; do sips --resampleHeightWidthMax 1024 $f; do
 {% endhighlight %}
 
 After mowing down all the huge pics, the entire images folder shrunk by over
-90%. That was even better than I'd hoped for.
+90%. That's even better than I'd hoped for.
 
 {% highlight bash %}
 $ du -hs images/
@@ -67,7 +67,7 @@ for the entire resultant changelist.
 ### Now We're Fast(er)
 
 After pushing those changes, fetching the entire page took 2 seconds; about a
-85% speedup. A 2 second page load might not win any awards, but it's an enormous
+85% speedup. A 2 second page load might not win many awards, but it's an enormous
 improvement and not half bad.
 
 {% highlight bash %}
