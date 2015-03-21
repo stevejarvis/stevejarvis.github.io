@@ -2,7 +2,7 @@
 layout: post
 title: Fixing iCloud's "Photos has Stopped Responding" Error
 author: steve_jarvis
-excerpt: "iOS and the Photos ship all images and videos
+excerpt: "iOS and the Photos app ship all images and videos
 to iCloud, and sometimes that's the only place you can get them.
 Real bummer when it's broken!"
 tags: [apple, web, icloud, photos, missing, unresponsive, responding]
