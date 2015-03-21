@@ -330,6 +330,9 @@ $button-size: 1.5rem;
 .byline {
 	clear: both;
 	font-size: 80%;
+    .no-clear {
+        clear: none;
+    }
 }
 .article-author-side,
 .article-author-bottom {
@@ -667,6 +670,12 @@ $button-size: 1.5rem;
 			}
 		}
 	}
+}
+.image-preview {
+    float: left;
+    margin-right: 25px;
+    max-height: 0px + ( $doc-line-height * 2 );
+    @include rounded(5px);
 }
 
 // Browser Upgrade
