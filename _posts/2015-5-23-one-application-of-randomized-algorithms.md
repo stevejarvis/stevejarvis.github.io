@@ -29,9 +29,10 @@ $$C \times D$$, for $$O(n^2)$$ overall.
 
 When $$A \times B = C$$, then $$A \times B \times D = C \times D$$.
 When $$A \times B \neq C$$, then $$A \times B \times D \neq C \times D$$ at
-least half of the time. This is because the multiplication of differing elements
-by a 0 in $$D$$ effectively hides that inequality, and every element of $$D$$ has a
-$$\frac{1}{2}$$ probability of being 0, therefore each inequality of $$A
+least half of the time. This is because the multiplication of elements that
+differ between $$A \times B$$ and $$C$$ by a 0 in $$D$$ effectively hides
+that inequality, and every element of $$D$$ has a
+$$\frac{1}{2}$$ probability of being 0. Therefore each difference between $$A
 \times B$$ and $$C$$ has a $$\frac{1}{2}$$ probability of being detected, and
 further differences only increase the likelihood of correct detection.
 
