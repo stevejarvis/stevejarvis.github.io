@@ -39,6 +39,7 @@
       {% else %}
         <h1><a href="{{ site.url }}{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a></h1>
       {% endif %}
+      <h4>{{ page.excerpt }}</h4>
     </div><!--/ .headline-wrap -->
     <div class="article-wrap">
       {{ content }}
@@ -71,7 +72,7 @@
   </footer>
 </div><!-- /.footer-wrap -->
 
-{% include _scripts.html %}	        
+{% include _scripts.html %}
 
 </body>
 </html>
