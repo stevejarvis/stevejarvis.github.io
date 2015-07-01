@@ -22,7 +22,7 @@ image:
 <script>
 
 var httpObject = null;
-var getBaseUrl = 'http://callahan.nerdster.org:8000/usaw/';
+var getBaseUrl = 'http://cs-people.bu.edu/sajarvis/usaw-results/';
 
 // Get the HTTP Object.
 function getHTTPObject(){
