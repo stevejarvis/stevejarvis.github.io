@@ -47,12 +47,12 @@ passed around and actively used by all users around the world. So, who's to say
 my chain is more correct than your chain? After all, I just explained that the
 value of a user's wallet is determined simply by the sum of all transactions, so
 if I were to forge a block chain with an arbitrary number of transactions into
-my account I would be a millionaire in no time.
+my account I'd be a millionaire in no time.
 
-Building the block chain involves brute forcing hashes. The first solution to
+Well, building the block chain involves brute forcing hashes. The first solution to
 the presented problem adds that block to the chain, so making a transaction
 official is effectively a race among everyone in the world. No single entity has the
-processing power to beat the rest of the network, so forging the transaction
+processing power to consistently beat the rest of the network, so forging the transaction
 record is just not possible (in reality, pools of many users often form to
 solve blocks cooperatively, and some do arguably amass the power to cast
 doubt on the sanctity of this process[^3]).
@@ -71,16 +71,16 @@ chain not chosen are effectively thrown out; they never happened.
 ### Solving Blocks
 This is where the real cryptocurrency excitement comes in. Every block
 needs to be finalized to be accepted into the block chain. A block is finalized
-when a nonce is discovered that causes that the transaction to hash to a
+when a nonce is discovered that causes that transaction to hash to a
 particular range of values. For example, if the last block in the chain is
 represented by $$01234ABCD$$, and the accepted range of hashes is
-$$[0,1000000]$$, then the value that confirms the block is a
+$$[0,1000000]$$, then the value that confirms the block is any
 value $$n$$ such that $$0 < PRF( n, 01234ABCD ) < 1000000$$. The value of
 1000000 is chosen just for simplicity, in practice the Bitcoin family uses
-SHA256, so the range is actually $$[0,2^{256}]$$.
+SHA256, so the range is actually enormous: $$[0,2^{256}]$$.
 
 Since these are meant to be real, usable currencies, and a transaction isn't
-accepted until one of these outrageously difficult math problems are solved,
+accepted until one of these outrageously difficult math problems is solved,
 it's desirable that there's some predictability regarding the length of time
 required to process a transaction. If I were a merchant and it took an
 arbitrarily long time to get paid, I wouldn't be very interested in accepting
@@ -107,8 +107,9 @@ proven authentic by its very nature (it's too computationally difficult to
 forge). It's really a brilliant solution.
 
 ### Actually Mining
-I found this all pretty fascinating on this slow weekend. I even
-started mining on a spare laptop myself. More about that in Part 2...
+I found this all pretty fascinating on this slow weekend, and even
+started mining on a spare laptop myself to see what it's like. More about that
+in Part 2...
 
 
 [^1]: CNN Money. Someone bought a $100,000 Tesla with Bitcoins. http://money.cnn.com/2013/12/06/autos/tesla-bitcoin/
