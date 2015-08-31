@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cryptocurrencies Part 1 - How Digital Currencies Work"
+title: "Cryptocurrencies, Part 1 - How Digital Currencies Work"
 author: steve_jarvis
 excerpt: "How the cryptocurrency systems work, generally."
 tags: [litecoin, ubuntu, crypto, currency, currencies, mining]
@@ -77,7 +77,7 @@ represented by $$01234ABCD$$, and the accepted range of hashes is
 $$[0,1000000]$$, then the value that confirms the block is any
 value $$n$$ such that $$0 < PRF( n, 01234ABCD ) < 1000000$$. The value of
 1000000 is chosen just for simplicity, in practice the Bitcoin family uses
-SHA256, so the range is actually enormous: $$[0,2^{256}]$$.
+SHA256, so the range is actually enormous: $$[0,2^{256})$$.
 
 Since these are meant to be real, usable currencies, and a transaction isn't
 accepted until one of these outrageously difficult math problems is solved,
