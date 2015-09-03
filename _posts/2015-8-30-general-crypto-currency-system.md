@@ -72,7 +72,7 @@ chain not chosen are effectively thrown out; they never happened.
 This is where the real cryptocurrency excitement comes in. Every block
 needs to be finalized to be accepted into the block chain. A block is finalized
 when a nonce is discovered that causes that transaction to hash to a
-particular range of values. For example, if the last block in the chain is
+particular range of values. For example, if an unconfirmed block is
 represented by $$01234ABCD$$, and the accepted range of hashes is
 $$[0,1000000]$$, then the value that confirms the block is any
 value $$n$$ such that $$0 < PRF( n, 01234ABCD ) < 1000000$$. The value of
