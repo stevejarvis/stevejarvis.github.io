@@ -26,7 +26,7 @@ transaction is authentic. Therefore, as usual, the entire system hinges on the
 users' ability to keep private keys private--if you leak your key all your
 money disappears as quickly as I can type. It's also the only thing tying a user
 to his or her wallet, and if it's lost so is the ability to spend the value of
-their wallet.
+the wallet (by anyone, those coins are gone forever).
 
 ### Transactions
 Every movement of coins is recorded as a transaction. A transaction is simply a
