@@ -180,10 +180,49 @@ root@ubuntu:/home/ubuntu# cryptsetup luksClose foo
 root@ubuntu:/home/ubuntu# sync
 ~~~~~~
 
-Finally, reboot and you should be prompted for a password. Since the encrypted
+The system is ready to go at this point. Reboot and you should be prompted
+for a password. Since the encrypted
 partitions (swap, root) are located on the same LUKS device, a single
 prompt will unlock the entire system (as opposed to a LUKS on LVM setup). Now
 just tweet your password so you don't forget and you should be good to go.
+
+If this is setup on a laptop, though, there's one more step you'll likely want
+to take. In the bcache FAQ, the author explains that caching should not be
+active during suspend or resume:
+
+> Can I use bcache with suspend/resume?
+>
+> Yes and no: during resume you are not allowed to make any changes to the disk. However with bcache this can be tricky: any read you make from a bcache device could result in a write to update the caching device. Currently bcache has no good ways of solving this.
+>
+> Your options are:
+>
+> [...]
+>
+> Disable the caching device on bcache before hibernating
+>
+> Set the cache_mode to none. This will ensure no writes are performed to the caching device. This however has the downside you cannot use bcache performance during suspend and resume.
+
+There are other options for resolving this, but I opted for the author's
+suggestion to disable caching completely during suspend and resume. I did so
+by placing this (executable) file at /usr/lib/pm-utils/sleep.d/50myrules.
+
+~~~~~~
+#!/bin/sh
+# stop/start bcache on suspend/resume
+
+case $1 in
+    hibernate|suspend)
+        echo none > /sys/block/bcache0/bcache/cache_mode
+        ;;
+
+    thaw|resume)
+        echo writeback > /sys/block/bcache0/bcache/cache_mode
+        ;;
+esac
+
+exit 0
+~~~~~~
+
 
 #### References
 There were a number of references that helped through this, and a dozen
