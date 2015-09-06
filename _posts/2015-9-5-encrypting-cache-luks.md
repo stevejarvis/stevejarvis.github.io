@@ -2,7 +2,7 @@
 layout: post
 title: Full System Encryption with SSD Cache
 author: steve_jarvis
-excerpt: "Going through a setup of full disk encryption and SSD caching on a
+excerpt: "A setup of full disk encryption and SSD caching on a
 laptop with multiple drives. Ubuntu is the poison of choice."
 tags: [linux, security, luks, bcache, lvm]
 comments: true
