@@ -9,8 +9,7 @@ image:
   feature: header.jpg
 ---
 
-Linear algebra and matrix operations make up much of the core of computing, so
-doing related operations faster can be a big win. Here's a relatively simple
+Here's a relatively simple
 problem: Given three matrices, $$A$$, $$B$$ and $$C$$, check that $$C$$ is the
 correct product of $$A \times B$$.
 
