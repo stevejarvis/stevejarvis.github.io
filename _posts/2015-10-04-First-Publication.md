@@ -16,7 +16,7 @@ Ok so here we go:
 
 #### Research ####
 --------------
-Once you perform the preliminary experiments, there will be hints and subtle correlations that may appear. There will undoubtedly, however, be holes that need to be filled in. Don't skimp on the experiments. If you are asking "what if"s about your experiment, there is a chance that your reader and the scientific community will also be asking this. Be sue to run experiments that will strengthen your conclusion so you can not only have a publication but also be a strongly cited source for furthering knowledge and/or advancing technology in your field. 
+Once you perform the preliminary experiments, there will be hints and subtle correlations that may appear. There will undoubtedly, however, be holes that need to be filled in. Don't skimp on the experiments. If you are asking "what ifs" about your experiment, there is a chance that your reader and the scientific community will also be asking this. Be sure to run experiments that will strengthen your conclusion so you can not only have a publication but also be a strongly cited source for furthering knowledge and/or advancing technology in your field. 
 
 #### Writing ####
 --------------
