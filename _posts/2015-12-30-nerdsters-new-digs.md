@@ -12,9 +12,9 @@ comments: true
 ---
 
 This is largely for my own records, since I'm sure to move this again and/or
-break everything someday, but it'd be helpful for anyone else heading down a
+break everything someday, but it'd be helpful for anyone heading down a
 similar path. Hours ago this site was hosted on GitHub Pages, which is awesome
-in its own right, but has its own shortcomings. The biggest of which (for me)
+in its own right, but has its shortcomings. The biggest of which (for me)
 became the inability to offer SSL with a custom domain.[^1]
 I easily ignored this for a while, because I wasn't
 willing to pay for a certificate to secure a simple blog, but now that
