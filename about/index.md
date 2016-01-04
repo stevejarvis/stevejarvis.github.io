@@ -23,8 +23,11 @@ biomedical.
 It was originally built on [Drupal](https://www.drupal.org/) and hosted on an
 [Ubuntu](http://www.ubuntu.com/) server from a residential Comcast account,
 but the tricks to maintain a clean site with port forwarding and a dynamic IP
-quickly got less fun, so it's since migrated to [Jekyll](http://jekyllrb.com/)
-and [Github Pages](https://pages.github.com/). Also thanks to
-[mmistakes](https://github.com/mmistakes/minimal-mistakes) for a great starting
-point on the theme. This site's source is also available on
+quickly got less fun, so it migrated to [Jekyll](http://jekyllrb.com/)
+and [Github Pages](https://pages.github.com/). At the end of 2015, it moved from
+Pages to [another VPS](https://nerdster.org/nerdsters-new-digs/) to take
+advantage of Let's Encrypt's free certificate offerings.
+
+Also thanks to [mmistakes](https://github.com/mmistakes/minimal-mistakes) for a
+great starting point on the theme. This site's source is also available on
 [Github](https://github.com/stevejarvis/stevejarvis.github.io).
