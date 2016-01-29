@@ -16,9 +16,9 @@ level.
 
 ### Wallets
 Just like traditional wallets, a crypto wallet is used to hold your money.
-Unlike traditional wallets, however, there's never actually any money in there. A
-wallet, and really your entire cryptocurrency identity, is just a public key
-pair (as in public key encryption). Other users send you money by sending coins
+Unlike traditional wallets, however, they aren't a container and there's never
+money in there. A wallet, and really your entire cryptocurrency
+identity, is just a public key pair. Other users send you money by sending coins
 to your public key, and you do the same to their public key.
 
 The private keys are used by the sender to sign transactions, to prove the
