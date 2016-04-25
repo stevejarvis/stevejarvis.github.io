@@ -9,6 +9,7 @@ tags: [apple, web, icloud, photos, missing, unresponsive, responding]
 comments: true
 header:
   image: header.jpg
+  teaser: icloud/photos_unresponsive_warning.png
 ---
 
 Photos on iOS automatically uploads photos and videos to iCloud. That's neat,

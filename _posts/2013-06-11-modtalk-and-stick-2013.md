@@ -4,6 +4,8 @@ title: Modtalk and STIC 2013
 author: steve_jarvis
 excerpt: "Presented the Modtalk compiler at STIC 2013, my first software conference."
 tags: [compiler, smalltalk, conference]
+header:
+  teaser: modtalk.png
 comments: true
 ---
 

@@ -7,7 +7,7 @@ moved on to a more flexible home. Notes on a setup with Fedora/CentOS, Nginx,
 Jekyll, and TLS."
 tags: [system admin, sysadmin, nginx, ssl, letsencrypt, tls, digitalocean]
 header:
-  image: header.jpg
+  overlay_color: "#6f7e98"
   teaser: letsencrypt-secured.jpg
 comments: true
 ---

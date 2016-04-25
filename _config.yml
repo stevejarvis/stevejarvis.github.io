@@ -11,7 +11,7 @@ title                    : "Nerdster"
 title_separator          : "-"
 name                     : "Nerdster"
 description              : "Amazing physics going on.."
-url                      : # "https://nerdster.org"
+url                      : "https://nerdster.org"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  :
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -216,10 +216,5 @@ defaults:
       author_profile: true
       read_time: false
       comments: true
-      share: true
+      share: false
       related: true
-  - scope:
-      path: ""
-    values:
-      header:
-        image: "header.jpg"

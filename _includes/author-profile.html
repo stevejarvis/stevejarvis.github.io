@@ -8,14 +8,14 @@
 
   <div class="author__avatar">
     {% if author.avatar contains "http" %}
-    	<img src="{{ author.avatar }}" alt="{{ author.name }}">
+    	<a href={{ site.url }}/{{ author.page }} style="all:inherit"><img src="{{ author.avatar }}" alt="{{ author.name }}"></a>
     {% else %}
-    	<img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}">
+    	<a href={{ site.url }}/{{ author.page }} style="all:inherit"><img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}"></a>
     {% endif %}
   </div>
 
   <div class="author__content">
-    <h3 class="author__name">{{ author.name }}</h3>
+    <h3 class="author__name"><a href={{ site.url }}/{{ author.page }} style="all:inherit">{{ author.name }}</a></h3>
     {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
   </div>
 
