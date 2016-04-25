@@ -7,6 +7,7 @@ tags: [turku, Thanksgiving, travel, cooking]
 comments: true
 header:
   image: header.jpg
+  teaser: Eating.jpg
 ---
 
 What do you do when you're in Finland on Thanksgiving? More importantly, what do you do when you're in Finland on Thanksgiving when your mom, aunties, and grammas aren't there too cook a feast for you?
@@ -26,7 +27,7 @@ What do you do when you're in Finland on Thanksgiving? More importantly, what do
     <figcaption> Prepping the desserts on Saturday. </figcaption>
 </figure>
 
-Sunday morning, we prepped the turkey and got it in the oven around 10. Thanksgiving in Finland was officially underway. We had reserved the common room in Annie's apartment building. The room had two bathrooms, a kitchen, and a large, open room with a ping pong table and benches that worked quite nicely for a dinner table for our friends. The only downside was that two burners on the stove didn't work, which made cooking a little more difficult. 
+Sunday morning, we prepped the turkey and got it in the oven around 10. Thanksgiving in Finland was officially underway. We had reserved the common room in Annie's apartment building. The room had two bathrooms, a kitchen, and a large, open room with a ping pong table and benches that worked quite nicely for a dinner table for our friends. The only downside was that two burners on the stove didn't work, which made cooking a little more difficult.
 
 <figure>
     <a href="../images/Table.JPG"><img src="../images/Table.JPG"></a>
@@ -54,4 +55,4 @@ Luckily, everyone seemed to enjoy the food and the company.
     <figcaption> The table was full, which was perfect :) </figcaption>
 </figure>
 
-Thanksgiving 2014 was a Finnish success! 
+Thanksgiving 2014 was a Finnish success!
