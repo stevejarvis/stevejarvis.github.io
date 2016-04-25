@@ -1,4 +1,8 @@
 # Site navigation links
 
-- title: "Posts"
-  url: /posts/
+main:
+  - title: "Years"
+    url: /years/
+
+  - title: "Tags"
+    url: /tags/
