@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Finger Paint
 author: steve_jarvis
 excerpt: "A few words about my first major Android application."

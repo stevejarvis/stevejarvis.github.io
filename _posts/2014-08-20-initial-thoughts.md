@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: single
 title: Initial Thoughts
 author: jenny_jarvis
 excerpt: “New places”
 tags: [turku, finland, travel]
 comments: true
-image:
-  feature: header.jpg
+header:
+  image: header.jpg
 ---
 Most people living in Turku speak both Finnish and Swedish as well as English. I am studying at Åbo Akademi University which is a Swedish university so Turku, in general, has many Swedish speaking individuals. Some even choose to speak Swedish over Finnish and some don't even know Finnish (I am not alone!).
 

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Gauging the Stress of Competition
 author: steve_jarvis
 excerpt: "Even as a spectator, watching loved ones compete is hugely

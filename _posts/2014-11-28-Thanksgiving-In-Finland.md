@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: single
 title: Thanksgiving in Finland
 author: jenny_jarvis
 excerpt: How do you say "crescent roll" in Finnish?
 tags: [turku, Thanksgiving, travel, cooking]
 comments: true
-image:
-  feature: header.jpg
+header:
+  image: header.jpg
 ---
 
 What do you do when you're in Finland on Thanksgiving? More importantly, what do you do when you're in Finland on Thanksgiving when your mom, aunties, and grammas aren't there too cook a feast for you?

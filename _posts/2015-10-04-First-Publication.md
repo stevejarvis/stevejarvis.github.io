@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: First Publication
 author: jenny_jarvis
 excerpt: Insight from a first-timer on the entire process

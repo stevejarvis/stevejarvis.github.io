@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: single
 title: Learning Rates and Local Minima
 author: steve_jarvis
 excerpt: "My intro to machine learning, and one of the major bumps along the way."
 tags: [neural network, minima, machine learning]
 comments: true
-image:
-  feature: header.jpg
+header:
+  image: header.jpg
 ---
 
 I wrote a neural network and was glad to see it perform well learning XOR and other basic functions, but scaling it to recognize handwritten characters introduced more unpredictable performance. It demonstrated some successes polluted with frequent rounds of complete nonsense; series where the success rate was worse than even a random guess.

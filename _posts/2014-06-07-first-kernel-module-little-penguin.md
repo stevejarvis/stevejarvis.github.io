@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: First Kernel Module with Little Penguin
 author: steve_jarvis
 excerpt: "Excited to be taking part in the Eudyptula challenge!"

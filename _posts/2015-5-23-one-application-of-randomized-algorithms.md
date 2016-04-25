@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: single
 title: One Application of Randomized Algorithms
 author: steve_jarvis
 excerpt: "An overview of one useful application of randomization in computer science: checking matrix multiplication."
 tags: [computer science, algorithms, randomized, matrix]
 comments: true
-image:
-  feature: header.jpg
+header:
+  image: header.jpg
 ---
 
 Here's a relatively simple

@@ -1,13 +1,14 @@
 ---
-layout: post
+layout: single
 title: Nerdster's New Digs
 author: steve_jarvis
 excerpt: "Enticed by free and available trusted SSL certificates, this site
 moved on to a more flexible home. Notes on a setup with Fedora/CentOS, Nginx,
 Jekyll, and TLS."
 tags: [system admin, sysadmin, nginx, ssl, letsencrypt, tls, digitalocean]
-image:
-  feature: header.jpg
+header:
+  image: header.jpg
+  teaser: letsencrypt-secured.jpg
 comments: true
 ---
 

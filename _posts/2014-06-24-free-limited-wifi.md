@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Free (Limited) WiFi
 author: steve_jarvis
 excerpt: "Many public hotspots offer a short period of free access before requiring

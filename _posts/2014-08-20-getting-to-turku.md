@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: single
 title: Getting To Turku
 author: jenny_jarvis
 excerpt: “My experience getting to Turku, Finland for a 4 month research trip.”
 tags: [turku, finland, travel]
 comments: true
-image:
-  feature: header.jpg
+header:
+  image: header.jpg
 ---
 Hi all! I am writing this post from Turku - I made it! First of all, let me explain about the crazy journey to get here.
 

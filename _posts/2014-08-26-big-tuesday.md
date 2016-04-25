@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: single
 title: Big Small Tuesday
 author: jenny_jarvis
 excerpt: “Sometimes, it's the small things”
 tags: [turku, travel, research]
 comments: true
-image:
-  feature: header.jpg
+header:
+  image: header.jpg
 ---
 
 Today was a big small day in the lab. Here's what happened:

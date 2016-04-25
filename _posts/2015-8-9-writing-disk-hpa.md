@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Writing a Disk's Protected Area
 author: steve_jarvis
 excerpt: "How to edit the size and contents of a disk's HPA. A tricky and/or

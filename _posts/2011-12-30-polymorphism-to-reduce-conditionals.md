@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: single
 title: Polymorphism to Reduce Conditionals
 author: steve_jarvis
 excerpt: "Conditional branching isn't fun for anybody, use polymorphism to avoid it."
 tags: [object-oriented, polymorphism, code]
 comments: true
-image:
-  feature: header.jpg
+header:
+  image: header.jpg
 ---
 
 Polymorphism in object oriented language is the practice of subclassing objects to add or modify functionality. With it, programmers can create smarter objects.

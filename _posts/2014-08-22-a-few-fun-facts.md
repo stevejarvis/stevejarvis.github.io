@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: single
 title: Let Me Tell You Something
 author: jenny_jarvis
 excerpt: “A few fun facts about Turku from the perspective of a foreigner”
 tags: [turku, Finland, travel]
 comments: true
-image:
-  feature: header.jpg
+header:
+  image: header.jpg
 ---
 ##Facts about life here:
 

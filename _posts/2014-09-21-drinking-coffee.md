@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: single
 title: Drinking Coffee
 author: jenny_jarvis
 excerpt: A little taste of what I've been up to in Turku
 tags: [turku, travel, research]
 comments: true
-image:
-  feature: header.jpg
+header:
+  image: header.jpg
 ---
 
 Sorry I've been away for so long - I'm back with a quick update.

@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: single
 title: I'm Here For The Party
 author: jenny_jarvis
 excerpt: A night with new friends
 tags: [turku, travel, research]
 comments: true
-image:
-  feature: header.jpg
+header:
+  image: header.jpg
 ---
 
 As I said in my previous post, I was invited to an event with the church I attended last Sunday. Last night was the night. And things went almost exactly how things normally go for me - not as I planned. (Spoiler alert - it ended up being a really fun night!)

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Le Shell (It's French)
 author: steve_jarvis
 excerpt: "A bash-like shell, implemented in Perl."

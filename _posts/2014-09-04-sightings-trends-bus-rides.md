@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: single
 title: Sightings, Trends, and Bus Rides
 author: jenny_jarvis
 excerpt: Tidbits about the Finns and interactions on the bus
 tags: [turku, travel, research]
 comments: true
-image:
-  feature: header.jpg
+header:
+  image: header.jpg
 ---
 
 So, this will be a semi-unorganized post with random thoughts put together.

@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: single
 title: Sharing a Tmux Session
 author: steve_jarvis
 excerpt: Something I do just often enough to consistently forget the arguments.
 tags: [linux, unix, shell, tmux, share, screen]
 comments: true
-image:
-  feature: header.jpg
+header:
+  image: header.jpg
 ---
 
 You:

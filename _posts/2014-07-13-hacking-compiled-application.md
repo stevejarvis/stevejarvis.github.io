@@ -1,13 +1,13 @@
 ---
-layout: post
+layout: single
 title: Hacking a Compiled Application
 author: steve_jarvis
 excerpt: "A proof of concept. Altering the compiled binary of a simple
 C++ application to bypass authentication."
 tags: [security, code, binary]
 comments: true
-image:
-  feature: header.jpg
+header:
+  image: header.jpg
 ---
 
 ### Intro

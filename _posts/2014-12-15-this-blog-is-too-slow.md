@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: single
 title: This Blog is Too Slow
 author: steve_jarvis
 excerpt: "... and that's no good. Big pics make for bad load times."
 tags: [os x, web, bash, images, sips]
 comments: true
-image:
-  feature: header.jpg
+header:
+  image: header.jpg
 ---
 
 ### Big Pics Make Bad Load Times

@@ -11,11 +11,11 @@ title                    : "Nerdster"
 title_separator          : "-"
 name                     : "Nerdster"
 description              : "Amazing physics going on.."
-url                      : "https://nerdster.org"
+url                      : # "https://nerdster.org"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  :
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
-# breadcrumbs            : false # true, false (default)
+breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : disqus # false (default), "disqus", "facebook", "google-plus", custom"
@@ -35,7 +35,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : stevenjarvis
+  username               :
 facebook:
   username               :
   app_id                 :
@@ -64,7 +64,7 @@ author:
   name             : "Nerdster"
   avatar           : "logo.png"
   bio              : "Amazing physics going on..."
-  location         : "Somewhere"
+  location         :
   email            :
   uri              :
   bitbucket        :
@@ -147,7 +147,7 @@ kramdown:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 7 # amount of posts to show
 paginate_path: /page:num/
 timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
@@ -204,3 +204,22 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: true
+      share: true
+      related: true
+  - scope:
+      path: ""
+    values:
+      header:
+        image: "header.jpg"

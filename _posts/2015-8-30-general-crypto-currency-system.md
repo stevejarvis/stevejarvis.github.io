@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Cryptocurrencies, Part 1 - How Digital Currencies Work"
 author: steve_jarvis
 excerpt: "How the cryptocurrency systems work, generally."

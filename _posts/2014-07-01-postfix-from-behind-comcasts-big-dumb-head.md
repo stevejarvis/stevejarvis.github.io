@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Postfix from Behind Comcast's Big Dumb Head
 author: steve_jarvis
 excerpt: "Comcast residential accounts are quite restricted, but it's still

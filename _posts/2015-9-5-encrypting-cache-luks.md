@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Full System Encryption with SSD Cache
 author: steve_jarvis
 excerpt: "A setup of full disk encryption and SSD caching on a

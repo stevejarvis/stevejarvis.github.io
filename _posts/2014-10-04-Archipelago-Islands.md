@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: single
 title: Archipelago Islands
 author: jenny_jarvis
 excerpt: A roadtrip to see the beautiful islands off the coast of Finland
 tags: [turku, travel, research]
 comments: true
-image:
-  feature: header.jpg
+header:
+  image: header.jpg
 ---
 
 
