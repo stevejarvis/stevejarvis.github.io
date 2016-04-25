@@ -2,29 +2,25 @@
 layout: single
 title: "Cryptocurrencies, Part 1 - How Digital Currencies Work"
 author: steve_jarvis
-excerpt: "How the cryptocurrency systems work, generally."
+excerpt: "Learning how the cryptocurrency systems work, generally."
 tags: [litecoin, ubuntu, crypto, currency, currencies, mining]
 comments: true
 ---
 
-At the surface, it's fairly cool that a few years ago, in 2009, there was a
-new currency (Bitcoin) invented, just completely made up. It was radically
-unlike any currency before, and today you can actually use it to buy a car.[^1]
-In recent years many variations on Bitcoin have sprouted up, often called
-"altcoins".[^2] They all operate similarly at a technical
-level.
+In 2009, there was a new currency (Bitcoin) invented. In recent years many
+variations have sprouted up, often called "altcoins".[^2] They all operate
+similarly at a technical level.
 
 ### Wallets
-Just like traditional wallets, a crypto wallet is used to hold your money.
-Unlike traditional wallets, however, they aren't a container and there's never
-money in there. A wallet, and really your entire cryptocurrency
-identity, is just a public key pair. Other users send you money by sending coins
-to your public key, and you do the same to their public key.
+Crypto wallets serve as your cryptocurrency identity, which is the private half
+of a public key pair. Other users send you money by sending coins to your public
+key, and you do the same to theirs. There isn't an amount of money directly tied
+to this identity, but rather the sum of a long history of transactions.
 
-The private keys are used by the sender to sign transactions, to prove the
+The private keys are also used by the sender to sign transactions, to prove the
 transaction is authentic. Therefore, as usual, the entire system hinges on the
-users' ability to keep private keys private--if you leak your key all your
-money disappears as quickly as I can type. It's also the only thing tying a user
+users' ability to keep private keys private--if a key is leaked all the
+money disappears as quickly as the next person can type. It's also the only thing tying a user
 to his or her wallet, and if it's lost so is the ability to spend the value of
 the wallet (by anyone, those coins are gone forever).
 
@@ -32,30 +28,26 @@ the wallet (by anyone, those coins are gone forever).
 Every movement of coins is recorded as a transaction. A transaction is simply a
 record of some coins moving from one public address to another. These
 transactions are stored in blocks, and linked to one another in a sequential
-chain.
-
-This chain of transactions is precisely how the value of your wallet is
-determined. As mentioned, there's not actually money "in" your
-crypto wallet, and that's because the amount of currency you own is simply the
-net sum of coins sent to your wallet, as determined by the currency's
-transaction history.
+chain. As mentioned, this chain of transactions is precisely how the value of
+your wallet is determined.
 
 Every user of the currency has his or her own complete copy of this transaction
 history, called the block chain, since the beginning of time. It's a record
 of every transaction that ever happened. These block chains are asynchronously
 passed around and actively used by all users around the world. So, who's to say
-my chain is more correct than your chain? After all, I just explained that the
+my chain is more correct than your chain? After all, the
 value of a user's wallet is determined simply by the sum of all transactions, so
 if I were to forge a block chain with an arbitrary number of transactions into
 my account I'd be a millionaire in no time.
 
-Well, building the block chain involves brute forcing hashes. The first solution to
-the presented problem adds that block to the chain, so making a transaction
-official is effectively a race among everyone in the world. No single entity has the
-processing power to consistently beat the rest of the network, so forging the transaction
-record is just not possible (in reality, pools of many users often form to
-solve blocks cooperatively, and some do arguably amass the power to cast
-doubt on the sanctity of this process[^3]).
+This is a real concern, but building the block chain involves brute
+forcing hashes. The first solution to the presented problem adds that block to
+the chain, so making a transaction official is effectively a race among everyone
+in the world. No single entity has the processing power to consistently beat the
+rest of the network, so, theoretically, forging the transaction record is just
+not possible (in reality, pools of many users often form to solve blocks
+  cooperatively, and some do arguably amass the power to cast doubt on the
+  sanctity of this process[^3]).
 
 Because this entire process happens asynchronously, it's completely possible
 that two different blocks are solved at the same time by different parties and
