@@ -10,7 +10,7 @@ header:
 comments: true
 ---
 
-Last updated:  4:52:21 am MDT, Jun 27, 2016
+Last updated:  5:50:53 am MDT, Jun 28, 2016
 
 <figure>
     <a href="../images/denlapse/timelapse.gif"><img src="../images/denlapse/timelapse.gif"></a>
