@@ -10,23 +10,30 @@ header:
 comments: true
 ---
 
-Last updated: 12:46:11 pm MDT, Jun 25, 2016
+Last updated:  12:11:05 am MDT, Jun 25, 2016
 
 <figure>
-    <a href="../images/denlapse/timelapse.gif"><img src="../images/denlapse/timelapse.gif"></a>
-    <figcaption>Full loop of all images taken so far, beginning
+  <video width="720" height="480" controls="controls">
+    <source src="../images/denlapse/timelapse.mp4">
+  </video>
+  <figcaption>
+    Full loop of all images taken so far, beginning
     Monday, June 20, 2016. Images are taken every hour (except
-    throughout the night) and the gif is reassembled each night at 11 PM.
-    Perspective is looking northwest from Cheesman Park, Denver.</figcaption>
+    throughout the night) and the video is reassembled and published <del>each night
+    at 11 PM</del> once-in-a-while. Perspective is looking northwest from Cheesman Park, Denver.
+  </figcaption>
 </figure>
 
 Basically, this is a jailbroken iPhone running iOS 8.1.3, OpenSSH, and [Activator](http://www.cydiaios7.com/activator.html).
 Images are taken at the request of a RaspberryPi sitting inside, issuing
-Activator commands over SSH. At 11 PM the Pi assembles the current set of images
-into a gif and publishes the result to this page. This is quite an intensive
+Activator commands over SSH. <del>At 11 PM the Pi assembles the current set of images
+into the video and publishes the result to this page. This is quite an intensive
 process, though, it takes the Pi a while (you can see just how long by the time
-stamp at top, which marks the finish time). The scripts (and all images,
-versions of the gif, etc) can be found on
+stamp at top, which marks the finish time).</del> This task became simply too much
+for the Pi to handle; it took 8 hours to assemble one week of images, and started
+crashing before we made it to 2 weeks. So for now it will be updated occasionally,
+manually. For some up-to-the-moment shots, check out [Denverlapse](https://www.instagram.com/denverlapse/)
+on Instagram. The scripts, all images, versions of the timelapse, etc, can be found on
 [Bitbucket](https://bitbucket.org/stevejarvis/denlapse/src).
 
 <figure>
