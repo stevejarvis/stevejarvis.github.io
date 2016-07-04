@@ -14,7 +14,7 @@ Last updated:  12:11:05 am MDT, Jun 25, 2016
 
 <figure>
   <video width="720" height="480" controls="controls">
-    <source src="../images/denlapse/timelapse.mp4">
+    <source src="https://nerdster.org/static/timelapse.mp4">
   </video>
   <figcaption>
     Full loop of all images taken so far, beginning
