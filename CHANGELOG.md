@@ -1,3 +1,186 @@
+## [3.2.13](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.13)
+
+### Enhancement
+
+- Add English default UI text for Canada, Great Britain, and Australia. [#377](https://github.com/mmistakes/minimal-mistakes/issues/377)
+- Switch default locale from `en-US` to `en`.
+
+## [3.2.12](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.12)
+
+### Enhancements
+
+- Remove window width "magic number" from sticky sidebar check in `main.js` for improved flexibility. [#375](https://github.com/mmistakes/minimal-mistakes/pull/375)
+
+### Bug Fixes
+
+- Fix author override conditional where a missing `authors.yml` would show broken sidebar content. Defaults to `site.author`. [#376](https://github.com/mmistakes/minimal-mistakes/pull/376)
+
+## [3.2.11](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.11)
+
+### Bug Fixes
+
+- Fix disappearing author sidebar links [#372](https://github.com/mmistakes/minimal-mistakes/issues/372)
+
+### Maintenance
+
+- Update gems: `github-pages` (84), `jekyll-github-metadata` 2.0.2, and `kramdown` 1.11.1
+- Update vendor JavaScript: jQuery 1.12.4, Stickyfill.js 1.1.4
+- Update Font Awesome 4.6.3
+
+## [3.2.10](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.10)
+
+### Maintenance
+
+- Add `CONTRIBUTING.md`
+
+## [3.2.9](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.9)
+
+### Enhancements
+
+- Add support for [header overlay images](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#header-overlay) for Open Graph images. [#358](https://github.com/mmistakes/minimal-mistakes/pull/358)
+
+### Bug Fixes
+
+- Fix `Person` typo Schema.org type [#358](https://github.com/mmistakes/minimal-mistakes/pull/358)
+
+### Maintenance
+
+- Update `github-pages` gem and dependencies.
+- Remove `minutes_read` to avoid awkward reading time wording [#356](https://github.com/mmistakes/minimal-mistakes/issues/356)
+
+## [3.2.8](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.8)
+
+### Bug Fixes
+
+- Remove `cursor: pointer` that appears on white-space surrounding author side list items and links. [#354](https://github.com/mmistakes/minimal-mistakes/pull/354)
+
+### Maintenance
+
+- Add contributing information to `README.md`. [#357](https://github.com/mmistakes/minimal-mistakes/issues/357)
+
+## [3.2.7](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.7)
+
+### Enhancements
+
+- Add French localized UI text. [#346](https://github.com/mmistakes/minimal-mistakes/pull/346)
+
+### Bug Fixes
+
+- Fix branch logic for Yandex and Alexa in `seo.html`. [#348](https://github.com/mmistakes/minimal-mistakes/pull/348)
+
+## [3.2.6](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.6)
+
+### Bug Fixes
+
+- Fix error `Liquid Exception: divided by 0 in _includes/archive-single.html, included in _layouts/single.html` caused by null `words_per_minute` in `_config.yml`. [#345](https://github.com/mmistakes/minimal-mistakes/pull/345)
+
+## [3.2.5](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.5)
+
+### Bug Fixes
+
+- Fix link color in hero overlay to be white.
+- Remove underlines from archive item titles.
+
+## [3.2.4](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.4)
+
+### Enhancements
+
+- Improve text alignment of masthead, hero overlay, page footer to be flush left and remove awkward white-space gaps. [#342](https://github.com/mmistakes/minimal-mistakes/issues/342)
+- Add Spanish localized UI text. [#338](https://github.com/mmistakes/minimal-mistakes/pull/338)
+
+### Bug Fixes
+
+- Fix alignment of icons in author sidebar [#341](https://github.com/mmistakes/minimal-mistakes/issues/341)
+
+### Maintenance
+
+- Add background color to page footer to set it apart from main content. [#342](https://github.com/mmistakes/minimal-mistakes/issues/342)
+- Add terms and privacy policy to theme's demo site. [#343](https://github.com/mmistakes/minimal-mistakes/issues/343)
+- Update screenshots found in theme documentation.
+
+## [3.2.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.3)
+
+### Enhancement
+
+- Add [Discourse](https://www.discourse.org/) as a commenting provider. [#335](https://github.com/mmistakes/minimal-mistakes/pull/335)
+
+## [3.2.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.2)
+
+### Enhancement
+
+- Add support for image captions in Magnific Popup overlays via the [`gallery`](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#gallery) helper. [#334](https://github.com/mmistakes/minimal-mistakes/issues/334)
+
+## [3.2.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.1)
+
+### Bug Fixes
+
+- Remove need for "double tapping" masthead menu links on iOS devices. [#315](https://github.com/mmistakes/minimal-mistakes/issues/315)
+
+### Maintenance
+
+- Add `ISSUE_TEMPLATE.md` for improve issue submission process.
+
+## [3.2.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.0)
+
+### Bug Fixes
+
+- Fix missing category/tag links in post footer due to possible conflict with `site.tags` and `site.categories`. [#329](https://github.com/mmistakes/minimal-mistakes/issues/329#issuecomment-222375568)
+
+## [3.1.8](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.8)
+
+### Bug Fixes
+
+- Fix `Liquid Exception: undefined method 'gsub' for nil:NilClass in _layouts/single.html` error when `page.title` is null. `<h1>` element is now conditional if `title: ` is not set for a `page` or collection item. [#312](https://github.com/mmistakes/minimal-mistakes/issues/312)
+
+### Maintenance
+
+- Remove duplicate `fa-twitter` and `fa-twitter-square` classes from `_utilities.scss`. [#302](https://github.com/mmistakes/minimal-mistakes/issues/302)
+
+- Document installing additional Jekyll gem dependencies when using `gem "jekyll"` instead of `gem "github-pages"` to avoid any errors on run. [#305](https://github.com/mmistakes/minimal-mistakes/issues/305)
+
+## [3.1.7](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.7)
+
+### Enhancement
+
+- Add translation key for "Recent Posts" used in home page `index.html`. [#316](https://github.com/mmistakes/minimal-mistakes/pull/316)
+
+### Maintenance
+
+- Small fix to avoid underlying the whitespace between icons and related text when hovering. [#303](https://github.com/mmistakes/minimal-mistakes/pull/303)
+
+## [3.1.6](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.6)
+
+### Maintenance
+
+- Update gem dependencies. Run `bundle` to update `Gemfile.lock`.
+
+## [3.1.5](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.5)
+
+### Maintenance
+
+- Fix `www` and `https` links in author profile include [#293](https://github.com/mmistakes/minimal-mistakes/pull/293)
+
+## [3.1.4](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.4)
+
+### Enhancements
+
+- Add overlay_filter param to hero headers [#298](https://github.com/mmistakes/minimal-mistakes/pull/298)
+
+## [3.1.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.3)
+
+### Enhancements
+
+- Improve `site.locale` documentation [#284](https://github.com/mmistakes/minimal-mistakes/issues/284)
+- Remove ProTip note about protocol-less `site.url` as it is an anti-pattern [#288](https://github.com/mmistakes/minimal-mistakes/issues/288)
+
+### Bug Fixes
+
+- Fix `og_image` URL in seo.html [#277](https://github.com/mmistakes/minimal-mistakes/issues/277)
+- Fix `author_profile` toggle when assigned in a `_layout` [#285](https://github.com/mmistakes/minimal-mistakes/issues/285)
+- Fix typo in `build:all` npm script [#283](https://github.com/mmistakes/minimal-mistakes/pull/283)
+- Fix URL typo documentation [#287](https://github.com/mmistakes/minimal-mistakes/issues/287)
+- SEO author bug. If `twitter.username` is set and `author.twitter` is `nil` bad things happen. [#289](https://github.com/mmistakes/minimal-mistakes/issues/289)
+
 ## [3.1.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.2)
 
 ### Enhancement
@@ -25,7 +208,6 @@
 ### Bug Fixes
 - Fixed Bitbucket URL typo in author sidebar.
 
->>>>>>> release/3.1.0
 ## [3.0.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.0.3)
 
 ### Enhancements

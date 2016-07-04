@@ -6,9 +6,11 @@ For education, exploration, and fun.
 
 ![logo](http://www.nerdster.org/images/logo.png)
 
-Running on [Jekyll](http://jekyllrb.com/), at [Github Pages](https://pages.github.com/).
+Running on [Jekyll](http://jekyllrb.com/), on a Fedora VPS.
 
 ---
+
+## License
 
 The MIT License (MIT)
 
