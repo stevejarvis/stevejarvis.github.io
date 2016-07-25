@@ -11,7 +11,7 @@ header:
 comments: true
 ---
 
-<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+<link rel="stylesheet" href="https://nerdster.org/assets/css/leaflet-v0.7.7.css" />
 <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 
 We were motivated by a belief that the MBTA's Green Line stops too frequently.
@@ -53,7 +53,7 @@ level of scaling back.
     </div>
   </div>
 </div>
-<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+<script src="https://nerdster.org/assets/js/vendor/leaflet-v0.7.7.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 <script>
