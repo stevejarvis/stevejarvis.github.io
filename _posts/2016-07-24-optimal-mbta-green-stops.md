@@ -18,8 +18,9 @@ We were motivated by a belief that the MBTA's Green Line stops too frequently.
 This interactive map shows optimal stops based on different calculated 
 <i>k</i>-means scores for clustering the Green Line T stops in Boston. The 
 variant of the clustering algorithm takes into account a given weight for each 
-point, and the weight is a function of the stop's current popularity and the 
-proximity to the nearest alternative stop (measured by walking distance).
+point, and the weight is a function of two primary characteristics: the stop's 
+current popularity and the proximity to the nearest alternative stop (measured 
+by walking distance).
 
 Initally, the map shows the current existing Green Line stops (where <i>k</i> = 
 0). Call those <i>x</i>. By playing with the sliders and changing the 
