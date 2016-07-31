@@ -10,7 +10,7 @@ header:
 comments: true
 ---
 
-Last updated: 10:38:58 PM, Jul 21, 2016
+Last updated: 01:43:33 PM, Jul 31, 2016
 
 <figure>
   <video width="720" height="480" controls="controls">
