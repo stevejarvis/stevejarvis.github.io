@@ -14,7 +14,9 @@ all traffic accidents involving cyclists since 2011 (the beginning of recorded d
 
 Seems like we average almost 300 a year, so be mindful everyone!
 
-The data is licensed under [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/).
+And sorry mobile users, the heat map doesn't seem to work in mobile
+browsers. The data is licensed by Denver Gov under
+[CC BY 3.0](http://creativecommons.org/licenses/by/3.0/).
 
 <div style="position: relative">
   <div id="map" style="width:700px; height:400px"></div>
