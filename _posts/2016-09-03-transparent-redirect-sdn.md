@@ -20,7 +20,9 @@ By issuing commands trough the ODL controller, we'll insert network flows on the
 switch to reroute traffic destined to host 2 from host 1 to host 3 instead,
 while also rewriting L2 and L3 addresses so host 1 never knows any different.
 
-Estimated time to complete is 40 minutes (very roughly).
+Estimated time to complete is 40 minutes (very roughly). This exercise
+was inspired by a very similar presentation by Geddings Barrineau at
+the GENI networking workshop at BU earlier this Spring.[^1][^2]
 
 ## Setup
 
@@ -227,7 +229,7 @@ Now let's repeat the ping test.
 
 ![fl_ping](../images/sdn-bbag/fl_ping.png)
 
-Nice! The requests never went to h2, they were redirected to h3. Notice also
+Nice, the requests never went to h2, they were redirected to h3. Notice also
 though that the responses back to h1 _say_ they come from h3... not very
 stealthy. So let's insert the reverse link flow and fix that.
 
@@ -242,3 +244,8 @@ from h1 -> h2; h1 thinks it's getting authentic responses from h2, but h2 never
 even knows about it, h3 is handling all traffic from h1 on its behalf.
 
 Success!
+
+## References
+
+[^1]: The inspiring exercise by Barrineau: <https://floodlight.atlassian.net/wiki/display/floodlightcontroller/How+to+Perform+Transparent+Packet+Redirection+with+OpenFlow+and+Floodlight>
+[^2]: GENI Workshop page: <https://www.bu.edu/hic/2016/04/15/geni-regional-workshop-and-summer-camp-2016/>
