@@ -29,8 +29,8 @@ the GENI networking workshop at BU earlier this Spring.[^1][^2]
 ### Installing Applications
 Instructions assume Ubuntu 16.04.
 
-    $ sudo apt update && sudo apt install mininet open-jdk-8-jdk vim tmux wireshark libxml2-utils
-    $ echo "export JAVA_HOME=/lib/jvm/java-8-openjdk-amd64/" >> ~/.bashrc
+    $ sudo apt update && sudo apt install mininet openjdk-8-jdk vim tmux wireshark libxml2-utils
+    $ echo "export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/" >> ~/.bashrc
     $ wget https://nexus.opendaylight.org/content/groups/public/org/opendaylight/integration/distribution-karaf/0.4.2-Beryllium-SR2/distribution-karaf-0.4.2-Beryllium-SR2.tar.gz
     $ tar xvzf distribution-karaf-0.4.2-Beryllium-SR2.tar.gz
 
@@ -90,7 +90,7 @@ Try Mininet's equivalent of "Hello World".
 
     sudo mn --test pingall --topo single,3
 
-This must be done as root (reminder: password is "network"). What this does is
+This must be done as root. What this does is
 initializes a topology of 3 nodes connected to 1 switch and executes a
 "everybody ping everybody" test for connectivity.
 
@@ -102,7 +102,7 @@ Neat. What happens if we don't provide a test to run? Well, try it.
 
 Instead of running tasks and exiting it provides a shell. From this shell you
 can execute mininet commands, including executing \*nix applications on the
-emulated hosts (try `h1 ifconfig`, `h2 ping h3`, and `xterm x2` for a real
+emulated hosts (try `h1 ifconfig`, `h2 ping h3`, and `xterm h2` for a real
 shell, for example).
 
 Notice the start of stdout in these runs prints a warning that "there's no
@@ -125,7 +125,7 @@ it run version 1.3 of the OpenFlow protocol.
 
 Now we've added details of the controller and type of switch we want, as well as
 specifying the version of OpenFlow. This time, the network looks to the
-OpenDaylight switch to operate as the controller. It will by default operate as
+OpenDaylight switch to operate as the controller. It will, by default, operate as
 a learning switch.
 
 _Note: OVS might drop a couple of the initial packets as flows are being
@@ -202,8 +202,9 @@ accomplish this in
 [flow\_redirect\_fl.xml](../resources/sdn-bbag/flow_redirect_fl.xml)
 and [flow\_redirect\_rl.xml](../resources/sdn-bbag/flow_redirect_rl.xml)
 (_fl_ = forward link, _rl_ = reverse link). Read through these, cause they are
-what determines the flows and behavior of the network. It's really the meat of
-this whole process. The highlights include:
+what determines the flows and behavior of the network (so download them too, we 
+need 'em to reference locally). It's really the meat of this whole process. The
+highlights include:
 
 * Matching the 4-tuple source and destination L2 and L3 addresses over ethernet.
 * Rewriting the destination L2 and L3 addresses (for the forward flow) and the
