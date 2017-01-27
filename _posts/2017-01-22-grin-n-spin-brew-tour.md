@@ -10,7 +10,7 @@ header:
 comments: true
 ---
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.2/leaflet.css" />
 <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 
 There are, like, [a lot](https://www.coloradobrewerylist.com/brewery/)
@@ -18,7 +18,7 @@ of breweries in Colorado, and many are within biking distance of
 Denver. We're going to start a series of fun and friendly rides to
 visit some of 'em. There is no major plan, where we head on any given
 day depends totally on who's coming and what the group feels like
-doing, but in general we roll on Saturdays, departing in the late
+doing. In general we roll on Saturdays, departing in the late
 morning from somewhere around Cheesman Park.
 
 <div id="total_mileage"></div>
@@ -27,7 +27,8 @@ morning from somewhere around Cheesman Park.
 <div style="position: relative">
   <div id="map" style="width: 100%; height: 500px"></div>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.2/leaflet.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.2.0/gpx.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 
@@ -54,9 +55,11 @@ var trips = [
     "date":new Date(2016, 9, 3),
     "lat":39.593721,
     "lon":-105.023341,
-    "notes":"The first trip of the tour, before the tour was officially the tour!"
+    "notes":"The first trip of the tour, before the tour was officially the tour!",
+    "gpx": "../resources/grin-n-spin/breckenridge-9-3-2016.gpx"
   },
 ]
+
 
 // draw a marker for all trips
 var mileage = 0
@@ -76,7 +79,20 @@ trips.forEach(function(trip) {
                  '</div>' +
                '</div>',
                {'maxWidth':'400'}
-              );
+              )
+    .on("click", function() {
+      if(typeof gpxLayer !== 'undefined') {map.removeLayer(gpxLayer);}
+      if(this.getPopup().isOpen() && trip.gpx !== 'undefined' && trip.gpx !== null) {
+        gpxLayer = new L.GPX(trip.gpx,
+                             {async: true,
+                              marker_options: {
+                                startIconUrl: null,
+                                endIconUrl: null,
+                                shadowUrl: null
+                              }});
+        gpxLayer.addTo(map);
+      }
+    });
 });
 
 $(document).ready(function() {
