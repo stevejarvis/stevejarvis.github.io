@@ -72,7 +72,7 @@ trips.forEach(function(trip) {
   L.marker([trip.lat, trip.lon]).addTo(map)
     .bindPopup('<b><big>' + trip.brewery + '</b></big><br>' +
                '<div style="display:flex;">' +
-               '<div style="float:left; margin:0.5em;"><a href=' + trip.image + '><img width=160em src=' + trip.image + '/></a></div>' +
+               '<div style="float:left; margin:0.5em;"><a href=' + trip.image + '><img width=160em src=' + trip.image + '></a></div>' +
                  '<div style="flex-grow:1; word-wrap:break-word;">' +
                    trip.notes +
                    '<ul>' +
