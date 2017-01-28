@@ -21,6 +21,8 @@ day depends totally on who's coming and what the group feels like
 doing. In general we roll on Saturdays, departing in the late
 morning from somewhere around Cheesman Park.
 
+The map below gives a bit of an interactive journal of where we've been so far.
+
 <div id="total_mileage"></div>
 <br>
 
@@ -35,7 +37,7 @@ morning from somewhere around Cheesman Park.
 <script>
 // Load the openstreetmap. Based off the introductory example at: http://leafletjs.com/examples/quick-start.html
 var mapboxUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpandmbXliNDBjZWd2M2x6bDk3c2ZtOTkifQ._QA7i5Mpkd_m30IGElHziw';
-// The starting coords and zoom just look good.
+// The starting coords and zoom just look good. Selecting a marker will zoom to fit the route.
 var map = L.map('map').setView([39.71, -104.97], 10);
 L.tileLayer(mapboxUrl, {
   maxZoom: 30,
@@ -60,11 +62,13 @@ var trips = [
   },
 ]
 
+function setTotalMilesMsg(miles) {
+  $("#total_mileage").text(miles + " total tour miles to date. That's " + ((miles/3000)*100).toFixed(1) + "% of the way from L.A. to Boston!");
+}
 
 // draw a marker for all trips
 var mileage = 0
 trips.forEach(function(trip) {
-  mileage += trip.distance
   L.marker([trip.lat, trip.lon]).addTo(map)
     .bindPopup('<b><big>' + trip.brewery + '</b></big><br>' +
                '<div style="display:flex;">' +
@@ -89,14 +93,13 @@ trips.forEach(function(trip) {
                                 startIconUrl: null,
                                 endIconUrl: null,
                                 shadowUrl: null
-                              }});
+                              }}).on('loaded', function(e) {
+                                map.fitBounds(e.target.getBounds())});
         gpxLayer.addTo(map);
       }
     });
-});
-
-$(document).ready(function() {
-  $("#total_mileage").text(mileage + " total tour miles to date. That's " + ((mileage/3000)*100).toFixed(1) + "% of the way from L.A. to Boston!");
+  mileage += trip.distance;
+  setTotalMilesMsg(mileage);
 });
 
 </script>
