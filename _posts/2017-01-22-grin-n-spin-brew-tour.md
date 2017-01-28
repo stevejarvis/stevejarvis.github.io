@@ -2,7 +2,7 @@
 layout: single
 title: Grin-n-Spin Brew Tour
 author: steve_jarvis
-excerpt: "Biking and beers, let's find them."
+excerpt: "Biking and beers, let's take a tour of the Denver area."
 tags: [cycling, biking, denver, breweries, beer]
 header:
   image: header.jpg
