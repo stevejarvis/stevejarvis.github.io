@@ -60,6 +60,16 @@ var trips = [
     "notes":"The first trip of the tour, before the tour was officially the tour!",
     "gpx": "../resources/grin-n-spin/breckenridge-9-3-2016.gpx"
   },
+  {
+    "brewery":"Denver Beer Co",
+    "distance":5.5*2, "riders":["Steve", "Allie", "Chris", "Rachel"],
+    "image":path_prefix+"denver_beer_co_2_18.jpg",
+    "date":new Date(2017, 2, 18),
+    "lat":39.758234,
+    "lon":-105.007370,
+    "notes":"An unplanned stop, but we definitely rolled up on bikes and counting it.",
+    "gpx": "../resources/grin-n-spin/denver_beer_co_cruise_2_18_2017.gpx"
+  },
 ]
 
 function setTotalMilesMsg(miles) {
