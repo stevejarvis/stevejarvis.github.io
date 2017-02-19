@@ -15,16 +15,16 @@ comments: true
 <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 
 We were motivated by a belief that the MBTA's Green Line stops too frequently.
-This interactive map shows optimal stops based on different calculated 
-<i>k</i>-means scores for clustering the Green Line T stops in Boston. The 
-variant of the clustering algorithm takes into account a given weight for each 
-point, and the weight is a function of two primary characteristics: the stop's 
-current popularity and the proximity to the nearest alternative stop (measured 
+This interactive map shows optimal stops based on different calculated
+<i>k</i>-means scores for clustering the Green Line T stops in Boston. The
+variant of the clustering algorithm takes into account a given weight for each
+point, and the weight is a function of two primary characteristics: the stop's
+current popularity and the proximity to the nearest alternative stop (measured
 by walking distance).
 
-Initally, the map shows the current existing Green Line stops (where <i>k</i> = 
-0). Call those <i>x</i>. By playing with the sliders and changing the 
-value of <i>k</i>, you can see the optimal <i>k</i> stops for that branch, 
+Initally, the map shows the current existing Green Line stops (where <i>k</i> =
+0). Call those <i>x</i>. By playing with the sliders and changing the
+value of <i>k</i>, you can see the optimal <i>k</i> stops for that branch,
 suggesting all other <i>x - k</i> are the ones to eliminate if aiming for that
 level of scaling back.
 
@@ -60,7 +60,7 @@ level of scaling back.
 <script>
 
 // Load the openstreetmap. Based off the introductory example at: http://leafletjs.com/examples/quick-start.html
-var mapboxUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpandmbXliNDBjZWd2M2x6bDk3c2ZtOTkifQ._QA7i5Mpkd_m30IGElHziw';
+var mapboxUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoic2phcnZpcyIsImEiOiJjaXpieXdtM2ExYmFsMzJxaWN3bGhpMmU2In0.gKtkxDAwHZIbdLmpXPZlAA';
 // The starting coords and zoom just look good.
 var map = L.map('map').setView([42.35, -71.11], 13);
 L.tileLayer(mapboxUrl, {
@@ -8657,7 +8657,7 @@ function drawkmeans(k, branch) {
   // Find the id for all stops on this line.
   means = optimal_green_stops.filter(function(stop) {
     return stop.line == branch &&
-           stop.k == k;  
+           stop.k == k;
   });
   // Delete what means existed already for this branch.
   if(meanMarkers[branch]) {
@@ -8739,11 +8739,11 @@ $( "#esliderval" ).text(0);
 
 </script>
 <br>
-Each of the original stops are represented by a transparent circle of 
-corresponding color (see key up top). Each optimal stop appears as a solid 
+Each of the original stops are represented by a transparent circle of
+corresponding color (see key up top). Each optimal stop appears as a solid
 circle of the same color with a black border.
 
-In 2014, the [MBTA proposed removing four stops from the B line](http://www.bu.edu/today/2014/t-may-eliminate-two-green-line-b-stops/): 
+In 2014, the [MBTA proposed removing four stops from the B line](http://www.bu.edu/today/2014/t-may-eliminate-two-green-line-b-stops/):
 BU West, St
 Paul St., Pleasant St., and Babcock St., replacing them with one new stop just
 west of BU West and a second between Babcock St. and Pleasant St. The results

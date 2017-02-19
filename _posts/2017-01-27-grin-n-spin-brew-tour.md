@@ -36,7 +36,7 @@ The map below gives a bit of an interactive journal of where we've been so far.
 
 <script>
 // Load the openstreetmap. Based off the introductory example at: http://leafletjs.com/examples/quick-start.html
-var mapboxUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpandmbXliNDBjZWd2M2x6bDk3c2ZtOTkifQ._QA7i5Mpkd_m30IGElHziw';
+var mapboxUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoic2phcnZpcyIsImEiOiJjaXpieXdtM2ExYmFsMzJxaWN3bGhpMmU2In0.gKtkxDAwHZIbdLmpXPZlAA';
 // The starting coords and zoom just look good. Selecting a marker will zoom to fit the route.
 var map = L.map('map').setView([39.71, -104.97], 10);
 L.tileLayer(mapboxUrl, {
