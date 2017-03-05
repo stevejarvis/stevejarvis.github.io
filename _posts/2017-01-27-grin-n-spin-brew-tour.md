@@ -52,7 +52,8 @@ var path_prefix = "../images/grin_n_spin/"
 var trips = [
   {
     "brewery":"Breckenridge Brewery",
-    "distance":16.8*2, "riders":["Steve", "Allie", "Chris"],
+    "distance":16.8*2,
+    "riders":["Steve", "Allie", "Chris"],
     "image":path_prefix+"breckenridge-9-3.jpg",
     "date":new Date(2016, 9, 3),
     "lat":39.593721,
@@ -62,13 +63,25 @@ var trips = [
   },
   {
     "brewery":"Denver Beer Co",
-    "distance":5.5*2, "riders":["Steve", "Allie", "Chris", "Rachel"],
+    "distance":5.5*2,
+    "riders":["Steve", "Allie", "Chris", "Rachel"],
     "image":path_prefix+"denver_beer_co_2_18.jpg",
     "date":new Date(2017, 2, 18),
     "lat":39.758234,
     "lon":-105.007370,
     "notes":"An unplanned stop, but we definitely rolled up on bikes and counting it.",
     "gpx": "../resources/grin-n-spin/denver_beer_co_cruise_2_18_2017.gpx"
+  },
+  {
+    "brewery":"TRVE Brewing Co",
+    "distance":6.3*2,
+    "riders":["Steve", "Allie", "Jenny", "Bailey"],
+    "image":path_prefix+"trve_3_4.jpg",
+    "date":new Date(2017, 3, 4),
+    "lat":39.719919,
+    "lon":-104.987686,
+    "notes":"Yeah, the route is correct. 4th brewery is the charm, apparently vertical WI IDs are tricky to get served with.",
+    "gpx": "../resources/grin-n-spin/trve_brew_co_3_4_2017.gpx"
   },
 ]
 
