@@ -86,7 +86,7 @@ var trips = [
 ]
 
 function setTotalMilesMsg(miles) {
-  $("#total_mileage").text(miles + " total tour miles to date. That's " + ((miles/3000)*100).toFixed(1) + "% of the way from L.A. to Boston!");
+  $("#total_mileage").text(miles + " total tour miles in " + trips.length + " trips to date. That's " + ((miles/3000)*100).toFixed(1) + "% of the way from L.A. to Boston!");
 }
 
 // draw a marker for all trips
