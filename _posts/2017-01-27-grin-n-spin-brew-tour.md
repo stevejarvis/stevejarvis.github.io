@@ -8,6 +8,7 @@ header:
   image: header.jpg
   teaser: grin_n_spin/bikers.jpg
 comments: true
+date: April 16, 2017
 ---
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.2/leaflet.css" />
@@ -18,8 +19,7 @@ of breweries in Colorado, and many are within biking distance of
 Denver. We're going to start a series of fun and friendly rides to
 visit some of 'em. There is no major plan, where we head on any given
 day depends totally on who's coming and what the group feels like
-doing. In general we roll on Saturdays, departing in the late
-morning from somewhere around Cheesman Park.
+doing.
 
 The map below gives a bit of an interactive journal of where we've been so far.
 
@@ -82,6 +82,17 @@ var trips = [
     "lon":-104.987686,
     "notes":"Yeah, the route is correct. 4th brewery is the charm, apparently vertical WI IDs are tricky to get served with.",
     "gpx": "../resources/grin-n-spin/trve_brew_co_3_4_2017.gpx"
+  },
+  {
+    "brewery":"Green Mountain Beer Company",
+    "distance":30.3,
+    "riders":["Steve", "Rachel", "Chris"],
+    "image":path_prefix+"green_mtn_4_16_2017.jpg",
+    "date":new Date(2017, 4, 16),
+    "lat":39.669945,
+    "lon":-105.113684,
+    "notes":"First 'official' stop of the tour, in the sense we actually planned it and said that's what it's for. And Platson got new wheels!",
+    "gpx": "../resources/grin-n-spin/green_mtn_4_16_2017.gpx"
   },
 ]
 
