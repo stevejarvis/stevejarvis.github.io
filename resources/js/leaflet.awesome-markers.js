@@ -4,6 +4,8 @@
 
   http://leafletjs.com
   https://github.com/lvoogdt
+
+sjarvis: See http://stackoverflow.com/questions/22622393/leaflet-awesome-markers-adding-numbers
 */
 
 /*global L*/
@@ -31,7 +33,8 @@
             extraClasses: '',
             icon: 'home',
             markerColor: 'blue',
-            iconColor: 'white'
+            iconColor: 'white',
+            html: ''
         },
 
         initialize: function (options) {
@@ -42,9 +45,9 @@
             var div = document.createElement('div'),
                 options = this.options;
 
-            if (options.icon) {
+            //if (options.icon) {
                 div.innerHTML = this._createInner();
-            }
+            //}
 
             if (options.bgPos) {
                 div.style.backgroundPosition =
@@ -76,7 +79,7 @@
                 }
             }
 
-            return "<i " + iconColorStyle + "class='" + options.extraClasses + " " + options.prefix + " " + iconClass + " " + iconSpinClass + " " + iconColorClass + "'></i>";
+            return "<i " + iconColorStyle + "class='" + options.extraClasses + " " + options.prefix + " " + iconClass + " " + iconSpinClass + " " + iconColorClass + "'>" + options.html + "</i>";
         },
 
         _setIconStyles: function (img, name) {
@@ -114,12 +117,9 @@
             return div;
       }
     });
-        
+
     L.AwesomeMarkers.icon = function (options) {
         return new L.AwesomeMarkers.Icon(options);
     };
 
 }(this, document));
-
-
-

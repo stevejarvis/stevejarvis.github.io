@@ -12,6 +12,7 @@ date: April 16, 2017
 ---
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.2/leaflet.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css">
 <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 
 There are, like, [a lot](https://www.coloradobrewerylist.com/brewery/)
@@ -33,6 +34,7 @@ The map below gives a bit of an interactive journal of where we've been so far.
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.2.0/gpx.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="../resources/js/leaflet.awesome-markers.js"></script>
 
 <script>
 // Load the openstreetmap. Based off the introductory example at: http://leafletjs.com/examples/quick-start.html
@@ -113,8 +115,14 @@ function setTotalMilesMsg(miles) {
 
 // draw a marker for all trips
 var mileage = 0
-trips.forEach(function(trip) {
-  L.marker([trip.lat, trip.lon]).addTo(map)
+trips.forEach(function(trip, i) {
+  var micon = L.AwesomeMarkers.icon({
+    icon: '',
+    markerColor: 'darkblue',
+    prefix: 'fa',
+    html: (i+1)
+  })
+  L.marker([trip.lat, trip.lon], {icon: micon}).addTo(map)
     .bindPopup('<b><big>' + trip.brewery + '</b></big><br>' +
                '<div style="display:flex;">' +
                '<div style="float:left; margin:0.5em;"><a href=' + trip.image + '><img width=160em src=' + trip.image + '></a></div>' +
