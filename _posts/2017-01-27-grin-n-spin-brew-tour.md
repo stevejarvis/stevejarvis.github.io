@@ -94,10 +94,21 @@ var trips = [
     "notes":"First 'official' stop of the tour, in the sense we actually planned it and said that's what it's for. And Platson got new wheels!",
     "gpx": "../resources/grin-n-spin/green_mtn_4_16_2017.gpx"
   },
+  {
+    "brewery":"Station 26 Brewing Co",
+    "distance":16.3,
+    "riders":["Steve", "Rachel", "Chris"],
+    "image":path_prefix+"station26_4_22_2017.jpg",
+    "date":new Date(2017, 4, 16),
+    "lat":39.769584,
+    "lon":-104.90598,
+    "notes":"To Station 26 for the Wild game. And REI, cause sometimes you have some beer and wanna go to the garage sale (the pic is of some swag)",
+    "gpx": "../resources/grin-n-spin/station26_4_22_2017.gpx"
+  },
 ]
 
 function setTotalMilesMsg(miles) {
-  $("#total_mileage").text(miles + " total tour miles in " + trips.length + " trips to date. That's " + ((miles/3000)*100).toFixed(1) + "% of the way from L.A. to Boston!");
+  $("#total_mileage").text(miles + " total tour miles in " + trips.length + " trips to date.");
 }
 
 // draw a marker for all trips
