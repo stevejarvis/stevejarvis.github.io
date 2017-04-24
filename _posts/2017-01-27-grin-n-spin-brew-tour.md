@@ -101,16 +101,27 @@ var trips = [
     "distance":16.3,
     "riders":["Steve", "Rachel", "Chris"],
     "image":path_prefix+"station26_4_22_2017.jpg",
-    "date":new Date(2017, 4, 16),
+    "date":new Date(2017, 4, 22),
     "lat":39.769584,
     "lon":-104.90598,
     "notes":"To Station 26 for the Wild game. And REI, cause sometimes you have some beer and wanna go to the garage sale (the pic is of some swag)",
     "gpx": "../resources/grin-n-spin/station26_4_22_2017.gpx"
   },
+  {
+    "brewery":"Odyssey Beerwerks",
+    "distance":21.4,
+    "riders":["Steve", "Rachel", "Chris", "Allie", "Sari"],
+    "image":path_prefix+"odyssey_4_23_2017.jpg",
+    "date":new Date(2017, 4, 23),
+    "lat":39.800852,
+    "lon":-105.058954,
+    "notes":"The largest brew crew to date. First time going to the Arvada 'hood, too.",
+    "gpx": "../resources/grin-n-spin/odyssey_4_23_2017.gpx"
+  },
 ]
 
 function setTotalMilesMsg(miles) {
-  $("#total_mileage").text(miles + " total tour miles in " + trips.length + " trips to date.");
+  $("#total_mileage").text(Math.round(miles) + " total tour miles in " + trips.length + " trips to date.");
 }
 
 // draw a marker for all trips
