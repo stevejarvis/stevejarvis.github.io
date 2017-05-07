@@ -126,7 +126,7 @@ var trips = [
     "date":new Date(2017, 5, 6),
     "lat":39.758134,
     "lon":-105.224165,
-    "notes":"Getting to Golden was at least twice as hard as getting back. Pretty nummy beer.",
+    "notes":"Getting to Golden was at least twice as hard as getting back! Pretty nummy beer.",
     "gpx": "../resources/grin-n-spin/mountain_toad_5_6_17.gpx"
   },
 ]
