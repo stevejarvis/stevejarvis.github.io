@@ -118,6 +118,17 @@ var trips = [
     "notes":"The largest brew crew to date. First time going to the Arvada 'hood, too.",
     "gpx": "../resources/grin-n-spin/odyssey_4_23_2017.gpx"
   },
+  {
+    "brewery":"Mountain Toad Brewery",
+    "distance":35.4,
+    "riders":["Steve", "Chris", "Allie"],
+    "image":path_prefix+"mountain_toad_5_6_17.jpg",
+    "date":new Date(2017, 5, 6),
+    "lat":39.758134,
+    "lon":-105.224165,
+    "notes":"Getting to Golden was at least twice as hard as getting back. Pretty nummy beer.",
+    "gpx": "../resources/grin-n-spin/mountain_toad_5_6_17.gpx"
+  },
 ]
 
 function setTotalMilesMsg(miles) {
