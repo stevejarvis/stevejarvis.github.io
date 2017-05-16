@@ -8,7 +8,7 @@ header:
   image: header.jpg
   teaser: grin_n_spin/logo.jpg
 comments: true
-date: May 6, 2017
+date: May 13, 2017
 ---
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.2/leaflet.css" />
@@ -128,6 +128,17 @@ var trips = [
     "lon":-105.224165,
     "notes":"Getting to Golden was at least twice as hard as getting back! Pretty nummy beer.",
     "gpx": "../resources/grin-n-spin/mountain_toad_5_6_17.gpx"
+  },
+  {
+    "brewery":"Golden City Brewery",
+    "distance":34,
+    "riders":["Steve", "John", "Sari"],
+    "image":path_prefix+"gcb_5_13.jpg",
+    "date":new Date(2017, 5, 13),
+    "lat":39.754677,
+    "lon":-105.223686,
+    "notes":"Hot day and a beautiful ride. Got 3 flats on the way back so I didn't make the full round trip, had to call for backup.",
+    "gpx": "../resources/grin-n-spin/gcb_5_13.gpx"
   },
 ]
 
