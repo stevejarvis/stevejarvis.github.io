@@ -34,10 +34,9 @@ The map below gives a bit of an interactive journal of where we've been so far.
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.2.0/gpx.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-<script src="../resources/js/leaflet.awesome-markers.js"></script>
+<script src="{{ base_path }}/resources/js/leaflet.awesome-markers.js"></script>
 
 <script>
-// Load the openstreetmap. Based off the introductory example at: http://leafletjs.com/examples/quick-start.html
 var mapboxUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoic2phcnZpcyIsImEiOiJjaXpieXdtM2ExYmFsMzJxaWN3bGhpMmU2In0.gKtkxDAwHZIbdLmpXPZlAA';
 // The starting coords and zoom just look good. Selecting a marker will zoom to fit the route.
 var map = L.map('map').setView([39.71, -104.97], 10);
@@ -50,7 +49,9 @@ L.tileLayer(mapboxUrl, {
   id: 'mapbox.streets'
 }).addTo(map);
 
-var path_prefix = "../images/grin_n_spin/"
+var path_prefix = "{{ base_path }}/images/grin_n_spin/"
+var gpx_prefix = "{{ base_path }}/resources/grin-n-spin/"
+
 var trips = [
   {
     "brewery":"Breckenridge Brewery",
@@ -61,7 +62,7 @@ var trips = [
     "lat":39.593721,
     "lon":-105.023341,
     "notes":"The first trip of the tour, before the tour was officially the tour!",
-    "gpx": "../resources/grin-n-spin/breckenridge-9-3-2016.gpx"
+    "gpx": gpx_prefix + "breckenridge-9-3-2016.gpx"
   },
   {
     "brewery":"Denver Beer Co",
@@ -72,7 +73,7 @@ var trips = [
     "lat":39.758234,
     "lon":-105.007370,
     "notes":"An unplanned stop, but we definitely rolled up on bikes and counting it.",
-    "gpx": "../resources/grin-n-spin/denver_beer_co_cruise_2_18_2017.gpx"
+    "gpx": gpx_prefix + "denver_beer_co_cruise_2_18_2017.gpx"
   },
   {
     "brewery":"TRVE Brewing Co",
@@ -83,7 +84,7 @@ var trips = [
     "lat":39.719919,
     "lon":-104.987686,
     "notes":"Yeah, the route is correct. 4th brewery is the charm, apparently vertical WI IDs are tricky to get served with.",
-    "gpx": "../resources/grin-n-spin/trve_brew_co_3_4_2017.gpx"
+    "gpx": gpx_prefix + "trve_brew_co_3_4_2017.gpx"
   },
   {
     "brewery":"Green Mountain Beer Company",
@@ -94,7 +95,7 @@ var trips = [
     "lat":39.669945,
     "lon":-105.113684,
     "notes":"First 'official' stop of the tour, in the sense we actually planned it and said that's what it's for. And Platson got new wheels!",
-    "gpx": "../resources/grin-n-spin/green_mtn_4_16_2017.gpx"
+    "gpx": gpx_prefix + "green_mtn_4_16_2017.gpx"
   },
   {
     "brewery":"Station 26 Brewing Co",
@@ -105,7 +106,7 @@ var trips = [
     "lat":39.769584,
     "lon":-104.90598,
     "notes":"To Station 26 for the Wild game. And REI, cause sometimes you have some beer and wanna go to the garage sale (the pic is of some swag)",
-    "gpx": "../resources/grin-n-spin/station26_4_22_2017.gpx"
+    "gpx": gpx_prefix + "station26_4_22_2017.gpx"
   },
   {
     "brewery":"Odyssey Beerwerks",
@@ -116,7 +117,7 @@ var trips = [
     "lat":39.800852,
     "lon":-105.058954,
     "notes":"The largest brew crew to date. First time going to the Arvada 'hood, too.",
-    "gpx": "../resources/grin-n-spin/odyssey_4_23_2017.gpx"
+    "gpx": gpx_prefix + "odyssey_4_23_2017.gpx"
   },
   {
     "brewery":"Mountain Toad Brewery",
@@ -127,7 +128,7 @@ var trips = [
     "lat":39.758134,
     "lon":-105.224165,
     "notes":"Getting to Golden was at least twice as hard as getting back! Pretty nummy beer.",
-    "gpx": "../resources/grin-n-spin/mountain_toad_5_6_17.gpx"
+    "gpx": gpx_prefix + "mountain_toad_5_6_17.gpx"
   },
   {
     "brewery":"Golden City Brewery",
@@ -138,7 +139,7 @@ var trips = [
     "lat":39.754677,
     "lon":-105.223686,
     "notes":"Hot day and a beautiful ride. Got 3 flats on the way back so I didn't make the full round trip, had to call for backup.",
-    "gpx": "../resources/grin-n-spin/gcb_5_13.gpx"
+    "gpx": gpx_prefix + "gcb_5_13.gpx"
   },
 ]
 
