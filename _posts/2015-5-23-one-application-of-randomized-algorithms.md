@@ -9,6 +9,8 @@ header:
   image: header.jpg
 ---
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
 Here's a relatively simple
 problem: Given three matrices, $$A$$, $$B$$ and $$C$$, check that $$C$$ is the
 correct product of $$A \times B$$.
