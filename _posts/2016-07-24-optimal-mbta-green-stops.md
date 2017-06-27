@@ -9,10 +9,14 @@ header:
   image: header.jpg
   teaser: optimal-stops-map.png
 comments: true
+custom_css:
+  - "https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css"
+  - "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"
+custom_js:
+  - "https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"
+  - "https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"
+  - "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"
 ---
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css" />
-<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 
 We were motivated by a belief that the MBTA's Green Line stops too frequently.
 This interactive map shows optimal stops based on different calculated
@@ -54,9 +58,7 @@ level of scaling back.
     </div>
   </div>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
 <script>
 
 // Load the openstreetmap. Based off the introductory example at: http://leafletjs.com/examples/quick-start.html
