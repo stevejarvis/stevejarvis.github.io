@@ -9,11 +9,18 @@ header:
   teaser: grin_n_spin/logo.jpg
 comments: true
 date: May 13, 2017
+custom_css:
+  - "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.2/leaflet.css"
+  - "https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"
+  - "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"
+custom_js:
+  - "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.2/leaflet.js"
+  - "https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.2.0/gpx.min.js"
+  - "https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"
+  - "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"
+  - "/resources/js/leaflet.awesome-markers.js"
+  - "/resources/grin-n-spin/map.js"
 ---
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.2/leaflet.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css">
-<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 
 There are, like, [a lot](https://www.coloradobrewerylist.com/brewery/)
 of breweries in Colorado, and many are within biking distance of
@@ -30,163 +37,3 @@ The map below gives a bit of an interactive journal of where we've been so far.
 <div style="position: relative">
   <div id="map" style="width: 100%; height: 500px"></div>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.2/leaflet.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.2.0/gpx.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-<script src="{{ base_path }}/resources/js/leaflet.awesome-markers.js"></script>
-
-<script>
-var mapboxUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoic2phcnZpcyIsImEiOiJjaXpieXdtM2ExYmFsMzJxaWN3bGhpMmU2In0.gKtkxDAwHZIbdLmpXPZlAA';
-// The starting coords and zoom just look good. Selecting a marker will zoom to fit the route.
-var map = L.map('map').setView([39.71, -104.97], 10);
-L.tileLayer(mapboxUrl, {
-  maxZoom: 30,
-  // credit our tools
-  attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
-    '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-    'Imagery © <a href="http://mapbox.com">Mapbox</a>',
-  id: 'mapbox.streets'
-}).addTo(map);
-
-var path_prefix = "{{ base_path }}/images/grin_n_spin/"
-var gpx_prefix = "{{ base_path }}/resources/grin-n-spin/"
-
-var trips = [
-  {
-    "brewery":"Breckenridge Brewery",
-    "distance":16.8*2,
-    "riders":["Steve", "Allie", "Chris"],
-    "image":path_prefix+"breckenridge-9-3.jpg",
-    "date":new Date(2016, 9, 3),
-    "lat":39.593721,
-    "lon":-105.023341,
-    "notes":"The first trip of the tour, before the tour was officially the tour!",
-    "gpx": gpx_prefix + "breckenridge-9-3-2016.gpx"
-  },
-  {
-    "brewery":"Denver Beer Co",
-    "distance":5.5*2,
-    "riders":["Steve", "Allie", "Chris", "Rachel"],
-    "image":path_prefix+"denver_beer_co_2_18.jpg",
-    "date":new Date(2017, 2, 18),
-    "lat":39.758234,
-    "lon":-105.007370,
-    "notes":"An unplanned stop, but we definitely rolled up on bikes and counting it.",
-    "gpx": gpx_prefix + "denver_beer_co_cruise_2_18_2017.gpx"
-  },
-  {
-    "brewery":"TRVE Brewing Co",
-    "distance":6.3*2,
-    "riders":["Steve", "Allie", "Jenny", "Bailey"],
-    "image":path_prefix+"trve_3_4.jpg",
-    "date":new Date(2017, 3, 4),
-    "lat":39.719919,
-    "lon":-104.987686,
-    "notes":"Yeah, the route is correct. 4th brewery is the charm, apparently vertical WI IDs are tricky to get served with.",
-    "gpx": gpx_prefix + "trve_brew_co_3_4_2017.gpx"
-  },
-  {
-    "brewery":"Green Mountain Beer Company",
-    "distance":30.3,
-    "riders":["Steve", "Rachel", "Chris"],
-    "image":path_prefix+"green_mtn_4_16_2017.jpg",
-    "date":new Date(2017, 4, 16),
-    "lat":39.669945,
-    "lon":-105.113684,
-    "notes":"First 'official' stop of the tour, in the sense we actually planned it and said that's what it's for. And Platson got new wheels!",
-    "gpx": gpx_prefix + "green_mtn_4_16_2017.gpx"
-  },
-  {
-    "brewery":"Station 26 Brewing Co",
-    "distance":16.3,
-    "riders":["Steve", "Rachel", "Chris"],
-    "image":path_prefix+"station26_4_22_2017.jpg",
-    "date":new Date(2017, 4, 22),
-    "lat":39.769584,
-    "lon":-104.90598,
-    "notes":"To Station 26 for the Wild game. And REI, cause sometimes you have some beer and wanna go to the garage sale (the pic is of some swag)",
-    "gpx": gpx_prefix + "station26_4_22_2017.gpx"
-  },
-  {
-    "brewery":"Odyssey Beerwerks",
-    "distance":21.4,
-    "riders":["Steve", "Rachel", "Chris", "Allie", "Sari"],
-    "image":path_prefix+"odyssey_4_23_2017.jpg",
-    "date":new Date(2017, 4, 23),
-    "lat":39.800852,
-    "lon":-105.058954,
-    "notes":"The largest brew crew to date. First time going to the Arvada 'hood, too.",
-    "gpx": gpx_prefix + "odyssey_4_23_2017.gpx"
-  },
-  {
-    "brewery":"Mountain Toad Brewery",
-    "distance":35.4,
-    "riders":["Steve", "Chris", "Allie"],
-    "image":path_prefix+"mountain_toad_5_6_17.jpg",
-    "date":new Date(2017, 5, 6),
-    "lat":39.758134,
-    "lon":-105.224165,
-    "notes":"Getting to Golden was at least twice as hard as getting back! Pretty nummy beer.",
-    "gpx": gpx_prefix + "mountain_toad_5_6_17.gpx"
-  },
-  {
-    "brewery":"Golden City Brewery",
-    "distance":34,
-    "riders":["Steve", "John", "Sari"],
-    "image":path_prefix+"gcb_5_13.jpg",
-    "date":new Date(2017, 5, 13),
-    "lat":39.754677,
-    "lon":-105.223686,
-    "notes":"Hot day and a beautiful ride. Got 3 flats on the way back so I didn't make the full round trip, had to call for backup.",
-    "gpx": gpx_prefix + "gcb_5_13.gpx"
-  },
-]
-
-function setTotalMilesMsg(miles) {
-  $("#total_mileage").text(Math.round(miles) + " total tour miles in " + trips.length + " trips to date.");
-}
-
-// draw a marker for all trips
-var mileage = 0
-trips.forEach(function(trip, i) {
-  var micon = L.AwesomeMarkers.icon({
-    icon: '',
-    markerColor: 'darkblue',
-    prefix: 'fa',
-    html: (i+1)
-  })
-  L.marker([trip.lat, trip.lon], {icon: micon}).addTo(map)
-    .bindPopup('<b><big>' + trip.brewery + '</b></big><br>' +
-               '<div style="display:flex;">' +
-               '<div style="float:left; margin:0.5em;"><a href=' + trip.image + '><img width=160em src=' + trip.image + '></a></div>' +
-                 '<div style="flex-grow:1; word-wrap:break-word;">' +
-                   trip.notes +
-                   '<ul>' +
-                     '<li>' + trip.date.getMonth() + '-' + trip.date.getDate() + '-' + trip.date.getFullYear() + '</li>' +
-                     '<li>' + trip.riders.join(', ') + '</li>' +
-                     '<li>' + trip.distance + ' miles</li>' +
-                   '</ul>' +
-                 '</div>' +
-               '</div>',
-               {'maxWidth':'400'}
-              )
-    .on("click", function() {
-      if(typeof gpxLayer !== 'undefined') {map.removeLayer(gpxLayer);}
-      if(this.getPopup().isOpen() && trip.gpx !== 'undefined' && trip.gpx !== null) {
-        gpxLayer = new L.GPX(trip.gpx,
-                             {async: true,
-                              marker_options: {
-                                startIconUrl: null,
-                                endIconUrl: null,
-                                shadowUrl: null
-                              }}).on('loaded', function(e) {
-                                map.fitBounds(e.target.getBounds())});
-        gpxLayer.addTo(map);
-      }
-    });
-  mileage += trip.distance;
-  setTotalMilesMsg(mileage);
-});
-
-</script>
