@@ -8,7 +8,7 @@ header:
   image: header.jpg
   teaser: grin_n_spin/logo.jpg
 comments: true
-date: May 13, 2017
+date: July 8, 2017
 custom_css:
   - "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.2/leaflet.css"
   - "https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"
@@ -36,4 +36,10 @@ The map below gives a bit of an interactive journal of where we've been so far.
 
 <div style="position: relative">
   <div id="map" style="width: 100%; height: 500px"></div>
+</div>
+
+<br>
+
+<div>
+  <table id="trip_table"></table>
 </div>

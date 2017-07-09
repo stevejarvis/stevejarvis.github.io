@@ -87,6 +87,17 @@ var trips = [
     "notes":"Hot day and a beautiful ride. Got 3 flats on the way back so I didn't make the full round trip, had to call for backup.",
     "gpx": "gcb_5_13.gpx"
   },
+  {
+    "brewery":"Dry Dock Brewing Co - South Dock",
+    "distance":32.2,
+    "riders":["Steve", "Chris"],
+    "image": "dry_dock_south_7_8_17.jpg",
+    "date":new Date(2017, 7, 8),
+    "lat":39.652665,
+    "lon":-104.81204,
+    "notes":"First ride from the new place, also transported some camping equipment while we were at it. Apricot beers were favorites.",
+    "gpx": "dry_dock_south_7_8_17.gpx"
+  },
 ]
 
 function setTotalMilesMsg(miles) {
@@ -147,6 +158,16 @@ $(document).ready(function() {
           gpxLayer.addTo(map);
         }
       });
+
+    // Add to table as well
+    var table = document.getElementById("trip_table");
+    var row = table.insertRow(i);
+    row.insertCell(0).innerHTML = i+1;
+    row.insertCell(1).innerHTML = trip.brewery;
+    row.insertCell(2).innerHTML = trip.date.getMonth() + '-' + trip.date.getDate() + '-' + trip.date.getFullYear();
+    row.insertCell(3).innerHTML = trip.riders.join(', ');
+    row.insertCell(4).innerHTML = trip.distance + ' miles';
+
     mileage += trip.distance;
     setTotalMilesMsg(mileage);
   })
