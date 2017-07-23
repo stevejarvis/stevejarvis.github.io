@@ -98,6 +98,17 @@ var trips = [
     "notes":"First ride from the new place, also transported some camping equipment while we were at it. Apricot beers were favorites.",
     "gpx": "dry_dock_south_7_8_17.gpx"
   },
+  {
+    "brewery":"Boulder Beer Co",
+    "distance":82.2,
+    "riders":["Steve", "Chris"],
+    "image": "boulder_beer_co_7_22_17.jpg",
+    "date":new Date(2017, 7, 22),
+    "lat":40.0265719,
+    "lon":-105.24805650000002,
+    "notes":"Longest tour trip so far! And ran out of paved trail for a couple sections.",
+    "gpx": "boulder_beer_co_7_22_17.gpx"
+  },
 ]
 
 function setTotalMilesMsg(miles) {
@@ -108,7 +119,7 @@ function setTotalMilesMsg(miles) {
 $(document).ready(function() {
   var mapboxUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoic2phcnZpcyIsImEiOiJjaXpieXdtM2ExYmFsMzJxaWN3bGhpMmU2In0.gKtkxDAwHZIbdLmpXPZlAA';
   // The starting coords and zoom just look good. Selecting a marker will zoom to fit the route.
-  var map = L.map('map').setView([39.71, -104.97], 10);
+  var map = L.map('map').setView([39.758234, -105.007370], 9.5);
   L.tileLayer(mapboxUrl, {
     maxZoom: 30,
     // credit our tools
