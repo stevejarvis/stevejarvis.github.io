@@ -115,10 +115,10 @@ var trips = [
     "riders":["Steve", "Allie"],
     "image": "breckenridge_8_12_17.jpg",
     "date":new Date(2017, 8, 12),
-    "lat":39.593713,
-    "lon":-105.023349,
+    "lat":39.593213,
+    "lon":-105.023649,
     "notes": "We actually planned on a bigger circle up to Dry Dock North, but weather got really nasty when we got to Littleton, so we ducked in here instead!",
-    "gpx": "breckenridge8_12_17.gpx"
+    "gpx": "breckenridge_8_12_17.gpx"
   },
 ]
 
