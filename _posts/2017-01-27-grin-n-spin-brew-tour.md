@@ -8,7 +8,7 @@ header:
   image: header.jpg
   teaser: grin_n_spin/logo.jpg
 comments: true
-date: July 22, 2017
+date: August 12, 2017
 custom_css:
   - "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.2/leaflet.css"
   - "https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"

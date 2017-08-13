@@ -109,6 +109,17 @@ var trips = [
     "notes":"Longest tour trip so far! And ran out of paved trail for a couple sections.",
     "gpx": "boulder_beer_co_7_22_17.gpx"
   },
+  {
+    "brewery":"Breckenridge Brewery (trip #2)",
+    "distance":50.2,
+    "riders":["Steve", "Allie"],
+    "image": "breckenridge_8_12_17.jpg",
+    "date":new Date(2017, 8, 12),
+    "lat":39.593713,
+    "lon":-105.023349,
+    "notes": "We actually planned on a bigger circle up to Dry Dock North, but weather got really nasty when we got to Littleton, so we ducked in here instead!",
+    "gpx": "breckenridge8_12_17.gpx"
+  },
 ]
 
 function setTotalMilesMsg(miles) {
