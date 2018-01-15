@@ -128,7 +128,7 @@ var trips = [
     "date":new Date(2018, 1, 13),
     "lat":39.612762,
     "lon":-105.02449999999999,
-    "notes": "First ride of a new year. Went up through Denver each way, started a little chilly but turned out to be a nice day.",
+    "notes": "First ride of a new year. Went up through Denver each way, started a little chilly but turned out to be a nice day. Actually tried to go to Locavore but couldn't find it and happened to end up in Saint Patrick's parking lot while looking for it. Turned out to be a win though, great beer, and more affordable than most breweries in the area.",
     "gpx": "saint_patricks_1_13_18.gpx"
   },
 ]
