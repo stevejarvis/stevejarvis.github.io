@@ -120,6 +120,17 @@ var trips = [
     "notes": "We actually planned on a bigger circle up to Dry Dock North, but weather got really nasty when we got to Littleton, so we ducked in here instead!",
     "gpx": "breckenridge_8_12_17.gpx"
   },
+  {
+    "brewery":"Saint Patrick's Brewery",
+    "distance":55.2,
+    "riders":["Steve", "Chris"],
+    "image": "",
+    "date":new Date(2018, 1, 13),
+    "lat":39.612762,
+    "lon":-105.02449999999999,
+    "notes": "First ride of a new year. Went up through Denver each way, started a little chilly but turned out to be a nice day.",
+    "gpx": "saint_patricks_1_13_18.gpx"
+  },
 ]
 
 function setTotalMilesMsg(miles) {
