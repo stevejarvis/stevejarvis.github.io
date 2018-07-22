@@ -131,6 +131,39 @@ var trips = [
     "notes": "First ride of a new year. Went up through Denver each way, started a little chilly but turned out to be a nice day. Actually tried to go to Locavore but couldn't find it and happened to end up in Saint Patrick's parking lot while looking for it. Turned out to be a win though, great beer, and more affordable than most breweries in the area.",
     "gpx": "saint_patricks_1_13_18.gpx"
   },
+  {
+    "brewery":"Joyride Brewing Company",
+    "distance":38,
+    "riders":["Steve", "Chris", "Dave"],
+    "image": "",
+    "date":new Date(2018, 3, 30),
+    "lat":39.753134,
+    "lon":-105.053452,
+    "notes": "Went out after work, it's a nice area over by Sloan's Lake. Computer died on the way back, so the route isn't complete, but you get the idea.",
+    "gpx": "joyride_brew_3_30_18.gpx"
+  },
+  {
+    "brewery":"Lost Highway Brewing Company",
+    "distance":33.96,
+    "riders":["Steve", "Jimmy", "Sean", "Ken"],
+    "image": "lost_highway_5_28.jpeg",
+    "date":new Date(2018, 5, 28),
+    "lat":39.601885,
+    "lon":-104.840546,
+    "notes": "After the usual great Saturday morning Adventure Cycling route down to Meridian for laps, we went to recover at Lost Highway. We got there more than an hour before they were supposed to open, but we must have looked pitiful enough because she was kind enough to let us in early. Great beer and a great place.",
+    "gpx": "chenango_lost_highway.gpx"
+  },
+  {
+    "brewery":"Great Divide",
+    "distance":123.39,
+    "riders":["Steve", "Bill", "Amanda", "Ben", "Chris", "Allie"],
+    "image": "great_divide_6_9.jpeg",
+    "date":new Date(2018, 6, 9),
+    "lat":39.770259,
+    "lon":-104.97919,
+    "notes": "The (first) big one! Five of us set out to do a whole century, and two made it the distance, but we still all managed to get to Great Divide when all said and done. The route was fun, incredibly hot though. It was well over 90 degrees for much of the way. Getting back on the bike after a couple beers at the end (just to get back home) was the hardest part. This was a great day.",
+    "gpx": "great_divide_century.gpx"
+  },
 ]
 
 function setTotalMilesMsg(miles) {
