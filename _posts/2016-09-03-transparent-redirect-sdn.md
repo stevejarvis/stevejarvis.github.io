@@ -42,7 +42,7 @@ connections.
     $ ./bin/karaf
     > feature:install odl-l2switch-switch odl-dlux-all odl-openflowplugin-flow-services-ui odl-mdsal-apidocs
 
-![odl_features_install](../images/sdn-bbag/odl_feature_install.png)
+![odl_features_install](/assets/images/sdn-bbag/odl_feature_install.png)
 
 #### Mininet
 
@@ -66,12 +66,12 @@ You should be presented with a login screen, the credentials for DLUX
 should see essentially a blank slate, which is perfect, since there are not
 hosts or switches on this network yet!
 
-![odl_blank](../images/sdn-bbag/odl_blank_topo.png)
+![odl_blank](/assets/images/sdn-bbag/odl_blank_topo.png)
 
 _Note: Also, you can see that there is in fact *something* bound to port 6633,
 the default port for OpenFlow traffic (it's OpenDaylight)._
 
-![netstat](../images/sdn-bbag/netstat.png)
+![netstat](/assets/images/sdn-bbag/netstat.png)
 
 ### Make a Network
 
@@ -94,7 +94,7 @@ This must be done as root. What this does is
 initializes a topology of 3 nodes connected to 1 switch and executes a
 "everybody ping everybody" test for connectivity.
 
-![pingall_test](../images/sdn-bbag/mn_pingall_test.png)
+![pingall_test](/assets/images/sdn-bbag/mn_pingall_test.png)
 
 Neat. What happens if we don't provide a test to run? Well, try it.
 
@@ -132,13 +132,13 @@ _Note: OVS might drop a couple of the initial packets as flows are being
 installed, and I'm actually kinda confused and surprised by this. If drops last
 longer than 1-2 pings per host there's a problem, though._
 
-![controller_pings](../images/sdn-bbag/mn_pingall.png)
+![controller_pings](/assets/images/sdn-bbag/mn_pingall.png)
 
 Now OpenDaylight has added flows for the 3 connected nodes, just as a learning
 switch would have, and you can see this in the controller's topology (click
 "Reload").
 
-![first_topo](../images/sdn-bbag/topo_gui.png)
+![first_topo](/assets/images/sdn-bbag/topo_gui.png)
 
 Now let's grab some more information from the controller about our
 network. Navigate in the ODL UI to `Yang UI`, then expand
@@ -148,9 +148,9 @@ click the `Send` button. This sends a GET request for the current operational st
 to the ODL controller.  We can also see all information about the connected
 devices and installed flows.
 
-![click_send](../images/sdn-bbag/send_inventory_request.png)
+![click_send](/assets/images/sdn-bbag/send_inventory_request.png)
 
-![operational_status](../images/sdn-bbag/odl_features_gui.png)
+![operational_status](/assets/images/sdn-bbag/odl_features_gui.png)
 
 Being the programmatic type, though, we don't need to use the UI for this. We
 can 1) query the controller over a RESTful interface or 2) query the switch
@@ -160,7 +160,7 @@ To query the switch for all flows in place on the switch,
 enter `dpctl dump-flows` or `sh ovs-ofctl -O OpenFlow13 dump-flows s1` at the
 Mininet prompt. This is direct interaction with OpenVSwitch.
 
-![dump_flows](../images/sdn-bbag/dump_flows.png)
+![dump_flows](/assets/images/sdn-bbag/dump_flows.png)
 
 To query ODL's RESTful API, use cURL. Even though we haven't manually inserted
 flows yet, you can see a number exist.
@@ -191,7 +191,7 @@ In the each of the new terminals (one on each emulated host), start
 see two rounds of ping request/response between h1 and h2 (the same is true
 with ping to/from any host right now).
 
-![start_ping](../images/sdn-bbag/start_ping.png)
+![start_ping](/assets/images/sdn-bbag/start_ping.png)
 
 Now let's prevent h1 from bothering h2 (pretend he's a malicious host, or just
 annoying). To insert flows, ODL accepts XML and JSON describing the match and
@@ -228,7 +228,7 @@ returned by the restconf/operational/ endpoint._
 
 Now let's repeat the ping test.
 
-![fl_ping](../images/sdn-bbag/fl_ping.png)
+![fl_ping](/assets/images/sdn-bbag/fl_ping.png)
 
 Nice, the requests never went to h2, they were redirected to h3. Notice also
 though that the responses back to h1 _say_ they come from h3... not very
@@ -236,7 +236,7 @@ stealthy. So let's insert the reverse link flow and fix that.
 
     curl -u admin:admin -H "Accept: application/xml" -H "Content-type: application/xml" -d @sdn-bbag/flow_redirect_rl.xml -X PUT http://localhost:8181/restconf/config/opendaylight-inventory:nodes/node/openflow:1/table/0/flow/2
 
-![fl_rl_ping](../images/sdn-bbag/fl_rl_ping.png)
+![fl_rl_ping](/assets/images/sdn-bbag/fl_rl_ping.png)
 
 The controller redirects and rewrites addresses in both
 directions. Responses to h1's pings say they're from h2, but notice h2 never

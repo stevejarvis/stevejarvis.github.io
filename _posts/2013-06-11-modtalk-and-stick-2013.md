@@ -14,8 +14,8 @@ Modtalk! Today I gave a presentation at my first software conference, the Smallt
 The inspiration for Modtalk is largely academic and it differs from Smalltalk in a couple big ways. Traditional Smalltalk is image-based, with the program development and environment residing within the same living image. Some of the core objects are instantiated through a circular meta-class arrangement, which still seems to be hardly less than magic. Modtalk uses a declarative approach which specifies some of the would be meta-circular definitions outright, cutting off the “the chicken and the egg happen together” idea of traditional Smalltalk. Modtalk also introduces modularity (Modules + Smalltalk = Modtalk), which provides namespaces and limited visibility.
 
 <figure>
-    <a href="../images/modtalk.png"><img src="../images/modtalk.png"></a>
-    <figcaption><a href="../images/modtalk.png" title="modtalk logo">
+    <a href="/assets/images/modtalk.png"><img src="/assets/images/modtalk.png"></a>
+    <figcaption><a href="/assets/images/modtalk.png" title="modtalk logo">
     Modtalk's logo, courtesy of @taylor_hager.</a></figcaption>
 </figure>
 

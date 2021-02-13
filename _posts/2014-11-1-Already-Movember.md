@@ -19,7 +19,7 @@ I only have a short 6.5 weeks remaining here in Turku. The days are getting shor
 I wanted to make a nice treat for my friends and coworkers and discoverd that they haden't experienced the deliciousness that is caramel apples. I set out to the grocery store and after bothering just 3 different people for help, I managed to find the necessary ingredients. Luckily, it was a short list. It was my first time making caramel sauce so unfortunately I didn't nail it. The sauce came out a little too thin so simply dipping the whole apple in the sauce only led to a pile of caramel sauce on the plate and a bare apple. I changed plans and sliced apples leaving caramel in a small dish for dipping and a pile of crushed almonds as an option to cover the caramel. I am so happy that they enjoyed the treat despite it not being prepared/presented in the traditional way.
 
 <figure>
-    <a href="../images/Caramel-Apples.JPG"><img src="../images/Caramel-Apples.JPG"></a>
+    <a href="/assets/images/Caramel-Apples.JPG"><img src="/assets/images/Caramel-Apples.JPG"></a>
     <figcaption> Not your average caramel apple but turned out pretty darn fine. </figcaption>
 </figure>
 
@@ -40,7 +40,7 @@ There have been letters from home, Bailey's in my Saturday morning coffee, and c
 <br>Today, I find myself back at Kerttu for laundry day. I am so happy that I have found a more welcoming and convenient location to do laundry. Previously, I was doing my laundry at a shopping center. A lonely room with nearly 15 washing machines and 3 old dryers. It led to a very long and boring process and the most exciting part was when the music was playing (rarely and very quietly). Kerttu is a cute restaurant not far from the bus line that has washing machines and dryers you can reserve ahead of time. This is so nice because I don't have to battle anyone for the "good" dryer. And while I wait, I can enjoy their burger buffer, wifi, and people! <br>
 
 <figure>
-    <a href="../images/Kerttu-washing.jpg"><img src="../images/Kerttu-washing.jpg"></a>
+    <a href="/assets/images/Kerttu-washing.jpg"><img src="/assets/images/Kerttu-washing.jpg"></a>
     <figcaption> Two washing mashines and two dryers located just under the stairs in the basement of Kerttu. </figcaption>
 </figure>
 

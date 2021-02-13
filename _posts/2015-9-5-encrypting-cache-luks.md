@@ -123,7 +123,7 @@ they aren't already.
 
 ### Ubuntu Install
 <figure>
-    <a href="../images/luks-cache/partition.png"><img src="../images/luks-cache/partition.png"></a>
+    <a href="/assets/images/luks-cache/partition.png"><img src="/assets/images/luks-cache/partition.png"></a>
     <figcaption>Partition setup within the Ubuntu installer.</figcaption>
 </figure>
 

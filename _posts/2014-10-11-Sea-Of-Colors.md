@@ -20,8 +20,8 @@ header:
 <br>
 
 <figure class="half">
-    <a href="../images/Coast.jpg"><img src="../images/Coast.jpg"></a>
-    <a href="../images/Ruissalo.jpg"><img src="../images/Ruissalo.jpg"></a>
+    <a href="/assets/images/Coast.jpg"><img src="/assets/images/Coast.jpg"></a>
+    <a href="/assets/images/Ruissalo.jpg"><img src="/assets/images/Ruissalo.jpg"></a>
     <figcaption> Our first and second stops in Ruissalo - the second is where we stopped for lunch. </figcaption>
 </figure>
 <br>
@@ -29,7 +29,7 @@ header:
 <p>We finished our venture with a drive to Naantali where we visited Moomin park. Moomin is a comic started in Finland. The comic turned into a cartoon series and a movie just came out, as well. The amusement park wasn't open for business but the gates were open so we could still walk through and look around. It is beautiful - not what I would usually consider an amusement park. It contains many colorful buildings that resemble those in the comics but a large part of encompasses the natural landscape. The trails go through the woods and make it feel like a true adventure. I think the place is just as fun for adults as it is for the kiddos.</p>
 
 <figure>
-    <a href="../images/moomin.jpg"><img src="../images/moomin.jpg"></a>
+    <a href="/assets/images/moomin.jpg"><img src="/assets/images/moomin.jpg"></a>
     <figcaption> The Moomin house at the park. It's large because the Moomins like having guests :) </figcaption>
 </figure>
 

@@ -170,7 +170,7 @@ M-x hexl-find-file
 
 Change the opcode 75 to a 74 and save.
 <figure>
-    <a href="../images/emacs_hexl_after.png"><img src="../images/emacs_hexl_after.png"></a>
+    <a href="/assets/images/emacs_hexl_after.png"><img src="/assets/images/emacs_hexl_after.png"></a>
     <figcaption>Screenshot of the emacs hexl editor.</figcaption>
 </figure>
 

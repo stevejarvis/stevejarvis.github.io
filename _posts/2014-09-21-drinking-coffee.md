@@ -28,7 +28,7 @@ With new friends come new plans. In the making, we have coffee dates on the rive
 We drink a lot of coffee.
 
 <figure>
-    <a href="../images/coffee.jpg"><img src="../images/coffee.jpg"></a>
+    <a href="/assets/images/coffee.jpg"><img src="/assets/images/coffee.jpg"></a>
     <figcaption> Relaxing by the river outside of Cafe Art with some coffee and treats </figcaption>
 </figure>
 

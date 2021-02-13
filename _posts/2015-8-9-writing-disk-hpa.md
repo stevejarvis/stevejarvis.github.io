@@ -162,7 +162,7 @@ Now that everything is verified, re-enable the HPA, starting at sector
 And that's that.
 
 <figure>
-    <a href="../images/hpa/diagram.png"><img src="../images/hpa/diagram.png"></a>
+    <a href="/assets/images/hpa/diagram.png"><img src="/assets/images/hpa/diagram.png"></a>
     <figcaption>Final general layout of the disk.</figcaption>
 </figure>
 

@@ -14,8 +14,8 @@ I wrote a neural network and was glad to see it perform well learning XOR and ot
 To try to get a better grasp of exactly what was happening, I wrote a test to graph performance as the network scaled from 10 – 200 neurons per input and hidden layer. The function being taught was constant and always with 5,000 training iterations. The graph generated gave me no answers, just more confusion! There seemed to be about a 50/50 chance of relative success or complete failure, nothing in between. Also, subsequent runs saw different results at each size.
 
 <figure>
-    <a href="../images/200_5k_iterations.png"><img src="../images/200_5k_iterations.png"></a>
-    <figcaption><a href="../images/200_5k_iterations.png" title="success rate over time">
+    <a href="/assets/images/200_5k_iterations.png"><img src="/assets/images/200_5k_iterations.png"></a>
+    <figcaption><a href="/assets/images/200_5k_iterations.png" title="success rate over time">
     Success rate of increasingly larger neural networks, afflicted by local minima.</a></figcaption>
 </figure>
 

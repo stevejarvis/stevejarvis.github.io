@@ -17,6 +17,6 @@ Today was a big small day in the lab. Here's what happened:
 * I got a new Sharpie and a fancy pen specifically for signing documents.
 
 <figure>
-    <a href="../images/jennys-new-desk.jpg"><img src="../images/jennys-new-desk.jpg"></a>
+    <a href="/assets/images/jennys-new-desk.jpg"><img src="/assets/images/jennys-new-desk.jpg"></a>
     <figcaption> This is my new office - nice big windows with a lot of shelves and storage. Do I look kind of important? :) </figcaption>
 </figure>

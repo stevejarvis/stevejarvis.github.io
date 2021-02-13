@@ -33,7 +33,7 @@ Where it matters, the solution will be specific to the Red Hat family (Fedora
 23, specifically).
 
 <figure>
-    <a href="../images/letsencrypt-secured.jpg"><img src="../images/letsencrypt-secured.jpg"></a>
+    <a href="/assets/images/letsencrypt-secured.jpg"><img src="/assets/images/letsencrypt-secured.jpg"></a>
     <figcaption>The ultimately trusted connection, as shown in Chrome. I
     normally use Firefox, but it took a little longer to get Firefox to totally
     trust it. I had some mixed media (over http) that caused Firefox to give

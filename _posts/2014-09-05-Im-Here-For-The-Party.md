@@ -18,7 +18,7 @@ I get to my stop and it's 7:22 and I only have a couple blocks to walk. Now keep
 I find my seat as the prayer ends and apologize to the girls at my table for making a scene. They laughed with me and said it was no big deal. One girl, I recognized. She was one of the girls who invited me to have coffee with her after the service last Sunday. The night was filled with games including speed dating, charades, and a fast interview where the words "yes" and "no" were not allowed.
 
 <figure>
-    <a href="../images/games.jpg"><img src="../images/games.jpg"></a>
+    <a href="/assets/images/games.jpg"><img src="/assets/images/games.jpg"></a>
     <figcaption> Here is a line up for charades - the first person acts out a song to the person directly in front of them. This person then copies the charades of the first person for the person on the other side of them. It goes all the way down the line until the last person finally tries to guess the song. It's the charade form of "telephone". </figcaption>
 </figure>
 

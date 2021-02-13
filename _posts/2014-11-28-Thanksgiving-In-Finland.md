@@ -23,35 +23,35 @@ What do you do when you're in Finland on Thanksgiving? More importantly, what do
 <br>Next on the docket is cooking. We got together on Saturday to pre-cook and prepare everything possible. We made all the desserts and one of Annie's friends from Russia came over to help so we were able to get the sweet potato casserole made, too. It is amazing how much one extra set of hands can help and speed up the process. Remember when I had mentioned we had some trust issues with some translations? Well, turns out those trust issues weren't so unrealistic. In my attempt to prepare the stuffing, I began to brown the "sausage" which turned out to be liver. Yep, liver. So, I did a more thorough investigation into the correct translation of pork sausage and took one more trip to the grocery store. Overall, we were cooking from around 12 - 5 on Saturday and decided that we should start cooking around 9 am on Sunday to be able to sit down to eat for 3 pm.
 
 <figure>
-    <a href="../images/prepping.jpg"><img src="../images/prepping.jpg"></a>
+    <a href="/assets/images/prepping.jpg"><img src="/assets/images/prepping.jpg"></a>
     <figcaption> Prepping the desserts on Saturday. </figcaption>
 </figure>
 
 Sunday morning, we prepped the turkey and got it in the oven around 10. Thanksgiving in Finland was officially underway. We had reserved the common room in Annie's apartment building. The room had two bathrooms, a kitchen, and a large, open room with a ping pong table and benches that worked quite nicely for a dinner table for our friends. The only downside was that two burners on the stove didn't work, which made cooking a little more difficult.
 
 <figure>
-    <a href="../images/Table.JPG"><img src="../images/Table.JPG"></a>
+    <a href="/assets/images/Table.JPG"><img src="/assets/images/Table.JPG"></a>
     <figcaption> The table all set and ready for a feast! The banner says "Give Thanks". </figcaption>
 </figure>
 
 With only a few minor burns, the bird was done, food was prepared and our friends had arrived.
 
 <figure>
-    <a href="../images/Turkey.JPG"><img src="../images/Turkey.JPG"></a>
+    <a href="/assets/images/Turkey.JPG"><img src="/assets/images/Turkey.JPG"></a>
     <figcaption> Look at that beauty! We did it! </figcaption>
 </figure>
 
 We had a total of 12 countries represented at our Thanksgiving table. It was so amazing to share such a special holiday with friends from around the world. We explained the history of Thanksgiving and how Americans celebrate the holiday with family (eat until you're full and then eat some more)!
 
 <figure>
-    <a href="../images/Desserts.JPG"><img src="../images/Desserts.JPG"></a>
+    <a href="/assets/images/Desserts.JPG"><img src="/assets/images/Desserts.JPG"></a>
     <figcaption> The dessert table was a popular hangout spot. </figcaption>
 </figure>
 
 Luckily, everyone seemed to enjoy the food and the company.
 
 <figure>
-    <a href="../images/Eating.jpg"><img src="../images/Eating.jpg"></a>
+    <a href="/assets/images/Eating.jpg"><img src="/assets/images/Eating.jpg"></a>
     <figcaption> The table was full, which was perfect :) </figcaption>
 </figure>
 

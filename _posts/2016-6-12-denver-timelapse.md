@@ -37,6 +37,6 @@ on Instagram. The scripts, all images, versions of the timelapse, etc, can be fo
 [Bitbucket](https://bitbucket.org/stevejarvis/denlapse/src).
 
 <figure>
-    <a href="../images/denlapse.jpg"><img src="../images/denlapse.jpg"></a>
+    <a href="/assets/images/denlapse.jpg"><img src="/assets/images/denlapse.jpg"></a>
     <figcaption>The workhorse, a re-purposed iPhone 4s.</figcaption>
 </figure>

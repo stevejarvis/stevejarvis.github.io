@@ -29,7 +29,7 @@ I get the following unresponsive error. Every
 time. Even if the page actually loads in less than a second.
 
 <figure>
-    <a href="../images/icloud/photos_unresponsive_warning.png"><img src="../images/icloud/photos_unresponsive_warning.png"></a>
+    <a href="/assets/images/icloud/photos_unresponsive_warning.png"><img src="/assets/images/icloud/photos_unresponsive_warning.png"></a>
     <figcaption>Photos immediately throws this error, and the only thing making
     the page unresponsive is the error itself.</figcaption>
 </figure>
@@ -46,7 +46,7 @@ simpler than
 Just open the developer tools and delete the error dialog.
 
 <figure>
-    <a href="../images/icloud/unresponsive_element.png"><img src="../images/icloud/unresponsive_element.png"></a>
+    <a href="/assets/images/icloud/unresponsive_element.png"><img src="/assets/images/icloud/unresponsive_element.png"></a>
     <figcaption>The error dialog is done in javascript, just delete the element
     to get it out of the way.</figcaption>
 </figure>
@@ -58,7 +58,7 @@ the page. Once it's gone you're all set to download the videos iOS shipped
 off your phone.
 
 <figure>
-    <a href="../images/icloud/gaurd_element.png"><img src="../images/icloud/gaurd_element.png"></a>
+    <a href="/assets/images/icloud/gaurd_element.png"><img src="/assets/images/icloud/gaurd_element.png"></a>
     <figcaption>There's an extra element that grays out and covers the actual
     page. After removing it as well as the original error the Photos app is... good as new?</figcaption>
 </figure>
