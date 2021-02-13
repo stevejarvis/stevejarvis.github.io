@@ -63,10 +63,11 @@ google_ad_slot           :
 
 
 # Site Author
+# TODO this is duplicated from _data/authors.yml
 author:
-  name             : "iamteapot"
-  avatar           : "logo.png"
-  bio              : "Actually, I love coffee."
+  name             : Steve Jarvis
+  avatar           : /assets/images/bio-photo.jpg
+  bio              :  "Software dev, soon-to-be dad, and alumni of NMU and BU. And I actually love coffee."
   location         :
   email            :
   uri              :
@@ -76,18 +77,18 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : stevejarvis
   google_plus      :
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         :
+  linkedin         : stevenjarvis
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : stevenjarvis
   vine             :
   weibo            :
   xing             :

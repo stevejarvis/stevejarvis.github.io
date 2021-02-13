@@ -3,8 +3,8 @@
 steve_jarvis:
   name: Steve Jarvis
   email:
-  bio: "Software dev and alumni of NMU and BU. Also loves some beer league hockey and cycling."
-  avatar: bio-photo.jpg
+  bio: "Software dev, soon-to-be dad, and alumni of NMU and BU. And I actually love coffee."
+  avatar: /assets/images/bio-photo.jpg
   twitter: stevenjarvis
   github: stevejarvis
   linkedin: stevenjarvis
@@ -16,7 +16,7 @@ jenny_jarvis:
   web: http://twitter.com/JennyJarv
   email:
   bio: "Sweet, sweet science. Biomedical researcher at the University of Memphis and pretty mean on the softball diamond."
-  avatar: bio-photo-jen.jpg
+  avatar: /assets/images/io-photo-jen.jpg
   twitter: JennyJarv
   page: jenny-jarvis
   google:
