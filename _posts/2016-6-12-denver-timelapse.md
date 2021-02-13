@@ -6,7 +6,7 @@ excerpt: "Watching the days pass from the perspective of our balcony."
 tags: [timelapse, iphone, vine st, denver, cheesman]
 header:
   image: /assets/images/header.jpg
-  teaser: denlapse.jpg
+  teaser: /assets/images/denlapse.jpg
 comments: true
 ---
 

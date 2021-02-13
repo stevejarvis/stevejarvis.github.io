@@ -7,7 +7,7 @@ tags: [turku, Thanksgiving, travel, cooking]
 comments: true
 header:
   image: /assets/images/header.jpg
-  teaser: Eating.jpg
+  teaser: /assets/images/Eating.jpg
 ---
 
 What do you do when you're in Finland on Thanksgiving? More importantly, what do you do when you're in Finland on Thanksgiving when your mom, aunties, and grammas aren't there too cook a feast for you?

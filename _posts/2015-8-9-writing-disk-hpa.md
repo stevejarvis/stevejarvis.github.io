@@ -6,7 +6,7 @@ excerpt: "How to edit the size and contents of a disk's HPA. A tricky and/or
 useful way to hide data, untouchable by formatting tools."
 tags: [computer science, disk, tricks]
 header:
-  teaser: hpa/diagram.png
+  teaser: /assets/images/hpa/diagram.png
 comments: true
 ---
 

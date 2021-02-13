@@ -6,7 +6,7 @@ excerpt: "Biking and beers, let's take a tour of the Denver area."
 tags: [cycling, biking, denver, breweries, beer]
 header:
   image: /assets/images/header.jpg
-  teaser: grin_n_spin/logo.jpg
+  teaser: /assets/images/grin_n_spin/logo.jpg
 comments: true
 date: August 12, 2017
 custom_css:

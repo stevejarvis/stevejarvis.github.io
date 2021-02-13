@@ -8,7 +8,7 @@ tags: [sdn, software, defined, networking, redirect, opendaylight, odl, openflow
 comments: true
 header:
   image: /assets/images/header.jpg
-  teaser: sdn-bbag/topo_gui.png
+  teaser: /assets/images/sdn-bbag/topo_gui.png
 ---
 
 ## Overview

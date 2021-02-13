@@ -6,7 +6,7 @@ excerpt: "A bunch of evening sunsets after three months of capturing timelapse p
 tags: [summer, sunsets, timelapse, iphone, vine st, denver, cheesman]
 header:
   image: /assets/images/header.jpg
-  teaser: denlapse.jpg
+  teaser: /assets/images/denlapse.jpg
 comments: true
 ---
 

@@ -8,7 +8,7 @@ Jekyll, and TLS."
 tags: [system admin, sysadmin, nginx, ssl, letsencrypt, tls, digitalocean]
 header:
   overlay_color: "#6f7e98"
-  teaser: letsencrypt-secured.jpg
+  teaser: /assets/images/letsencrypt-secured.jpg
 comments: true
 ---
 

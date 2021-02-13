@@ -7,7 +7,7 @@ up the Green Line."
 tags: [boston, mbta, green line, optimal, algorithms, open data, data, k-means]
 header:
   image: /assets/images/header.jpg
-  teaser: optimal-stops-map.png
+  teaser: /assets/images/optimal-stops-map.png
 comments: true
 custom_css:
   - "https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css"

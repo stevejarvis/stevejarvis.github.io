@@ -7,7 +7,7 @@ tags: [turku, travel, research]
 comments: true
 header:
   image: /assets/images/header.jpg
-  teaser: Coast.jpg
+  teaser: /assets/images/Coast.jpg
 ---
 
 <p>How did I get so lucky to fall into a lab with such kind and fun people?! Last Sunday, Ulriika took me to all her favorite spots in and around Turku. Ulriika is originally from Turku so she makes for an excellent tour guide! Around 1:30 pm, we hopped in the car and were off!</p>
