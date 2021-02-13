@@ -6,7 +6,7 @@ excerpt: How do you say "crescent roll" in Finnish?
 tags: [turku, Thanksgiving, travel, cooking]
 comments: true
 header:
-  image: header.jpg
+  image: /assets/images/header.jpg
   teaser: Eating.jpg
 ---
 

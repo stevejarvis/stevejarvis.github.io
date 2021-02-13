@@ -6,7 +6,7 @@ excerpt: A day of exploring in and around Turku (Åbo)
 tags: [turku, travel, research]
 comments: true
 header:
-  image: header.jpg
+  image: /assets/images/header.jpg
   teaser: Coast.jpg
 ---
 

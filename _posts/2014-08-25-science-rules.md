@@ -6,7 +6,7 @@ excerpt: “An amazing opportunity to research  with some of the best”
 tags: [turku, travel, research]
 comments: true
 header:
-  image: header.jpg
+  image: /assets/images/header.jpg
 ---
 I absolutely love sitting down and having conversations with others about science! (Though, intimidating when you find yourself among brilliant minds.) Being in an environment where everyone is interested in their research is such a great feeling. Everyone that works in the PCC is so extremely nice. So nice. And so incredibly smart. So smart. Even so, they are all humble and down to earth.
 

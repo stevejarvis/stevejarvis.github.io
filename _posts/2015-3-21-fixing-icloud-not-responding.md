@@ -8,7 +8,7 @@ Real bummer when it's broken!"
 tags: [apple, web, icloud, photos, missing, unresponsive, responding]
 comments: true
 header:
-  image: header.jpg
+  image: /assets/images/header.jpg
   teaser: icloud/photos_unresponsive_warning.png
 ---
 

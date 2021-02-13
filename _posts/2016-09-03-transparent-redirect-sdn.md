@@ -7,7 +7,7 @@ OpenVSwitch to transparently reroute traffic."
 tags: [sdn, software, defined, networking, redirect, opendaylight, odl, openflow]
 comments: true
 header:
-  image: header.jpg
+  image: /assets/images/header.jpg
   teaser: sdn-bbag/topo_gui.png
 ---
 

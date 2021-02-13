@@ -6,7 +6,7 @@ excerpt: A little taste of what I've been up to in Turku
 tags: [turku, travel, research]
 comments: true
 header:
-  image: header.jpg
+  image: /assets/images/header.jpg
 ---
 
 Sorry I've been away for so long - I'm back with a quick update.

@@ -7,7 +7,7 @@ but it's certainly difficult to cover all the tracks."
 tags: [security, privacy, cyber]
 comments: true
 header:
-  image: header.jpg
+  image: /assets/images/header.jpg
 ---
 
 One of the commonly cited benefits of cyber attacks over conventional warfare is

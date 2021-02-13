@@ -6,7 +6,7 @@ excerpt: Something I do just often enough to consistently forget the arguments.
 tags: [linux, unix, shell, tmux, share, screen]
 comments: true
 header:
-  image: header.jpg
+  image: /assets/images/header.jpg
 ---
 
 You:

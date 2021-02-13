@@ -6,7 +6,7 @@ excerpt: We jumped on a ship and went to Stockholm
 tags: [turku, sweden, travel, research]
 comments: true
 header:
-  image: header.jpg
+  image: /assets/images/header.jpg
 ---
 
 On Thursday night I boarded the beautiful ship with three great friends, the crew yelled "Ahoy!", and we were off! Okay, no one yelled Ahoy but the rest really happened. We began our 10 hour cruise on Grace with a short tour of just a few of the 10 floors.

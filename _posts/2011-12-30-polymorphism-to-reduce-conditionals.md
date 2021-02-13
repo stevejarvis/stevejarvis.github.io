@@ -6,7 +6,7 @@ excerpt: "Conditional branching isn't fun for anybody, use polymorphism to avoid
 tags: [object-oriented, polymorphism, code]
 comments: true
 header:
-  image: header.jpg
+  image: /assets/images/header.jpg
 ---
 
 Polymorphism in object oriented language is the practice of subclassing objects to add or modify functionality. With it, programmers can create smarter objects.

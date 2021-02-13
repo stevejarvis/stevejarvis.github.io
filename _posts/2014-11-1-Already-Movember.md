@@ -6,7 +6,7 @@ excerpt: Time is flying! Here's a little bit about what happened this week.
 tags: [turku, travel, research]
 comments: true
 header:
-  image: header.jpg
+  image: /assets/images/header.jpg
 ---
 
 I only have a short 6.5 weeks remaining here in Turku. The days are getting short (by 5 o'clock it's already quite dark) but I'm set on making the most of them.

@@ -7,7 +7,7 @@ C++ application to bypass authentication."
 tags: [security, code, binary]
 comments: true
 header:
-  image: header.jpg
+  image: /assets/images/header.jpg
 ---
 
 ### Intro

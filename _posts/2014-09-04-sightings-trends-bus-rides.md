@@ -6,7 +6,7 @@ excerpt: Tidbits about the Finns and interactions on the bus
 tags: [turku, travel, research]
 comments: true
 header:
-  image: header.jpg
+  image: /assets/images/header.jpg
 ---
 
 So, this will be a semi-unorganized post with random thoughts put together.

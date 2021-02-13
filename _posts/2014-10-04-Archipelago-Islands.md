@@ -6,7 +6,7 @@ excerpt: A roadtrip to see the beautiful islands off the coast of Finland
 tags: [turku, travel, research]
 comments: true
 header:
-  image: header.jpg
+  image: /assets/images/header.jpg
 ---
 
 

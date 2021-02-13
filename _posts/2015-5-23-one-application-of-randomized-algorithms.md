@@ -6,7 +6,7 @@ excerpt: "An overview of one useful application of randomization in computer sci
 tags: [computer science, algorithms, randomized, matrix]
 comments: true
 header:
-  image: header.jpg
+  image: /assets/images/header.jpg
 ---
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>

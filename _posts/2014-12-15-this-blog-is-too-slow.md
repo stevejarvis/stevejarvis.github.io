@@ -6,7 +6,7 @@ excerpt: "... and that's no good. Big pics make for bad load times."
 tags: [os x, web, bash, images, sips]
 comments: true
 header:
-  image: header.jpg
+  image: /assets/images/header.jpg
 ---
 
 ### Big Pics Make Bad Load Times

@@ -6,7 +6,7 @@ excerpt: "Using the k-means clustering algorithm to see how the MBTA could speed
 up the Green Line."
 tags: [boston, mbta, green line, optimal, algorithms, open data, data, k-means]
 header:
-  image: header.jpg
+  image: /assets/images/header.jpg
   teaser: optimal-stops-map.png
 comments: true
 custom_css:

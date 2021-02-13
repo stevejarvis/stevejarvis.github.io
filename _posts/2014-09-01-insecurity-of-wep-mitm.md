@@ -8,7 +8,7 @@ SSL connection."
 tags: [security, WEP, network, SSL, mitm]
 comments: true
 header:
-  image: header.jpg
+  image: /assets/images/header.jpg
 ---
 
 ## Take Care

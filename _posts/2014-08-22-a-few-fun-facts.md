@@ -6,7 +6,7 @@ excerpt: “A few fun facts about Turku from the perspective of a foreigner”
 tags: [turku, Finland, travel]
 comments: true
 header:
-  image: header.jpg
+  image: /assets/images/header.jpg
 ---
 ##Facts about life here:
 

@@ -6,7 +6,7 @@ excerpt: “Sometimes, it's the small things”
 tags: [turku, travel, research]
 comments: true
 header:
-  image: header.jpg
+  image: /assets/images/header.jpg
 ---
 
 Today was a big small day in the lab. Here's what happened:

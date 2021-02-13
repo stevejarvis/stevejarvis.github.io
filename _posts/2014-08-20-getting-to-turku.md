@@ -6,7 +6,7 @@ excerpt: “My experience getting to Turku, Finland for a 4 month research trip.
 tags: [turku, finland, travel]
 comments: true
 header:
-  image: header.jpg
+  image: /assets/images/header.jpg
 ---
 Hi all! I am writing this post from Turku - I made it! First of all, let me explain about the crazy journey to get here.
 
