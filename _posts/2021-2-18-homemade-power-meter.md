@@ -39,9 +39,9 @@ meters (by using both at the same time) over these times and durations
 with these results: 
 
 * Wahoo Kickr, the programmed 20 min FTP test. This meter read 9%
-  lower than the Kickr.
-* Computrainer, 40 min at ~190 watts. This meter read 6% higher.
-* Favero Assioma Duo, 40 min at ~190 watts. This meter read 6% lower.
+  lower than the Kickr. :chart_with_downwards_trend:
+* Computrainer, 40 min at ~190 watts. This meter read 6% higher. :chart_with_upwards_trend:
+* Favero Assioma Duo, 40 min at ~190 watts. This meter read 6% lower. :chart_with_downwards_trend:
 
 I do wish I had the GPX files for each of those A/B comparisons, but I
 can't find them at the moment, so I can only offer my
@@ -270,7 +270,7 @@ Getting a power measurement was (by comparison) trivially simple.
 Getting a nice steady power measurement proved to be as much an art
 as a science. It's natural for power output to be constantly moving as
 you're riding, but in comparisons to commercial power meters, this DIY
-version is far spikier. 
+version is spikier. 
 
 To combat this I did some software tuning, like rolling weighted
 averages for both power and foot speed and throwing out outlier
@@ -293,3 +293,9 @@ it's all hooked up and you just see whether numbers are negative or
 positive (there _is_ a [nice hook in the
 code](https://gitlab.com/sjarvis/powermeter/-/blob/master/power.ino#L25)
 for that, though).
+
+# Adios
+If you find this helpful or hit any blockers, please let me know in the 
+comments below, on the repo, 
+or [Tweet at me](https://twitter.com/stevenjarvis). I'd love a great 
+reason to remember anything I've forgotten to help out.
