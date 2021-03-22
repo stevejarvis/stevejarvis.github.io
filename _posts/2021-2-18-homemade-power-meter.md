@@ -135,9 +135,9 @@ second is $${deg \over s} * {\pi rad \over 180 deg} = {rad \over s}$$,
 and the ratio of the circumference traveled per second is
 $$\frac {rad \over s} {2 * \pi}$$. So we know how to move from degrees
 to radians to a percentage of the circumference traveled, and since we
-know the full circumference of the pedal stroke (twice the length of
-your crank, usually $$\frac {m = 172.5mm * 2} {1000mm \over 1m} *
-\pi), the actual distance. 
+know the full circumference of the pedal stroke (counting twice the length 
+of your crank, usually $$m = \frac {172.5mm * 2} {1000mm \over 1m} *
+\pi$$), we can determine the actual distance traveled. 
 
 Putting the above together, we can describe the formula to derive the
 velocity as \\(m \over s\\):
