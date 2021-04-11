@@ -9,6 +9,7 @@ header:
   overlay_image: /assets/images/powermeter/power_6_22_19.png
   overlay_filter: 0.4
   caption: This is actual output from a 20 minute FTP test on the DIY power meter. And apparently a short sprint at the end.
+toc: true
 ---
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -165,7 +166,7 @@ Here's the BOM, with links for the exact models I used. There's
 nothing particularly special about these exact products, so if they're
 out of stock in one place, try an alternative.
 
-![schematic](/assets/images/powermeter/power_meter.jpeg)
+![powermeter](/assets/images/powermeter/power_meter.jpeg)
 
 _Note: One alternative I recommend you **don't** try is the Beetle BLE
 from DFRobot. It's probably one of the top results if you search for
@@ -200,6 +201,7 @@ Orca -- but each one was different enough that it takes a slight
 variation on the plan. Use thin, flexible wiring, with enough 
 forgiveness to shift things at least slightly (I used 30 gauge wire).
 
+## Schematic
 ![schematic](/assets/images/powermeter/schematic.png)
 
 _Notice in the schematic there's an additional SD card over a
