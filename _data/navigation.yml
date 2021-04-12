@@ -1,11 +1,7 @@
-# Site navigation links
-
 main:
   - title: "Years"
     url: /years/
-
   - title: "Tags"
     url: /tags/
-
   - title: "Baby"
     url: /baby/
