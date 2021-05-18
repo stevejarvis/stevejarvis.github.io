@@ -38,6 +38,7 @@ Don't feel in any way obligated to get a gift! But we are registered at these pl
 
 * [DoGoodDiapers](https://dogooddiapers.com/product/gift-certificate/) - Diaper service. (Not really a registry, just gift certificates.)
 * [Lovevery](https://gifting.lovevery.com/registries/umLUxpuVq5TN2mxoyU7tVg) - Play things aimed at learning.
+* [Target](https://www.target.com/gift-registry/giftgiver?registryId=ab2f547a7a444279aa9809a6a8a91226&type=BABY) - General baby goods.
 
 
 
