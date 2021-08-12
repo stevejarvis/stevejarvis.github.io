@@ -5,8 +5,9 @@ author: steve_jarvis
 excerpt: "A bunch of evening sunsets after three months of capturing timelapse pics."
 tags: [summer, sunsets, timelapse, iphone, vine st, denver, cheesman]
 header:
-  image: /assets/images/header.jpg
   teaser: /assets/images/denlapse.jpg
+  overlay_filter: 0.4
+  overlay_image: /assets/images/denlapse.jpg
 comments: true
 ---
 
