@@ -25,8 +25,8 @@ and ask people to drop pics there, but needing guests to create an account for s
 is a big ask, and in many cases they're very not tech savvy; it's just not gonna happen.
 
 So! What if there was a service that didn't require any download, no login, and no set of instructions 
-longer than a partying aunt would mind following? That's exactly the goal for Hitchdpix. And in the 
-end, the happy couple ends up with all those precious shots in one place.
+longer than a partying aunt would mind following? That's exactly the goal for [Hitchdpix](https://www.hitchdpix.com). 
+And in the end, the happy couple ends up with all those precious shots in one place.
 
 To recap:
 * No app download.
@@ -149,3 +149,5 @@ maybe it'd be useful at seminars or corporate outings. It could be monetized by 
 submitted image ("wouldn't the bride look amazing on a 30"x30" physical canvas mailed straight to her 
 door?! :bride_with_veil:"), or by enabling support for other media, like videos. If I get back to it, the 
 possibilities are exciting.
+
+Check it out at [https://www.hitchdpix.com](https://www.hitchdpix.com).
