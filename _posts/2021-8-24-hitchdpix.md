@@ -124,7 +124,8 @@ There's a few other notable features and tooling we built to test and maintain t
 * Slack integration for errors and for contacting us via [hitchdpix.com/contact](https://www.hitchdpix.com/contact)
 
 # Demo
-Here's a demo that's a bit out of date, the UI has evolved, but all the ideas still just as applicable! 
+Here's a demo that's a bit out of date, originally recorded more than a year ago. The UI has evolved, but all 
+the principals remain! 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/RaPVGe1je-g" title="YouTube Hitchdpix Demo" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
