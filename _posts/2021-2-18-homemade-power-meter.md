@@ -296,6 +296,18 @@ positive (there _is_ a [nice hook in the
 code](https://gitlab.com/sjarvis/powermeter/-/blob/master/power.ino#L25)
 for that, though).
 
+## 6. Make it Hardware
+Really this one trumps all previous improvements; they're marginal gains, 
+this one's a game-changer. We could take the (relatively few) pieces of 
+the hardware we're really using and turn them into custom hardware, in 
+the form of a PCB/PCBA. The features and circuitry not needed would fall away,
+shrinking the physical size dramatically (we could fit it in a waterproof 
+case) and not powering unnecessary board or module features would make power 
+consumption much more efficient. This work really wouldn't be in my wheelhouse,
+though.
+
+(Thanks to Mike for bringing this up in the comments. :bow:)
+
 # Adios
 If you find this helpful or hit any blockers, please let me know in the 
 comments below, on the repo, 
