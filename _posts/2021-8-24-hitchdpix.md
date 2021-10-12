@@ -71,7 +71,7 @@ For example, I created an event called "Rehearsal Dinner". For that event, Hitch
 ![qrcode](/assets/images/hitchdpix-intro/dinner_qr.png)
 
 You can scan it (whip out your phone's camera), and see that embedded in the QR code is a rather 
-lengthy URL like the following (_I removed the signature, so it won't actually work by the time you're reading 
+lengthy URL like the following (_I removed the event, so it won't actually work by the time you're reading 
 this, but you get the idea._):
 
 ```
