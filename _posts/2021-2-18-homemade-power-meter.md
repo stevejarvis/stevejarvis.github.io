@@ -20,8 +20,7 @@ toc: true
 
 For about $70 in supplies I built a crank-based power meter. I trained
 with it for season and it gets the job done! Plus it's just a fun
-project. So are you a fan of cycling? Electronics? Both?!? Perfect,
-what more could you want.
+project. 
 
 This article will go through an overview of the hardware, software,
 operation, and known ~~pain points~~ opportunities for
@@ -253,7 +252,7 @@ this to the next level...
 
 ## 1. Calibration
 Calibration is a very manual process right now. It's so tedious it's
-basically a 2-person job. Basically anything would be an improvement
+really a 2-person job. Basically anything would be an improvement
 on what it takes to calibrate now.
 
 ## 2. Waterproofing
