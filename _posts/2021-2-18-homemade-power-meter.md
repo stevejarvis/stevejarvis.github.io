@@ -78,6 +78,10 @@ one of the points I call out below for future improvement. The
 consistency and smoothing is important to get right and a it's a
 difficult problem. 
 
+![ride](/assets/images/powermeter/power_6_22_19.png)
+_Results from the default 20min FTP test programmed into Zwift.
+Plus a little sprint at the end._
+
 The license is GPL, because perhaps my greatest take away from this
 project is that this stuff isn't rocket science and there's no reason
 these meters cost as much as the rest of the bike.
