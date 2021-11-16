@@ -4,7 +4,7 @@ title: The Anonymity of Cyber Attacks
 author: steve_jarvis
 excerpt: "A core political advantage of cyber attacks is their anonymous nature,
 but it's certainly difficult to cover all the tracks."
-tags: [security, privacy, cyber]
+tags: [security, privacy, cyber, hacks]
 comments: true
 header:
   image: /assets/images/header.jpg

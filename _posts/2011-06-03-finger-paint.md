@@ -3,7 +3,7 @@ layout: single
 title: Finger Paint
 author: steve_jarvis
 excerpt: "A few words about my first major Android application."
-tags: [android, code]
+tags: [side project, android]
 comments: true
 ---
 

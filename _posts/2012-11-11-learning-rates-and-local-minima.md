@@ -3,7 +3,7 @@ layout: single
 title: Learning Rates and Local Minima
 author: steve_jarvis
 excerpt: "My intro to machine learning, and one of the major bumps along the way."
-tags: [neural network, minima, machine learning]
+tags: [side project, neural network, minima, machine learning]
 comments: true
 header:
   overlay_color: "#6f7e98"

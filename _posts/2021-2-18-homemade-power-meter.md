@@ -3,7 +3,7 @@ layout: single
 title: A Homemade Cycling Power Meter
 author: steve_jarvis
 excerpt: "A crank-based power meter for cycling. Built on Arduino with proper Bluetooth, all for about $70."
-tags: [computer science, cycling, power meter, power, arduino, electronics]
+tags: [side project, computer science, cycling, power meter, power, arduino, electronics]
 comments: true
 header:
   overlay_image: /assets/images/powermeter/power_6_22_19.png

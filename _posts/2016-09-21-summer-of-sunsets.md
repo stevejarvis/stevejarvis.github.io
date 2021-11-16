@@ -3,7 +3,7 @@ layout: single
 title: A Summer of Sunsets
 author: steve_jarvis
 excerpt: "A bunch of evening sunsets after three months of capturing timelapse pics."
-tags: [summer, sunsets, timelapse, iphone, vine st, denver, cheesman]
+tags: [side project, summer, sunsets, timelapse, iphone, vine st, denver, cheesman]
 header:
   teaser: /assets/images/denlapse.jpg
   overlay_filter: 0.4

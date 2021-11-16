@@ -3,7 +3,7 @@ layout: single
 title: Visitor Pattern OOD
 author: steve_jarvis
 excerpt: "Examining the strengths of the visitor patter and it's appropriate usage."
-tags: [java, object-oriented, design, software]
+tags: [java, object-oriented, design, software, computer science, hacks]
 comments: true
 header:
   image: /assets/images/header.jpg

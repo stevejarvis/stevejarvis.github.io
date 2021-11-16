@@ -3,7 +3,7 @@ layout: single
 title: Hitchdpix 
 author: steve_jarvis
 excerpt: Crowd-sourced event photography. Imagine all your low-tech family being able to share their full resolution shots from your wedding or big event, no account creation or apps for them to learn.
-tags: [computer science, photography, qr code, hitchdpix, jwt, pics, wedding]
+tags: [side project, computer science, photography, qr code, hitchdpix, jwt, pics, wedding]
 comments: true
 header:
   overlay_image: /assets/images/hitchdpix-intro/icon.png

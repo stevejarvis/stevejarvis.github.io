@@ -1,0 +1,7 @@
+main:
+  - title: "About"
+    url: /about/
+
+  - title: "Side Projects"
+    url: /tags/#side-project
+  

@@ -3,7 +3,7 @@ layout: single
 title: Deleting the Root Directory
 author: steve_jarvis
 excerpt: "Having some fun with the university's loaner laptop. What happens when you blow away the root directory?"
-tags: [science, linux, ubuntu]
+tags: [science, linux, ubuntu, hacks]
 comments: true
 header:
   image: /assets/images/header.jpg

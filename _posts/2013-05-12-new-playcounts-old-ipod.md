@@ -3,7 +3,7 @@ layout: single
 title: New Playcounts from an Old iPod
 author: steve_jarvis
 excerpt: "What to do when your Mac crashes and all your beloved stats are stuck on an iPod."
-tags: [iTunes, iPod, play counts]
+tags: [iTunes, iPod, play counts, hacks]
 comments: true
 ---
 
