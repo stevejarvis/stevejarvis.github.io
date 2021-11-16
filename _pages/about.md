@@ -25,5 +25,4 @@ a better way to brew coffee. That's a beautiful thing.
 [^1]: 418 status code definition. https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/418
 [^2]: The Coffee protocol RFC. https://datatracker.ietf.org/doc/html/rfc2324
 [^3]: Just check out some of the backlash from the time the IETF considered removing the code from the HTTP spec. https://duckduckgo.com/?q=save+http+418&t=ffab&ia=web)
-[^4]: 75\% of all clicks to popular news outlets originate from just two sources, Google and Facebook. That's a ton 
-  of control in two hands. https://www.parse.ly/resources/data-studies/referrer-dashboard/
+[^4]: 75\% of all clicks to popular news outlets originate from just two sources, Google and Facebook. That's a ton of control in two hands. https://www.parse.ly/resources/data-studies/referrer-dashboard/
