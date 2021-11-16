@@ -16,6 +16,10 @@ toc: true
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
+_Update: I wasn't getting around to fixing bugs and adding features and it started to weigh on me a bit. 
+So instead of leaving it out there in its current state, for now the app is down and all Hitchdpix links 
+301 to this post._ 
+
 # The Vision
 A few years ago we got married! Friends and family came from all over and sent us oodles of 
 candid shots over the following weeks. Pics came via text/SMS, email, Facebook albums, shared 
