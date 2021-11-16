@@ -11,14 +11,14 @@ header:
 
 ### Big Pics Make Bad Load Times
 
-[Jenny](http://www.iamteapot.dev/jenny-jarvis/) has one of those fancy
+[Jenny](http://www.imateapot.dev/jenny-jarvis/) has one of those fancy
 cameras and takes beautiful, high resolution photos. They're nice to
 look at, but a 150 million pixel blog post adds more to load times than it does
 to viewing quality.<sup>1</sup> Specifically, a fetch of Jenny's
-[latest post](http://www.iamteapot.dev/Helsinki/) took a painful 13 seconds:
+[latest post](http://www.imateapot.dev/Helsinki/) took a painful 13 seconds:
 
 {% highlight bash %}
-$ wget --page-requisites http://www.iamteapot.dev/Helsinki/
+$ wget --page-requisites http://www.imateapot.dev/Helsinki/
 [ ... ]
 FINISHED --2014-12-15 19:24:14--
 Total wall clock time: 18s
@@ -71,7 +71,7 @@ After pushing those changes, fetching the entire page took 2 seconds; about a
 improvement and not half bad.
 
 {% highlight bash %}
-$ wget --page-requisites http://www.iamteapot.dev/Helsinki/
+$ wget --page-requisites http://www.imateapot.dev/Helsinki/
 [ ... ]
 FINISHED --2014-12-15 19:51:16--
 Total wall clock time: 4.7s

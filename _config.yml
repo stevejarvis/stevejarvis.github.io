@@ -7,12 +7,12 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "iamteapot"
+title                    : "imateapot"
 title_separator          : "-"
 remote_theme             : "mmistakes/minimal-mistakes@4.22.0"
-name                     : "iamteapot"
+name                     : "imateapot"
 description              : "JK, I make mostly coffee."
-url                      : "https://iamteapot.dev"
+url                      : "https://imateapot.dev"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  :
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"

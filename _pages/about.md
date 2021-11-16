@@ -10,7 +10,7 @@ title: "About"
 ---
 
 # Who's a Teapot?
-This site's domain, "iamteapot", is an obscure reference to the 418 HTTP code[^1].  It may have 
+This site's domain, "imateapot", is an obscure reference to the 418 HTTP code[^1].  It may have 
 started as an April Fool's joke, with the RFC published April 1, 1998[^2], but to me (and many 
 others[^3]) it's a quintessential example of how fun and tangible the Internet can be.
 
