@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Lassie Codes - Chapter 1
+title: Lassie Codes - Grand Opening
 author: steve_jarvis
 excerpt: Easy emergency contact info when you're on the road.
 tags: [side project, computer science, cycling, qr code, lassie]
