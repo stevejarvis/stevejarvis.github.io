@@ -64,7 +64,8 @@ into little mailed widgets. I'm no doubt over-engineering this in my mind alread
 crossover to build.
 
 ## GUI and UX
-I continue to slog my way through CSS 101 and can make it _kinda_ look like I want it to, but it's
-never what really something I enjoy. I realize for it to be useable the UX has to at least make sense, and
-current state isn't attractive, but in my mind this is about 1/100th as interesting as the NFC-related 
-challenges.  So I'll get there, but also... paging interested front-end devs. :pager:
+Forever the bane of my full-stack endeavors. But I'll continue to slog my way through CSS 101 and 
+do what I can. It's not really something I enjoy. I realize for it to be useable the UX has to at 
+least make sense, and current state isn't attractive, 
+but in my mind this is about 1/100th as interesting as the NFC-related challenges.  
+So I'll get there, but also... paging interested front-end devs. :pager:
