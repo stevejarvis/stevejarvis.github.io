@@ -78,9 +78,10 @@ one of the points I call out below for future improvement. The
 consistency and smoothing is important to get right and a it's a
 difficult problem. 
 
-![ride](/assets/images/powermeter/power_6_22_19.png)
-_Results from the default 20min FTP test programmed into Zwift.
-Plus a little sprint at the end._
+<figure class="full">
+    <a href="/assets/images/powermeter/power_6_22_19.png"><img src="/assets/images/powermeter/power_6_22_19.png"></a>
+    <figcaption>Results from the default 20min FTP test programmed into Zwift. Plus a little sprint at the end.</figcaption>
+</figure>
 
 The license is GPL, because perhaps my greatest take away from this
 project is that this stuff isn't rocket science and there's no reason
@@ -170,7 +171,10 @@ Here's the BOM, with links for the exact models I used. There's
 nothing particularly special about these exact products, so if they're
 out of stock in one place, try an alternative.
 
-![powermeter](/assets/images/powermeter/power_meter.jpeg)
+<figure class="full">
+    <a href="/assets/images/powermeter/power_meter.jpeg"><img src="/assets/images/powermeter/power_meter.jpeg"></a>
+    <figcaption>The whole assembled meter, attached to a crank arm. I think this was the first one I built.</figcaption>
+</figure>
 
 _Note: One alternative I recommend you **don't** try is the Beetle BLE
 from DFRobot. It's probably one of the top results if you search for
@@ -206,13 +210,15 @@ variation on the plan. Use thin, flexible wiring, with enough
 forgiveness to shift things at least slightly (I used 30 gauge wire).
 
 ## Schematic
-![schematic](/assets/images/powermeter/schematic.png)
+<figure class="full">
+    <a href="/assets/images/powermeter/schematic.png"><img src="/assets/images/powermeter/schematic.png"></a>
+    <figcaption>Full wiring schematic. The dotted line represents a "pluggable interface", which I never implemented, but the idea was that only _some_ of the meter really needs to be permanently mounted to a crank arm. Namely the strain gauges and calibration state. The compute, gyro, amp, and battery could move from bike to bike and just "plug in". And the SD card was something I used for logging and debugging, not necessary and not included in the BOM above.</figcaption>
+</figure>
 
-_Notice in the schematic there's an additional SD card over a
-"pluggable interface". I used an SD card for debugging for a while,
-you can just ignore it, and it's not included in the BOM above._
-
-![schematic](/assets/images/powermeter/power_meter_closest.jpeg)
+<figure class="full">
+    <a href="/assets/images/powermeter/power_meter_closest.jpeg"><img src="/assets/images/powermeter/power_meter_closest.jpeg"></a>
+    <figcaption>A close-up. There's a lot to pack in a tight space.</figcaption>
+</figure>
 
 # Software
 This is all [open source](https://gitlab.com/sjarvis/powermeter). The
@@ -253,6 +259,9 @@ But after calibrating, you're ready to rock. Avoid puddles.
 If you're taking on this project, kudos and I'm excited to hear
 it. Here's the top things I think need some attention to take
 this to the next level...
+
+_Update! [Thijs](https://twitter.com/tbressers) did a lot of this! So big thanks and 
+kudos to him. Check out the updates [in the comments](http://disq.us/p/2m44ig1)._
 
 ## 1. Calibration
 Calibration is a very manual process right now. It's so tedious it's
