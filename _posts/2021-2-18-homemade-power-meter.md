@@ -11,6 +11,7 @@ header:
   overlay_filter: 0.4
   caption: This is actual output from a 20 minute FTP test on the DIY power meter. And apparently a short sprint at the end.
 toc: true
+last_modified_at: 2022-1-18
 ---
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
