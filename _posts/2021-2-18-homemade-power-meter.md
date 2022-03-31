@@ -222,7 +222,7 @@ forgiveness to shift things at least slightly (I used 30 gauge wire).
 </figure>
 
 # Software
-This is all [open source](https://gitlab.com/sjarvis/powermeter). The
+This is all [open source](https://github.com/stevejarvis/powermeter). The
 repository includes the COTS libraries to interact with the hardware
 modules, the `.ino` files are those crafted by me to pull it all
 together. It's not what I'd consider "production quality", because it
@@ -253,7 +253,7 @@ it just... doesn't... work. I ended up programming an extra central
 
 There's some finer notes on the project wiki, including [instructions
 to calibrate the 
-meter](https://gitlab.com/sjarvis/powermeter/-/wikis/setup/load-cell/calibrating).
+meter](https://github.com/stevejarvis/powermeter/wiki/calibrating).
 But after calibrating, you're ready to rock. Avoid puddles.
 
 # Improvements
@@ -307,7 +307,7 @@ The code is generally a bit messy. And the schematic and setup
 instructions aren't descriptive enough to know "which way is up" until
 it's all hooked up and you just see whether numbers are negative or
 positive (there _is_ a [nice hook in the
-code](https://gitlab.com/sjarvis/powermeter/-/blob/master/power.ino#L25)
+code](https://github.com/stevejarvis/powermeter/blob/main/power.ino#L25)
 for that, though).
 
 ## 6. Make it Hardware
