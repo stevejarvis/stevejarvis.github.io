@@ -11,7 +11,7 @@ header:
   overlay_filter: 0.4
   caption: This is actual output from a 20 minute FTP test on the DIY power meter. And apparently a short sprint at the end.
 toc: true
-last_modified_at: 2022-1-18
+last_modified_at: 2022-3-30
 ---
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -327,3 +327,15 @@ If you find this helpful or hit any blockers, please let me know in the
 comments below, on the repo, 
 or [Tweet at me](https://twitter.com/stevenjarvis). I'd love a great 
 reason to remember anything I've forgotten to help out.
+
+_
+Updates:
+
+March 22, 2021 - Fixing some formula formatting. They weren't wrong, just not
+readable.
+
+November 4, 2021 - Include graphs and clickable/zoomable photos in the post.
+
+March 30, 2022 - Push mirror of repo to Github and change links to there instead
+of Gitlab. Just because it's a more active open source scene.
+_
