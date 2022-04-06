@@ -328,14 +328,13 @@ comments below, on the repo,
 or [Tweet at me](https://twitter.com/stevenjarvis). I'd love a great 
 reason to remember anything I've forgotten to help out.
 
-_
-Updates:
 
-March 22, 2021 - Fixing some formula formatting. They weren't wrong, just not
-readable.
+_Updates:_
 
-November 4, 2021 - Include graphs and clickable/zoomable photos in the post.
+_March 22, 2021 - Fixing some formula formatting. They weren't wrong, just not... readable._
 
-March 30, 2022 - Push mirror of repo to Github and change links to there instead
-of Gitlab. Just because it's a more active open source scene.
-_
+_August 24, 2021 - Add PCB/hardware improvement to the list._
+
+_November 4, 2021 - Include graphs and clickable/zoomable photos in the post._
+
+_March 30, 2022 - Push mirror of repo to Github and change links to there instead of Gitlab. Just because it's a more active open source scene._
