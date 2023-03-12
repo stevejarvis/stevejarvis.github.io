@@ -31,7 +31,7 @@ To get on the ranking list, a racer only needs to do a single USAC event in any 
 
 So, that's what we did here. And the put it in a map. The elements on the map below represent a heatmap of the license holders who raced at least one USAC-sanctioned race from February 2022 - February 2023 (where the racer lives, not necessarily where they raced).
 
-_Recommend interacting with this map on desktop for best experience. It doesn't work real well on mobile._
+_Recommend interacting with this map on desktop._
 
 <div id="map" style="width: 100%; height: 300px;"></div>
 
@@ -60,4 +60,4 @@ One might expect this to simply look like a population heatmap of the US, and fo
     <figcaption>A heatmap of wildly different style, but the most official source I found with 3 minutes of low effort searching. From <a href=https://www.census.gov/library/visualizations/2021/geo/population-distribution-2020.html>US Census</a>.</figcaption>
 </figure>
 
-Salt Lake City and Denver are known for being "athletic" and "outdoorsy" areas, so I kinda expected them to look like more popular race scenes, but... Chicago? That one surprised me. What's going on in Chicago? So Chicago, tell us your secrets!
+Salt Lake City and Denver are known for being "athletic" and "outdoorsy" areas, so I kinda expected them to look like more popular race scenes, but... Chicago? That one surprised me. So Chicago, tell us your secrets!
