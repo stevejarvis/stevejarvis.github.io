@@ -25,7 +25,9 @@ toc: false
 
 My buddy Dave (just Dave, you know, like Cher) is big into stats and metrics. If it can be measured in a spreadsheet and manipulated in a pivot table, he's on it. And recently we've been looking at ridership in USA Cycling (USAC) races, because the road scene hasn't been doing so hot the last few years.
 
-Well Dave was playing around with the data on the [USAC rankings site](https://legacy.usacycling.org/events/rr.php). The gist of USAC rankings is that your best five races from the last 12 months are combined to give a racer a score. The higher ranked your competitors in a given race, the better ranking you'll receive for that race, and the best 5 rankings you earn determine your actual ranking. Rankings are tracked overall, as well as grouped via age group and region (_it is a cool idea, but also no one seems to care about this ranking system :man_shrugging:_). To get on the ranking list, a racer only needs to do a single USAC event in any sanctioned discipline in the last 12 months (for our purposes here, that's crits, road, cross). Since the rankings are public and include location and age, we can basically click "show more" a hundred times and we have a pretty interesting database of all active racers in the country in the last 12 months.
+Well Dave was playing around with the data on the [USAC rankings site](https://legacy.usacycling.org/events/rr.php). The gist of USAC rankings is that your best five races from the last 12 months are combined to give a racer a score. The higher ranked your competitors in a given race, the better ranking you'll receive for that race, and the best 5 rankings you earn in a 12 month window determine your actual ranking. Rankings are tracked overall, as well as grouped via age and region (_it is a cool idea, but no one really seems to care about this ranking :man_shrugging:_). 
+
+To get on the ranking list, a racer only needs to do a single USAC event in any sanctioned discipline in the last 12 months (for our purposes here, that's crits, road, cross). Since the rankings are public and include location and age, we can basically click "_show more_" a hundred times and we have a pretty interesting database of all active racers in the country in the last 12 months.
 
 So, that's what we did here. And the put it in a map. The elements on the map below represent a heatmap of the license holders who raced at least one USAC-sanctioned race from February 2022 - February 2023 (where the racer lives, not necessarily where they raced).
 
@@ -51,7 +53,7 @@ _Recommend interacting with this map on desktop for best experience. It doesn't 
 
 <script src="/assets/js/usac_heatmap/usacheat.js"></script>
 
-One might expect this to simply look like a population heatmap of the US, and for a large part it does, but with some notable exceptions. Visually, Salt Lake City, Denver, and Chicago regions are punching above their weight. There seem to be disproportionally many users there, when compared to strictly population density. What are they doing so right? 
+One might expect this to simply look like a population heatmap of the US, and for a large part it does, but with some notable exceptions. Visually, Salt Lake City, Denver, and Chicago regions are punching above their weight. There seem to be disproportionally many racers there, when compared to strictly population density. What are they doing so right? 
 
 <figure class="full">
     <a href="/assets/images/usac_heatmap/census_2020_map.png"><img src="/assets/images/usac_heatmap/census_2020_map.png"></a>
