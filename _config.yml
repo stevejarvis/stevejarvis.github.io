@@ -225,3 +225,8 @@ defaults:
       share: true
       related: true
       show_date: true
+
+# Include GoatCounter js
+# Dashboard at https://imateapot.goatcounter.com/
+include_js:
+  - data-goatcounter="https://imateapot.goatcounter.com/count" async src="//gc.zgo.at/count.js"
