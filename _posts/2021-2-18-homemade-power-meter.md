@@ -29,6 +29,8 @@ improvement. There are more details and gotchas than I can include
 here, largely because I was last in the weeds on this more than a year
 ago, and that's what I get for procrastinating.
 
+Or if you wanna cut to it, the code and schematics are all [open source on GitHub:](https://github.com/stevejarvis/powermeter) [https://github.com/stevejarvis/powermeter](https://github.com/stevejarvis/powermeter)
+
 ## Performance
 Overall, this really did work well. It's
 within a reasonable margin of error when compared with commercial
