@@ -86,9 +86,10 @@ difficult problem.
     <figcaption>Results from the default 20min FTP test programmed into Zwift. Plus a little sprint at the end.</figcaption>
 </figure>
 
-The license is GPL, because perhaps my greatest take away from this
+The license is ~~GPL, because perhaps my greatest take away from this
 project is that this stuff isn't rocket science and there's no reason
-these meters cost as much as the rest of the bike.
+these meters cost as much as the rest of the bike~~ MIT, because let's
+keep it simple.
 
 # The Theory
 
@@ -206,7 +207,7 @@ arm, then break out the soldering iron and connect the dots. The main
 "gotcha" to keep track of is that this form factor is
 _challenging_. With off-the-shelf components, it's difficult to pack
 it in tightly enough to clear the limited space between the crank arm
-and rear dropout. And each frame is different. I did fit one of these
+and chainstay. And each frame is different. I did fit one of these
 on three bikes -- a Merckx San Remo, a Trek 1000, and my wife's Orbea
 Orca -- but each one was different enough that it takes a slight
 variation on the plan. Use thin, flexible wiring, with enough 
