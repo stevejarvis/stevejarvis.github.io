@@ -9,7 +9,7 @@
 locale                   : "en"
 title                    : "imateapot"
 title_separator          : "-"
-remote_theme             : "mmistakes/minimal-mistakes@4.22.0"
+remote_theme             : "mmistakes/minimal-mistakes@4.24.0"
 name                     : "imateapot"
 description              : "JK, I make mostly coffee."
 url                      : "https://imateapot.dev"
