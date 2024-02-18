@@ -7,11 +7,9 @@ steve_jarvis:
   software -- particularly the aspects of performance & security -- and am currently professionally security-focused 
   and figuring out what a leader is supposed to do. And I actually love coffee."
   avatar: /assets/images/bio-photo.jpg
-  twitter: stevenjarvis
   github: stevejarvis
   linkedin: stevenjarvis
   page: steve-jarvis    # for page {{ site.url }}/{{ author.page }}
-  google:
 
 jenny_jarvis:
   name: Jenny Jarvis
