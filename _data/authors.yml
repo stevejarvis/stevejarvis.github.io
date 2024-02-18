@@ -3,9 +3,8 @@
 steve_jarvis:
   name: Steve Jarvis
   email:
-  bio: "I spend a lot of time cycling and racing bikes around the Twin Cities. I studied CS and love building 
-  software -- particularly the aspects of performance & security -- and am currently professionally security-focused 
-  and figuring out what a leader is supposed to do. And I actually love coffee."
+  bio: "I race bikes around the Twin Cities and probably drink a bit too much coffee. I srudied computer science and love building software (especially when it comes to performance and security).
+  I'm professionally primarily focused on security and figuring out what a leader should be doing."
   avatar: /assets/images/bio-photo.jpg
   github: stevejarvis
   linkedin: stevenjarvis
