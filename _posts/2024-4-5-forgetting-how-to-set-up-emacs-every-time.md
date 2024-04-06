@@ -8,8 +8,8 @@ comments: true
 toc: false
 ---
 
-Here we're rocking [Doom](https://github.com/doomemacs/doomemacs/tree/master). This is not exactly complex but 
-it's enough that I have to relearn it every time I have to install it again, so actually writing it
+We're rocking [Doom](https://github.com/doomemacs/doomemacs/tree/master). This is not exactly complex but 
+it's enough that I have to relearn it every time I have to install it again, so writing it
 down this time. These are self notes, if they help someone else that's cool too though.
 
 ## Emacs itself
@@ -19,7 +19,11 @@ focus like it should. I actually still have that issue w/ `emacs-mac` too and I 
 it's less often. Like if emacs is launched as the `$EDITOR` for a git commit, I cannot type in the GUI, all keystrokes
 to go the Terminal. If this rings a bell with anyone let me know :bow:.
 
-Brew install [emacsmacport](https://github.com/railwaycat/homebrew-emacsmacport).
+Brew install [emacsmacport](https://github.com/railwaycat/homebrew-emacsmacport). First dependencies.
+
+```shell
+ brew install git ripgrep coreutils fd
+```
 
 ```shell
 brew tap railwaycat/emacsmacport
@@ -68,13 +72,21 @@ reference, here is:
               (add-hook 'before-save-hook 'gofmt nil 'make-it-local))))
 ```
 
-## Gopls (or <insert language server>)
+## Go and Gopls (or <insert language server>)
 Repeat for other language dependencies, but focused on [Go](https://emacs-lsp.github.io/lsp-mode/page/lsp-gopls/) 
 at the moment.
 
 ```shell
 brew install gopls
 go install golang.org/x/tools/cmd/goimports@latest
+go install github.com/x-motemen/gore/cmd/gore@latest
+go install github.com/stamblerre/gocode@latest
+go install golang.org/x/tools/cmd/godoc@latest
+go install golang.org/x/tools/cmd/goimports@latest
+go install golang.org/x/tools/cmd/gorename@latest
+go install golang.org/x/tools/cmd/guru@latest
+go install github.com/cweill/gotests/...@latest
+go install github.com/fatih/gomodifytags@latest
 ```
 
 ## Linking the app
