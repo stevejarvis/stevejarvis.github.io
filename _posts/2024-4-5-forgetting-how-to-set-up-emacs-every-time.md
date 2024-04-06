@@ -3,7 +3,7 @@ layout: single
 title: Forgetting how to set up Emacs every time I get a new computer
 author: steve_jarvis
 excerpt: Was it emacs-plus or emacs-mac that had a weird window thing? How did Go imports get re-written on save?
-tags: [emacs, notes]
+tags: [emacs, doom, doom emacs, setup, notes]
 comments: true
 toc: false
 ---
