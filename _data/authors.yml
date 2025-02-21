@@ -1,6 +1,13 @@
 # Authors
 
 steve_jarvis:
+  name: Steve Jarvis
+  email:
+  bio: Girl dad, bike racer, and pond hockey enthusiast. Alumni of NMU and BU, now a WFH software engineer focused on security. Love athletics and hacks of all kinds.
+  avatar: /assets/images/bio-photo.jpg
+  location: Saint Paul, Minnesota
+  github: stevejarvis
+  linkedin: stevenjarvis
   page: steve-jarvis    # for page {{ site.url }}/{{ author.page }}
 
 jenny_jarvis:
