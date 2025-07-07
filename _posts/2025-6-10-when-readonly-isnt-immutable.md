@@ -84,16 +84,6 @@ What we'd really love to do is run our own image, from our own registry. When yo
 #### WTF is a Snapshotter and Why's it In Our Way
 Step 2 is actually quite hard. Remember we're giving instructions to the `containerd` runtime, but that runtime itself is a process on the host. So when it gets to referencing a prepared filesystem for the container, if it's told the filesystem is prepared at `/tmp/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/<snapshot-id>/fs`, it's going to look in the host's `/tmp/`, not the current container's. And we don't have permission to add or modify mounts. 
 
-sequenceDiagram
-    participant InfectedContainer as Infected Container
-    participant Containerd as containerd.sock (host)
-    participant HostFS as Host Filesystem
-
-    InfectedContainer->>Containerd: API call: CreateContainer (with new image)
-    Containerd->>HostFS: Prepare snapshot (overlayfs mount)
-    HostFS-->>Containerd: Permission Denied (mount fails)
-    Containerd-->>InfectedContainer: Error: permission denied (mount failure)
-
 Even though we can talk to `containerd`, when we ask it to create a new container, it tries to prepare a new overlayfs snapshot on the host. Since the host filesystem is read-only, this step fails with a "permission denied" error. That's why simply requesting containerd to launch a new image from inside a container doesn't work as easily as it seems like it might.
 
 #### Solution: Reuse Prepared Snapshots
@@ -116,7 +106,7 @@ What do we _really_ want though? The  goal isn't really to run our own image, it
 					rootfsPath = fsPath
 					break
 				}
-      }
+			}
 		}
 	}
 ```
@@ -141,21 +131,21 @@ So mission accomplished, we escaped and are tromping around the node.
 # Should This Be Obvious?
 I want to spend another minute on _why_ it's reasonable that this would be an accepted config to start with. If you don't buy into the idea that this is not common knowledge in the security community, note that sources on the internet are all over the place. Some recognize the risk, others don't and imply read-only is safe. 
 
-From [Bottlerocket's security guidance](https://github.com/bottlerocket-os/bottlerocket/blob/develop/SECURITY_GUIDANCE.md#restrict-access-to-the-container-runtime-socket).
+From [Bottlerocket's security guidance](https://github.com/bottlerocket-os/bottlerocket/blob/develop/SECURITY_GUIDANCE.md#restrict-access-to-the-container-runtime-socket):
 
 <figure class="full">
     <a href="/assets/images/read-only-isnt-immutable/bottlerocket-sec-guidance.png"><img src="/assets/images/read-only-isnt-immutable/bottlerocket-sec-guidance.png"></a>
-    <figcaption>It's not technically wrong, but a reader could easily infer "oh, just don't give it write access and it'll be ok".</figcaption>
+    <figcaption>It's not technically wrong, but from "Write access to any of these..." a reader could very reasonably take away "oh, don't give it write access and it'll be ok".</figcaption>
 </figure>
 
-This is just one of the most reputable examples I know of, there's many more in random blogs and StackOverflow answers. There's enough verbiage online implying that `readOnly: true` makes for a safe configuration that Google's Gemini has learned to confidently asset that's the case.
+This is just one of the most reputable examples I know of, there's many more in random blogs and StackOverflow answers. In fact there's enough verbiage online implying that `readOnly: true` makes for a safe configuration that Google's Gemini has learned to confidently asset that's the case.
 
 <figure class="full">
     <a href="/assets/images/read-only-isnt-immutable/gemini.png"><img src="/assets/images/read-only-isnt-immutable/gemini.png"></a>
     <figcaption>Gemini is sure that filesystem permissions apply to sockets.</figcaption>
 </figure>
 
-And even as I'm writing this post, using VS Code with Copilot enabled, I asked Copilot to read what I've written and suggest remediations not already mentioned. Despite all this context focused precisely on read-only not being a mitigation, it still suggested "make it read-only and drop caps". :weary:
+And even as I'm writing this post, using VS Code with Copilot enabled, I asked Copilot to read what I've written and suggest remediations I've not already mentioned. Despite an entire blog of context focused precisely on read-only mounts not being a protection for sockets, it still suggested "make it read-only and drop caps". :weary:
 
 <figure class="full">
     <a href="/assets/images/read-only-isnt-immutable/copilot.png"><img src="/assets/images/read-only-isnt-immutable/copilot.png"></a>
@@ -165,7 +155,7 @@ And even as I'm writing this post, using VS Code with Copilot enabled, I asked C
 ## Why Is It Like This?
 Why's it like this, anyway? It's because sockets are interprocess communication (IPC), files are part of the filesystem, and in Linux these are totally separate things. The Kubernetes read-only config employs the virtual filesystem in Linux to make sure there are no modifications made to any filesystem resources. That enforcement includes POSIX calls like `open`. Connecting to a socket is just not part of that stack, the POSIX call is `connect`, and it's entirely outside of the filesystem's purview. Unless you've been here and are already familiar for one reason or another, I don't think the distinction is really at all obvious. 
 
-What you get with a read-only `/var/` mount is no ability to change the name of the socket file, or delete it or create a new one. But nothing stopping you from connecting to what exists and sending/receiving traffic over that connection.
+What you get with a read-only `/var/` mount is no ability to change the name of the socket file, or delete it, or create a new one. But nothing at all preventing you from connecting to what exists and sending/receiving traffic over that connection.
 
 # How to Guard Against This
 
@@ -183,4 +173,4 @@ Or, if it is a SIEM tool, maybe it could have simply specified `/var/log` and no
 It could have also been prevented by using non-root users in the original container, since those are the permissions enforced by Linux when evaluating `connect` to the runtime socket. Or using user namespacing, so the UID 0 in the container wasn't allowed to actually connect to the socket owned by UID 0 on the host.
 
 # Conclusion
-This is an educational post. Let's work together to find better ways of accomplishing security goals. If a defensive measure requires permissions that could just as easily be leveraged to take over the host, we should find a better way to achieve the goal!
+This is an educational post. We can work together to find better ways of accomplishing security goals. If a defensive measure requires permissions that could just as easily be leveraged to take over the host, we should really find a better way to achieve the goal!
