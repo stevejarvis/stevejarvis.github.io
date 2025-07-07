@@ -1,7 +1,7 @@
 ---
 title: Projects
 permalink: /projects/
-layout: tags
+layout: tag
 tag: project
 ---
 
