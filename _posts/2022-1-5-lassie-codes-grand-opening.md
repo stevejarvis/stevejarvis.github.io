@@ -3,7 +3,7 @@ layout: single
 title: Lassie Codes - Grand Opening
 author: steve_jarvis
 excerpt: Easy emergency contact info when you're on the road.
-tags: [side project, computer science, cycling, qr code, lassie]
+tags: [side project, computer science, cycling, qr code, lassie, project]
 comments: true
 header:
   overlay_image: /assets/images/lassiecodes/goodboy.jpg

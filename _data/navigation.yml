@@ -2,9 +2,9 @@ main:
   - title: "Home"
     url: /
 
+  - title: "Projects"
+    url: /projects/
+
   - title: "About"
     url: /about/
 
-  - title: "Side Projects"
-    url: /tags/#side-project
-  

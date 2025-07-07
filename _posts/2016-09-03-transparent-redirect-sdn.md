@@ -4,7 +4,7 @@ title: Transparent Redirect with Software Defined Networking
 author: steve_jarvis
 excerpt: "Introduction to SDN by using OpenDaylight, Mininet, OpenFlow, and
 OpenVSwitch to transparently reroute traffic."
-tags: [side project, sdn, software, defined, networking, redirect, opendaylight, odl, openflow]
+tags: [side project, sdn, software, defined, networking, redirect, opendaylight, odl, openflow, project]
 comments: true
 header:
   overlay_image: /assets/images/sdn-bbag/topo_gui.png

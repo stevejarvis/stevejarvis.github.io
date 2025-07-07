@@ -3,7 +3,7 @@ layout: single
 title: When Read-Only isn't Immutable
 author: steve_jarvis
 excerpt: Abusing a config that may look safe to escape a container.
-tags: [k8s, kubernetes, containers, read-only, socket]
+tags: [k8s, kubernetes, containers, read-only, socket, security, project]
 comments: true
 header:
   overlay_color: "#000"

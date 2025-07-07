@@ -3,7 +3,7 @@ layout: single
 title: Where the USAC Racers At?
 author: steve_jarvis
 excerpt: Heatmap of USA Cycling racers who raced at least once in 2022.
-tags: [side project, cycling, racers, heatmap, usac, usa cycling]
+tags: [side project, cycling, racers, heatmap, usac, usa cycling, project]
 comments: true
 header:
   teaser: /assets/images/usac_heatmap/twincities.png

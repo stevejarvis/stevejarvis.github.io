@@ -3,7 +3,7 @@ layout: single
 title: Writing NTAGs for NFC in Lassie Codes
 author: steve_jarvis
 excerpt: The 101 of NFC and tags. Getting started with automating NTAG writes is harder than I thought it'd be.
-tags: [side project, computer science, cycling, nfc, ntag, lassie]
+tags: [side project, computer science, cycling, nfc, ntag, lassie, project]
 comments: true
 header:
   overlay_image: /assets/images/lassiecodes/goodboy.jpg
