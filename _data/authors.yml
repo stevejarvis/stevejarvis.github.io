@@ -8,7 +8,12 @@ steve_jarvis:
   location: Saint Paul, Minnesota
   github: stevejarvis
   linkedin: stevenjarvis
+  instagram: sajarvis
   page: steve-jarvis    # for page {{ site.url }}/{{ author.page }}
+  links:
+    - label: "Bluesky"
+      icon: "fas fa-crow" # icon for Bluesky isn't until font-awesome 6.5.2
+      url: "https://bsky.app/profile/imateapot.dev"
 
 jenny_jarvis:
   name: Jenny Jarvis
