@@ -17,7 +17,7 @@ We were reviewing a Kubernetes manifest for a 3rd party integration. It was a se
 
 If you know where this is going (that read-only permissions don't apply to sockets and there's some serious goodies in `/var/`) then there's nothing too surprising coming up. If not, buckle up because we're going to use a seemingly innocent manifest to escape from a Kubernetes container and write some files on the host! :rocket:
 
-_And obligatory but important: Use information here only in systems you have permission to operate on._
+_And obligatory but important: Use information here only for systems you have permission to operate on._
 
 # The Breakout
 
@@ -53,7 +53,7 @@ spec:
 Having a host mount at all should raise eyebrows, but assuming there's some justification for it I'd dare say that manifest passes the sniff test. The container drops *all* Linux capabilities, `/var/` is Linux's store for variable data, logs, and temporary file kind of stuff, and we're clearly only granting read access to it. So sure, maybe we have some kind of SIEM service that's aggregating logs, this looks like a very fair config. 
 
 ## How Juicy Is `/var` Really, though?
-Here's the jam. `/var/runtime/` includes the runtime socket for `containerd` (and `docker` and probably others, but here we're using `containerd`). That's the socket that start, stops, kills containers, and pulls images. It's the socket that offers the container runtime API to the Kubernetes controller. It's everything. And the only authorization here is provided by Linux's file permissions, the API itself has none. And, for reasons I'll get into a little more later, the `readOnly: true` config means nothing for a socket. So the seemingly innocent manifest above actually grants carte blanche access to the container runtime, which itself usually runs with significant permission, and we're going to leverage that to increase our own privilege.
+Here's the jam. `/var/run/` includes the runtime socket for `containerd` (and `docker` and probably others, but here we're using `containerd`). That's the socket that start, stops, kills containers, and pulls images. It's the socket that offers the container runtime API to the Kubernetes controller. It's everything. And the only authorization here is provided by Linux's file permissions, the API itself has none. And, for reasons I'll get into a little more later, the `readOnly: true` config means nothing for a socket. So the seemingly innocent manifest above actually grants carte blanche access to the container runtime, which itself usually runs with significant permission, and we're going to leverage that to increase our own privilege.
 
 ## Taking Advantage of This
 I'm not for a moment implying a trusted vendor would do anything like this to escalate permissions, that's bananas. I _am_ implying that supply chain compromise is a real, regular reality, and any exploit in a 3rd party can immediately become your own. So imagine we're a 4th party attacker who's silently compromised a trusted 3rd party. We're running code in a Kuberenetes pod like above, including read access to all of host `/var/`. How do we exploit the situation to escalate privilege and take full control of the host? 
@@ -65,11 +65,11 @@ We're going to abuse our powers and launch a more privileged image and pivot fro
 3. The goal is to escape the container and get access to the node
 
 ### Step 1. What's Easy: Killing Processes
-Enter tools like `ctr` and `crictl`. They're CLIs that you can point to that `/var/runtime/containerd.sock` and interact directly with `containerd` API. And if you run those in the compromised container, you'll quickly discover that you can do something like this:
+Enter tools like `ctr` and `crictl`. They're CLIs that you can point to that `/var/run/containerd.sock` and interact directly with `containerd` API. And if you run those in the compromised container, you'll quickly discover that you can do something like this:
 
 ```bash
-$ ctr --address /run/containerd/containerd.sock containers list
-$ ctr --address /run/containerd/containerd.sock containers delete <choose a container id>
+$ ctr --address /var/run/containerd/containerd.sock containers list
+$ ctr --address /var/run/containerd/containerd.sock containers delete <choose a container id>
 ```
 
 and delete one of the other containers running in the cluster, no questions asked. Solid start, but we're looking to get to the host here, not just wreck havoc.
@@ -83,6 +83,11 @@ What we'd really love to do is run our own image, from our own registry. When yo
 
 #### WTF is a Snapshotter and Why's it In Our Way
 Step 2 is actually quite hard. Remember we're giving instructions to the `containerd` runtime, but that runtime itself is a process on the host. So when it gets to referencing a prepared filesystem for the container, if it's told the filesystem is prepared at `/tmp/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/<snapshot-id>/fs`, it's going to look in the host's `/tmp/`, not the current container's. And we don't have permission to add or modify mounts. 
+
+<figure class="full">
+    <a href="/assets/images/read-only-isnt-immutable/perm-denied-diagram.png"><img src="/assets/images/read-only-isnt-immutable/perm-denied-diagram.png"></a>
+    <figcaption>Putting some arrows to words, actors involved in the failure to prepare the container filesystem.</figcaption>
+</figure>
 
 Even though we can talk to `containerd`, when we ask it to create a new container, it tries to prepare a new overlayfs snapshot on the host. Since the host filesystem is read-only, this step fails with a "permission denied" error. That's why simply requesting containerd to launch a new image from inside a container doesn't work as easily as it seems like it might.
 
@@ -111,20 +116,22 @@ What do we _really_ want though? The  goal isn't really to run our own image, it
 	}
 ```
 
-Seems silly, but baby is that effective. If there's any shell in any image already present, it'll just identity which one. Then there's an image we know can be reused to run arbitrary shell code.
+Seems silly, but baby is that effective. If there's any shell in any image already present, it'll just identify which one. Then there's an image we know can be reused to run arbitrary shell code.
 
 ### Step 3. Escalate Privilege and chroot
-I'm purposelly skipping some interesting steps here, because this blog is a word of caution, not an exploit manual. But the steps are honestly not any more than mildly interesting, you should assume any attacker who can read a man page has a fresh container running at this point, and it has the host `/` mounted and `cat /proc/$$/status | grep Cap` shows it's granted the default capabilities (including those that were explicitly dropped in the original manifest!) 
+I'm purposelly skipping some interesting steps here, because this blog is a word of caution, not an exploit manual. But the steps from here are honestly not any more than mildly interesting, you should assume any attacker who can read API docs has a fresh container running at this point, and it has the host `/` mounted and `cat /proc/$$/status | grep Cap` shows it's granted the default capabilities (including those that were explicitly dropped in the original container!) 
 
 From this new container, it's a short:
 
 ```sh
-chroot /host /bin/sh # note this can't be done on the original container
+chroot /host /bin/sh 
 useradd steve
 echo "steve:p@ss" | chpasswd
 ```
 
-to establish a persistent user on the node. We've escalated, escaped, and how have a user we can use on the host. If you're more a visual :tada: person, then `touch /tmp/hi_i_was_here` is also stellar proof. 
+to establish a persistent user on the node. Note that, originally, not only did we not have a full host `/` mount, we didn't have the Linux capability that'd allow calling `chroot`, either. 
+
+We've escalated, escaped, and how have a user we can use on the host. If you're more a visual :tada: person, then `touch /tmp/hi_i_was_here` is also stellar proof. 
 
 So mission accomplished, we escaped and are tromping around the node.
 
@@ -170,7 +177,9 @@ Is "no shells anywhere in the cluster" really plausible? Maybe. I dunno. If you 
 
 Or, if it is a SIEM tool, maybe it could have simply specified `/var/log` and not just `/var`. In this case that would have made all the difference.
 
-It could have also been prevented by using non-root users in the original container, since those are the permissions enforced by Linux when evaluating `connect` to the runtime socket. Or using user namespacing, so the UID 0 in the container wasn't allowed to actually connect to the socket owned by UID 0 on the host.
+It could have also been prevented by using non-root users in the original container, since those are the permissions enforced by Linux when evaluating `connect` to the runtime socket. _Or_ using user namespacing, so the UID 0 in the container wasn't allowed to actually connect to the socket owned by UID 0 on the host.
+
+Basically, as least privilege goes, even simple restrictions could have made this much harder.
 
 # Conclusion
-This is an educational post. We can work together to find better ways of accomplishing security goals. If a defensive measure requires permissions that could just as easily be leveraged to take over the host, we should really find a better way to achieve the goal!
+I think the point is some non-obvious things have major impacts, and this is one of them. Or maybe it's to be careful how much you trust 3rd parties (and AI). Or it's just clarifying and adding detail to an issue that I found confusingly hard to find clarity or get detail on. I suppose it's all the above.
