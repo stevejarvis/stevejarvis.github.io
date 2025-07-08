@@ -10,7 +10,7 @@ header:
   overlay_filter: "0.2"
   overlay_image: /assets/images/lookout_mtn_clipd.jpeg
   caption: "Biking Lookout Mountain in Golden, CO"
-toc: false
+toc: true
 ---
 
 We were reviewing a Kubernetes manifest for a 3rd party integration. It was a service from a well-known vendor and included read-only access to `/var/`.  Read-only typically means exactly what it says on the tin: no writing, no deleting, no mutable actions allowed. It _feels_ like that should apply to everything in the mount. And on first pass, most of the reviewers were in the "sounds good to me" camp for exactly that reason. Once it made the rounds and raised concerns, the vendor themselves defended the mount with "well it's read-only". 
