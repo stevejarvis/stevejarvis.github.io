@@ -5,7 +5,7 @@ author: steve_jarvis
 excerpt: "How WEP secured wireless networks can be a security risk. Portrayed by
 a very real life attack vector, continuing with a man in the middle attack on an
 SSL connection."
-tags: [security, WEP, network, SSL, mitm]
+tags: [security, WEP, network, SSL, mitm, project]
 comments: true
 header:
   image: /assets/images/header.jpg

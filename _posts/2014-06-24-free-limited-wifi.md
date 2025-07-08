@@ -4,7 +4,7 @@ title: Free (Limited) WiFi
 author: steve_jarvis
 excerpt: "Many public hotspots offer a short period of free access before requiring
 payment. It may be possible to keep your free period going, though."
-tags: [wifi, airports, hotspot, hacks]
+tags: [wifi, airports, hotspot, hacks, project]
 comments: true
 ---
 

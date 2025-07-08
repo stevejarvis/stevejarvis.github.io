@@ -4,7 +4,7 @@ title: Postfix from Behind Comcast's Big Dumb Head
 author: steve_jarvis
 excerpt: "Comcast residential accounts are quite restricted, but it's still
 possible to run a personal mail server."
-tags: [mail, linux, hacks]
+tags: [mail, linux, hacks, project]
 comments: true
 ---
 
