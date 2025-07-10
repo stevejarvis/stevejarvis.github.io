@@ -2,7 +2,7 @@
 layout: single
 title: When Read-Only isn't Immutable
 author: steve_jarvis
-excerpt: Abusing a config that may look safe to escape a container.
+excerpt: Abusing a k8s config that may look safe to escape a container.
 tags: [k8s, kubernetes, containers, read-only, socket, security, project]
 comments: true
 header:
@@ -131,7 +131,7 @@ echo "steve:p@ss" | chpasswd
 
 to establish a persistent user on the node. Note that, originally, not only did we not have a full host `/` mount, we didn't have the Linux capability that'd allow calling `chroot`, either. 
 
-We've escalated, escaped, and how have a user we can use on the host. If you're more a visual :tada: person, then `touch /tmp/hi_i_was_here` is also stellar proof. 
+We've escalated, escaped, and now have a user we can use on the host. If you're more a visual :tada: person, then `touch /tmp/hi_i_was_here` is also stellar proof. 
 
 So mission accomplished, we escaped and are tromping around the node.
 
