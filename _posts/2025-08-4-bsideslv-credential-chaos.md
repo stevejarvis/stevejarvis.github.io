@@ -18,7 +18,7 @@ toc: false
 Demo resources? That code is all here: [https://github.com/stevejarvis/bsideslv25-credential-chaos](https://github.com/stevejarvis/bsideslv25-credential-chaos).
 
 ## Talk Recording
-_(Once it's published to YouTube, I'll link here)_
+:point_right: [Here on YouTube](https://www.youtube.com/live/goERQMqAv50?si=-mNlB8_YkyGgpT1I&t=10334).
 
 # What's This All About?
 There's a huge amount of risk in a "typical tech stack". There's static, long-lived creds for engineer access to SaaS and infra, CICD to deploy resources, for services to authenticate to each other, and more. This talk illustates some common, real world scenarios and walks through options for improving the situation.
