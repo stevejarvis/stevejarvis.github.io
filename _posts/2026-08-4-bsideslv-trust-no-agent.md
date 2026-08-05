@@ -36,9 +36,9 @@ The talk went really well. The live demo failed to launch twice on stage, I coul
 
 ### SPIFFE
 
-Three different follow-up convos asked "what about SPIFFE?" And right on, that's a clear follow-up question I half-anticipated. I felt like this talk was a very packed 30 minutes of tech (with ATProto and FGA being big topics that'd be new to many, and we knew we'd also be explaning Codenames gameplay) so last night I decided to cut SPIFFE from the script. It felt like too much, one too many acronyms. I had notes on paper, like a luddite, and it's literally struck out. 
+Three different follow-up convos asked "what about SPIFFE?" And right on, that's a clear follow-up question I half-anticipated. I felt like this talk was a very packed 30 minutes of tech (with ATProto and FGA being big topics that'd be new to many, and we knew we'd also be explaning Codenames gameplay) so last night I decided to cut SPIFFE from the script. It felt like too much, one too many things to introduce.
 
-SPIFFE has stronger workload binding than what we presented today, that process could _also_ get an ATProto identity if it wants to play in that network. There's no "firehose" concept or publicly verifiable records built into SPIFFE (meaning like PDS records, not like certificate / TLS records). I think there's a picture where these are complementary technologies, not competing.
+SPIFFE has stronger workload binding than what we presented today, this idea isn't competing there. That process could _also_ get an ATProto identity if it wants to play in that network. There's no "firehose" concept or publicly verifiable records built into SPIFFE (meaning like PDS records, not like certificate / SVID records). And ATProto supports federating with basically no setup. I think there's a picture where these are complementary technologies, not competing.
 
 If we give this talk again anywhere I'll include it directly, since clearly there's interest in how it fits into the discussion. (And we _were_ asked to give this talk again, which felt really nice :heart_hands:)
 
