@@ -20,7 +20,7 @@ Compared to last, this talk was less "security best practice", more "what if we 
 ## Demo Code
 The code is all here: [https://github.com/beckitrue/atproto-agents](https://github.com/beckitrue/atproto-agents)
 
-And our agents' plays are forever on Bluesky: [go.bsky.app/BKtUVcq](go.bsky.app/BKtUVcq)
+And our agents' plays are forever on Bluesky: [https://go.bsky.app/BKtUVcq](https://go.bsky.app/BKtUVcq)
 
 ## Talk Recording
 :point_right: [Here on YouTube](https://www.youtube.com/live/K9tDYG4dMSY?t=4230s).
