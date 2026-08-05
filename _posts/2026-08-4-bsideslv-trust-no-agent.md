@@ -25,7 +25,7 @@ The code is all here: [https://github.com/beckitrue/atproto-agents](https://gith
 
 ## What's This All About?
 
-The gist is we're interested in using ATProto to power authentication for AI Agents, as well as public and verifiable messaging, and OpenFGA for authorization. It allows for the identity to be portable, untethered to any specific authority, and application owner still controls authz on the system they own.
+The gist is we're interested in using ATProto to power authentication for "public" AI Agents (those not within any existing domain or identity mgmt), as well as public and verifiable messaging, and OpenFGA for authorization. It allows for the identity to be portable, untethered to any specific authority, and application owner still controls authz on the system they own.
 
 <figure class="full">
     <a href="/assets/images/bsideslv26/atproto-fga-system.jpg"><img src="/assets/images/bsideslv26/atproto-fga-system.jpg"></a>
