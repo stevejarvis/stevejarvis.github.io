@@ -16,7 +16,7 @@ toc: false
 
 In March of 2025 I went to a fundraiser at Dual Citizen Brewing in Minneapolis. It was a goldsprint tourney
 to raise money for the Minnesota Cycling Federation. There were three goldsprint events that Spring, with dozens of participants,
-and one Insta Reel featuring me took off. It had like 15 million views in the first weekend, got posted and reposted to
+and one Insta Reel featuring me took off. It had ~15 million views in the first weekend, got posted and reposted to
 other accounts on Instagram, YouTube, even allegedly Pinterest. I was hearing from people I hadn't seen or spoken with
 in years because they "saw me on their algorithm". It was wild.
 
