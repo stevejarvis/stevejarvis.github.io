@@ -27,7 +27,7 @@ no one was wondering "who is that guy?" And the guy I raced was only in a kit be
 the way to go. I was in street clothes because I drove there from my daughter's swim practice. 
 
 So anyway, I've never experienced a viral moment like this, it was fun, the other guy got more heat from Internet than 
-he should have, so I wanna set an accurate narrative.
+he should have, and I wanna set an accurate narrative.
 
 ## By the Numbers
 
@@ -49,7 +49,7 @@ Recon for counts below was done on Oct 2, 2026.
 
 That's about 69M views just between the original and the first repost. If you're as unversed in viewership numbers as I was, then for reference,
 I don't see a video with that many views right now on the [@jimmykimmellive](https://www.instagram.com/jimmykimmellive/) profile. Not that I should
-necessarily host a nightshow, but ABC I'm open to ideas. 
+necessarily host a late-night show, but ABC, I'm open to ideas. 
 The other 18 reposts together add up to a fraction of the FitBlips short, but they keep coming: 12 of the 19 were posted in 2026, 8 in the last few months.
 
 <figure class="full">
@@ -76,7 +76,7 @@ because new uploads are easier to find in a search, and 2025 reposts are just lo
 ## The Story Gets Better with Every Repost
 
 The original caption just advertises the next goldsprints night. The narration started three days later, and has ever escalated.
-Oldest first, as of Oct 2, 2026. I know none of these ppl, and they clearly don't know me either :laughing:. They can't seem to agree on 
+Oldest first, as of Oct 2, 2026. I know none of these ppl. They can't seem to agree on 
 which one of us is the alleged professional.
 
 <figure class="full">
