@@ -21,7 +21,10 @@ toc: false
   integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
   crossorigin="">
 </script>
-<script src="https://leaflet.github.io/Leaflet.heat/dist/leaflet-heat.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/leaflet.heat@0.2.0/dist/leaflet-heat.js"
+  integrity="sha256-65UqrlgGoRAnKfKRuriH3eeDrOhZgZo1SCenduc+SGo="
+  crossorigin="anonymous">
+</script>
 
 My buddy Dave (just Dave, you know, like Cher) is big into stats and metrics. If it can be measured in a spreadsheet and manipulated in a pivot table, he's on it. And recently we've been looking at ridership in USA Cycling (USAC) races, because the road scene hasn't been doing so hot the last few years.
 
