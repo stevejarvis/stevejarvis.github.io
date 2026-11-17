@@ -3,7 +3,7 @@ layout: single
 title: BSidesLV '26 - Trust No Agent
 author: steve_jarvis
 excerpt: Identity with no central authority, open comms, and further actions authorized by FGA.
-tags: [security, fga, openfga, atproto, bluesky, agent security, ai auth, ai]
+tags: [security, fga, openfga, atproto, bluesky, agent security, ai auth, ai, project]
 comments: true
 header:
   overlay_color: "#000"
