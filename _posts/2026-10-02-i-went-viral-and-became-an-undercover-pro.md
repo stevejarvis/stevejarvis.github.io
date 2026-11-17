@@ -15,17 +15,19 @@ toc: false
 ---
 
 In March of 2025 I went to a fundraiser at Dual Citizen Brewing in Minneapolis. It was a goldsprint tourney
-to raise money for the Minnesota Cycling Federation. There were three goldsprint events that Spring and lots of participants,
-but one Insta Reel featuring me took off. It had like 15 million views in the first weekend, got posted and reposted to
-other accounts on Instagram, YouTube, even allegedly Pinterest. 
+to raise money for the Minnesota Cycling Federation. There were three goldsprint events that Spring, with dozens of participants,
+and one Insta Reel featuring me took off. It had like 15 million views in the first weekend, got posted and reposted to
+other accounts on Instagram, YouTube, even allegedly Pinterest. I was hearing from people I hadn't seen or spoken with
+in years because they "saw me on their algorithm". It was wild.
 
 The original post had no narration, no story. Every repost 
-got a bit wilder. Before too long I was a secret pro hipster that went to the tourney just to light up the local scene. 
+got a bit more out there. Before long I was a secret pro hipster that went to the tourney just to light up the local scene. 
 In reality, just about everyone there knew each other. I'm very much an amateur and had been around the local race scene for years,
 no one was wondering "who is that guy?" And the guy I raced was only in a kit because he actually biked _to_ the event, which is 
-the way to go. I was in street clothes because I drove there from my daughter's swim practice. So anyway, I've 
-never experienced a viral moment like this, it was fun, the other guy got more heat from Internet than he should have, 
-so I wanna set an accurate narrative.
+the way to go. I was in street clothes because I drove there from my daughter's swim practice. 
+
+So anyway, I've never experienced a viral moment like this, it was fun, the other guy got more heat from Internet than 
+he should have, so I wanna set an accurate narrative.
 
 ## By the Numbers
 
@@ -35,7 +37,9 @@ or Stories reposted to accounts like
 [@houseofhighlights](https://www.instagram.com/houseofhighlights/)
 and [@WEDU](https://www.instagram.com/wedu/), a media account founded by Lance Armstrong. So those had
 lots of hits too, but they're unavailable now. 
-What I got is the original and the YouTube reposts.  Recon for counts below done on Oct 2, 2026.
+What I got is the original and YouTube reposts. 
+
+Recon for counts below was done on Oct 2, 2026.
 
 | | Views | Likes | Comments | Link |
 |---|---|---|---|---|
@@ -43,7 +47,10 @@ What I got is the original and the YouTube reposts.  Recon for counts below done
 | FitBlips YouTube Short (Mar 30, 2025) | 39.9M | 576K | 672 | [youtube](https://www.youtube.com/shorts/ZaQBw9M97r4) |
 | The other 18 YouTube reposts I found, combined | 545K | | | [table below](#every-repost-i-found) |
 
-That's about 69M views between the original and the first repost. The other 18 reposts together add up to a fraction of the FitBlips short, but they keep coming: 12 of the 19 were posted in 2026, 8 in the last few months.
+That's about 69M views just between the original and the first repost. If you're as unversed in viewership numbers as I was, then for reference,
+I don't see a video with that many views right now on the [@jimmykimmellive](https://www.instagram.com/jimmykimmellive/) profile. Not that I should
+necessarily host a nightshow, but ABC I'm open to ideas. 
+The other 18 reposts together add up to a fraction of the FitBlips short, but they keep coming: 12 of the 19 were posted in 2026, 8 in the last few months.
 
 <figure class="full">
     <a href="/assets/images/went-viral/instagram-reels-view-count.png"><img src="/assets/images/went-viral/instagram-reels-view-count.png"></a>
@@ -59,7 +66,7 @@ That's about 69M views between the original and the first repost. The other 18 r
 
 A search found 19 reposts, recuts, and re-narrations on YouTube alone. One per square, by the month it was posted. The 
 surprising thing to me is there's more reposts in 2026 than there were in 2025. Or maybe more likely, that could also be 
-because new uploads are easier to find in a search, 2025 reposts are maybe just lost to time, I didn't keep an index.
+because new uploads are easier to find in a search, and 2025 reposts are just lost to time, I didn't keep an index.
 
 <figure class="full">
     <a href="/assets/images/went-viral/reposts-by-month.svg"><img src="/assets/images/went-viral/reposts-by-month.svg" alt="Unit chart of YouTube reposts by month, March 2025 to October 2026"></a>
@@ -69,7 +76,8 @@ because new uploads are easier to find in a search, 2025 reposts are maybe just 
 ## The Story Gets Better with Every Repost
 
 The original caption just advertises the next goldsprints night. The narration started three days later, and has ever escalated.
-Oldest first, as of Oct 2, 2026. I know none of these ppl, and they clearly don't know me either :laughing:.
+Oldest first, as of Oct 2, 2026. I know none of these ppl, and they clearly don't know me either :laughing:. They can't seem to agree on 
+which one of us is the alleged professional.
 
 <figure class="full">
     <a href="/assets/images/went-viral/repost-wall.jpg"><img src="/assets/images/went-viral/repost-wall.jpg"></a>
